@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[90vh] bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center overflow-hidden py-12"
+      className="relative min-h-[90vh] bg-[url('/james_gallery.jpg')] bg-cover bg-center flex items-center justify-center overflow-hidden py-12"
       aria-label="Kitur Cyprian Kipkemei Hero Section"
     >
       {/* Background pattern */}
@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="absolute top-0 left-0 w-full h-full bg-repeat opacity-[0.03]" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")'}}></div>
       </div>
       
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 z-10">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 z-10  backdrop-blur-[3px]">
         {/* Text Content */}
         <motion.div
           className="lg:w-1/2 text-center lg:text-left space-y-6"
@@ -34,17 +34,17 @@ export default function Hero() {
           
           <div className="flex items-center justify-center lg:justify-start gap-3 my-4">
             <div className="w-12 h-0.5 bg-pink-500"></div>
-            <h2 className="text-xl sm:text-2xl font-medium text-pink-200">
+            <h2 className="text-xl sm:text-2xl font-medium text-pink-300 md:text-pink-400">
               Champion Long-Distance Athlete
             </h2>
           </div>
           
-          <p className="text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-lg text-gray-400 md:text-white max-w-xl mx-auto lg:mx-0 leading-relaxed">
             Representing Kenya on the global stage with exceptional endurance and record-breaking performances. 
             Dedicated to pushing the limits of human potential in marathon running.
           </p>
           
-          <p className="text-pink-300 italic font-medium flex items-center justify-center lg:justify-start gap-2">
+          <p className="text-pink-400 italic font-medium flex items-center justify-center lg:justify-start gap-2">
             <span className="text-pink-500 text-xl">•</span> 
             Passion • Perseverance • Victory
             <span className="text-pink-500 text-xl">•</span>

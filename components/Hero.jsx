@@ -39,7 +39,7 @@ export default function Hero() {
             </h2>
           </div>
           
-          <p className="text-lg text-gray-400 md:text-white max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-lg text-gray-300 md:text-white max-w-xl mx-auto lg:mx-0 leading-relaxed">
             Representing Kenya on the global stage with exceptional endurance and record-breaking performances. 
             Dedicated to pushing the limits of human potential in marathon running.
           </p>
@@ -70,14 +70,14 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute -inset-4 bg-pink-500/10 rounded-full blur-xl"></div>
             <div className="absolute inset-0 border-2 border-pink-500/20 rounded-full"></div>
-            <Image
+            {/* <Image
               src="/james_gallery.jpg" // Update this path to your actual image
               alt="Kitur Cyprian Kipkemei in a competitive marathon"
               width={400}
               height={400}
               className="rounded-full w-80 h-80 object-cover relative z-10 shadow-2xl"
               priority
-            />
+            /> */}
             
             {/* Decorative elements */}
             <div className="absolute -bottom-2 -left-4 w-24 h-24 border-4 border-pink-500/30 rounded-full z-0"></div>

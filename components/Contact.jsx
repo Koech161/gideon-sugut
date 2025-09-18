@@ -88,14 +88,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Response Time Info */}
-            <div className="bg-gray-800/30 backdrop-blur-md rounded-2xl border border-pink-900/30 p-6 text-center">
-              <svg className="w-12 h-12 mx-auto text-pink-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <h4 className="font-semibold text-white mb-2">Response Time</h4>
-              <p className="text-gray-300">I typically respond to inquiries within 24-48 hours during training season.</p>
-            </div>
+           
           </motion.div>
         </div>
       </div>

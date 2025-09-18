@@ -51,16 +51,12 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
-            <Link href="#achievements">
+            <Link href="#records">
               <button className="px-8 py-3 bg-pink-600 text-white font-semibold rounded-lg shadow-lg hover:bg-pink-700 transition-all duration-300 transform hover:-translate-y-1">
                 Career Achievements
               </button>
             </Link>
-            <Link href="#gallery">
-              <button className="px-8 py-3 border border-pink-500/50 text-pink-300 font-medium rounded-lg hover:bg-pink-950/30 transition-all duration-300">
-                Race Gallery
-              </button>
-            </Link>
+            
           </div>
         </motion.div>
 

@@ -38,7 +38,7 @@ const columns = [
       }),
   }),
   columnHelper.accessor('venue', {
-    header: 'Venue',
+    header: '',
     cell: (info) => <span className="text-gray-700">{info.getValue()}</span>,
   }),
   

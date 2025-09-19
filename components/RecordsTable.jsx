@@ -127,7 +127,7 @@ export default function RecordsTable() {
                     {headerGroup.headers.map((header) => (
                       <th
                         key={header.id}
-                        className="px-3 py-2 text-sm font-semibold tracking-wider text-left text-white uppercase transition-colors cursor-pointer md:px-6 md:py-4 hover:bg-blue-700"
+                        className="px-3 py-2 text-sm font-medium tracking-wider text-left text-white uppercase transition-colors cursor-pointer md:px-6 md:py-4 hover:bg-blue-700"
                         onClick={header.column.getToggleSortingHandler()}
                       >
                         <div className="flex items-center">

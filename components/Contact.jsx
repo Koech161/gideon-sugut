@@ -58,7 +58,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="https://wa.me/+254723054668"
+                  href="https://wa.me/+254728675034"
                   className="flex items-center p-4 transition-all border border-green-200 bg-green-50 rounded-xl hover:bg-green-100 group"
                   whileHover={{ x: 5 }}
                 >
@@ -69,13 +69,13 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-green-900">WhatsApp</h4>
-                    <p className="text-green-700">+254 723 054 668</p>
+                    <p className="text-green-700">+254 728 675 034</p>
                     <p className="text-sm text-green-600">Quick responses</p>
                   </div>
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254723054668"
+                  href="tel:+254728675034"
                   className="flex items-center p-4 transition-all border border-blue-200 bg-blue-50 rounded-xl hover:bg-blue-100 group"
                   whileHover={{ x: 5 }}
                 >
@@ -86,7 +86,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900">Phone Call</h4>
-                    <p className="text-blue-700">+254 723 054 668</p>
+                    <p className="text-blue-700">+254 728 675 034</p>
                     <p className="text-sm text-blue-600">Available 9AM-6PM EAT</p>
                   </div>
                 </motion.a>

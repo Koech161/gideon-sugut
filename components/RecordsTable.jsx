@@ -11,16 +11,6 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import records from '@/data/records.json'
 
-// Sample data - replace with actual records data
-// const records = [
-//   { event: 'Berlin Marathon', time: '2:19:12', date: '2023-09-24', venue: 'Berlin, Germany', placement: '1st' },
-//   { event: 'London Marathon', time: '2:20:45', date: '2022-10-02', venue: 'London, UK', placement: '2nd' },
-//   { event: 'Tokyo Marathon', time: '2:21:30', date: '2022-03-06', venue: 'Tokyo, Japan', placement: '1st' },
-//   { event: 'Boston Marathon', time: '2:22:15', date: '2021-10-11', venue: 'Boston, USA', placement: '3rd' },
-//   { event: 'New York Marathon', time: '2:23:05', date: '2021-11-07', venue: 'New York, USA', placement: '2nd' },
-//   { event: 'Chicago Marathon', time: '2:24:20', date: '2020-10-10', venue: 'Chicago, USA', placement: '1st' },
-//   { event: 'World Championships', time: '2:25:10', date: '2019-10-05', venue: 'Doha, Qatar', placement: '2nd' },
-// ];
 
 // Define column helper
 const columnHelper = createColumnHelper();
@@ -137,7 +127,7 @@ export default function RecordsTable() {
                     {headerGroup.headers.map((header) => (
                       <th
                         key={header.id}
-                        className="px-6 py-4 text-sm font-semibold tracking-wider text-left text-white uppercase transition-colors cursor-pointer hover:bg-blue-700"
+                        className="px-3 py-2 text-sm font-semibold tracking-wider text-left text-white uppercase transition-colors cursor-pointer md:px-6 md:py-4 hover:bg-blue-700"
                         onClick={header.column.getToggleSortingHandler()}
                       >
                         <div className="flex items-center">
@@ -177,7 +167,7 @@ export default function RecordsTable() {
                       {row.getVisibleCells().map((cell) => (
                         <td
                           key={cell.id}
-                          className="px-6 py-4 text-sm transition-colors group-hover:text-blue-800"
+                          className="px-3 py-2 text-sm transition-colors md:px-6 md:py-4 group-hover:text-blue-800"
                         >
                           {flexRender(cell.column.columnDef.cell, cell.getContext())}
                         </td>

@@ -86,9 +86,9 @@ export default function Hero() {
             <div className="relative z-10 overflow-hidden shadow-2xl w-80 h-80 rounded-2xl">
               <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-400/20 to-blue-600/20"></div>
               {/* Placeholder for athlete image */}
-              <div className="flex items-center justify-center w-full h-full bg-gray-200">
+              {/* <div className="flex items-center justify-center w-full h-full bg-gray-200">
                 <span className="text-gray-500">Sharon Jerop Kebenei Image</span>
-              </div>
+              </div> */}
             </div>
             
             {/* Decorative elements */}
@@ -98,7 +98,7 @@ export default function Hero() {
             {/* Futuristic data elements */}
             <div className="absolute px-4 py-2 rounded-lg shadow-lg -bottom-6 -right-6 bg-white/90 backdrop-blur-sm">
               <p className="text-sm font-bold text-blue-600">Personal Best</p>
-              <p className="text-xs text-gray-700">2:19:12</p>
+              <p className="text-xs text-gray-700">2:32:05</p>
             </div>
             
             <div className="absolute px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full shadow-lg -top-6 -left-6">

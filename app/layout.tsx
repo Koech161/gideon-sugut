@@ -16,7 +16,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
   description: "Official website of Sharon Jerop Kebenei, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
-  keywords: "Sharon Jerop Kebenei, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Berlin Marathon, Iten Kenya runner",
+  keywords: "Sharon Jerop Kebenei, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
   authors: [{ name: "Sharon Jerop Kebenei" }],
   creator: "Sharon Jerop Kebenei",
   publisher: "Sharon Jerop Kebenei",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
-    description: "Professional Kenyan marathon runner specializing in long-distance races. Berlin Marathon champion and record holder.",
+    description: "Professional Kenyan marathon runner specializing in long-distance races.",
     url: 'https://sharonjeropkebenei.com', // Replace with actual domain
     siteName: "Sharon Jerop Kebenei",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
-    description: "Professional Kenyan marathon runner and Berlin Marathon champion.",
+    description: "Professional Kenyan marathon runner",
     images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
     creator: '@sharonjerop', // Replace with actual Twitter handle
   },

@@ -14,32 +14,32 @@ const jost = Jost({
 
 
 export const metadata: Metadata = {
-  title: "Kitur Cyprian Kipkemei - Professional Kenyan Marathon Runner",
-  description: "Official website of Kitur Cyprian Kipkemei, elite Kenyan marathon runner. Explore race records, achievements, training insights, and contact for sponsorship opportunities.",
-  keywords: "Kitur Cyprian Kipkemei, Kenyan marathon runner, long-distance runner, athletics, marathon records, Kenya athletics, professional runner, race results",
-  authors: [{ name: "Kitur Cyprian Kipkemei" }],
-  creator: "Kitur Cyprian Kipkemei",
-  publisher: "Kitur Cyprian Kipkemei",
+  title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
+  description: "Official website of Sharon Jerop Kebenei, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
+  keywords: "Sharon Jerop Kebenei, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Berlin Marathon, Iten Kenya runner",
+  authors: [{ name: "Sharon Jerop Kebenei" }],
+  creator: "Sharon Jerop Kebenei",
+  publisher: "Sharon Jerop Kebenei",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://kiturkipkemei.com'), // Replace with actual domain
+  metadataBase: new URL('https://sharonjeropkebenei.com'), // Replace with actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Kitur Cyprian Kipkemei - Professional Kenyan Marathon Runner",
-    description: "Elite Kenyan marathon runner specializing in long-distance races. Record holder and champion athlete.",
-    url: 'https://kiturkipkemei.com', // Replace with actual domain
-    siteName: "Kitur Cyprian Kipkemei",
+    title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
+    description: "Professional Kenyan marathon runner specializing in long-distance races. Berlin Marathon champion and record holder.",
+    url: 'https://sharonjeropkebenei.com', // Replace with actual domain
+    siteName: "Sharon Jerop Kebenei",
     images: [
       {
-        url: '/favicon.ico', // Replace with actual OG image path
+        url: '/og-image.jpg', // Replace with actual OG image path
         width: 1200,
         height: 630,
-        alt: 'Kitur Cyprian Kipkemei - Professional Marathon Runner',
+        alt: 'Sharon Jerop Kebenei - Professional Marathon Runner',
       },
     ],
     locale: 'en_US',
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Kitur Cyprian Kipkemei - Professional Kenyan Marathon Runner",
-    description: "Elite Kenyan marathon runner specializing in long-distance races.",
-    images: ['/favicon.ico'], // Replace with actual Twitter image path
-    creator: '@kitur_kipkemei', // Replace with actual Twitter handle
+    title: "Sharon Jerop Kebenei - Elite Kenyan Marathon Runner",
+    description: "Professional Kenyan marathon runner and Berlin Marathon champion.",
+    images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
+    creator: '@sharonjerop', // Replace with actual Twitter handle
   },
   robots: {
     index: true,
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  
   category: 'sports',
+  
 };
 
 export default function RootLayout({

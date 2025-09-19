@@ -25,7 +25,7 @@ const columns = [
   columnHelper.accessor('time', {
     header: 'Time',
     cell: (info) => (
-      <span className="font-mono text-lg font-bold text-blue-700">{info.getValue()}</span>
+      <span className="font-mono text-lg text-blue-700 font-semi-bold">{info.getValue()}</span>
     ),
   }),
   columnHelper.accessor('date', {

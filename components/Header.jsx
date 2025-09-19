@@ -30,11 +30,11 @@ export default function Header() {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-pink-900/20' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-200' 
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-4 py-3 flex items-center justify-between" aria-label="Main navigation">
+      <nav className="container flex items-center justify-between px-4 py-4 mx-auto" aria-label="Main navigation">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -43,15 +43,15 @@ export default function Header() {
         >
           <Link 
             href="/" 
-            className="text-xl md:text-2xl font-bold text-white hover:text-pink-400 transition-colors flex items-center"
+            className="flex items-center text-xl font-bold text-blue-900 transition-colors md:text-2xl hover:text-blue-700"
           >
-            <span className="text-pink-500">Kitur</span>
-            <span className="hidden sm:inline ml-1">Kipkemei</span>
+            <span className="text-blue-600">Sharon</span>
+            <span className="hidden ml-1 text-blue-800 sm:inline">Jerop Kebenei</span>
           </Link>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="items-center hidden space-x-8 lg:flex">
           {navLinks.map((link, index) => (
             <motion.div
               key={link.href}
@@ -63,15 +63,15 @@ export default function Header() {
                 href={link.href}
                 className={`relative text-sm font-medium uppercase tracking-wider transition-colors px-3 py-2 ${
                   pathname === link.href
-                    ? 'text-pink-400'
-                    : 'text-gray-200 hover:text-pink-300'
+                    ? 'text-blue-600'
+                    : 'text-blue-800 hover:text-blue-600'
                 }`}
                 aria-current={pathname === link.href ? 'page' : undefined}
               >
                 {link.label}
                 {pathname === link.href && (
                   <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"
                     layoutId="navbar-indicator"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -86,13 +86,18 @@ export default function Header() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-           
+            <Link
+              href="#contact"
+              className="px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+            >
+              Get In Touch
+            </Link>
           </motion.div>
         </div>
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="lg:hidden text-white focus:outline-none focus:ring-2 focus:ring-pink-500 rounded p-2"
+          className="p-2 text-blue-900 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-blue-500"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMenuOpen}
@@ -122,7 +127,7 @@ export default function Header() {
           <>
             {/* Backdrop */}
             <motion.div
-              className="fixed inset-0 bg-black/50 lg:hidden z-40"
+              className="fixed inset-0 z-40 bg-black/30 lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -131,7 +136,7 @@ export default function Header() {
             
             {/* Menu Panel */}
             <motion.div
-              className="fixed top-0 right-0 h-full w-80 max-w-full bg-gray-900/95 backdrop-blur-md shadow-2xl border-l border-pink-900/30 lg:hidden z-50"
+              className="fixed top-0 right-0 z-50 h-full max-w-full border-l border-blue-200 shadow-2xl w-80 bg-white/98 backdrop-blur-md lg:hidden"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -139,11 +144,11 @@ export default function Header() {
             >
               <div className="flex flex-col h-full">
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-pink-900/20">
-                  <span className="text-lg font-bold text-white">Menu</span>
+                <div className="flex items-center justify-between p-6 border-b border-blue-200">
+                  <span className="text-lg font-bold text-blue-900">Menu</span>
                   <button
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-gray-400 hover:text-pink-400 transition-colors"
+                    className="text-blue-600 transition-colors hover:text-blue-800"
                     aria-label="Close menu"
                   >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,15 +158,15 @@ export default function Header() {
                 </div>
 
                 {/* Navigation Links */}
-                <nav className="flex-1 p-6 space-y-6">
+                <nav className="flex-1 p-6 space-y-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       className={`block text-lg font-medium transition-colors py-3 px-4 rounded-lg ${
                         pathname === link.href
-                          ? 'bg-pink-900/30 text-pink-400'
-                          : 'text-gray-200 hover:bg-gray-800/50 hover:text-pink-300'
+                          ? 'bg-blue-100 text-blue-700'
+                          : 'text-blue-900 hover:bg-blue-50 hover:text-blue-700'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                       aria-current={pathname === link.href ? 'page' : undefined}
@@ -172,7 +177,15 @@ export default function Header() {
                 </nav>
 
                 {/* Footer */}
-                
+                <div className="p-6 border-t border-blue-200">
+                  <Link
+                    href="#contact"
+                    className="block w-full px-4 py-3 font-semibold text-center text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact Sharon
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </>

@@ -74,38 +74,6 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Hero Image */}
-        <motion.div
-          className="relative flex justify-center lg:w-1/2 lg:justify-end"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          <div className="relative">
-            {/* Main image container with futuristic frame */}
-            <div className="relative z-10 overflow-hidden shadow-2xl w-80 h-80 rounded-2xl">
-              <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-400/20 to-blue-600/20"></div>
-              {/* Placeholder for athlete image */}
-              {/* <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                <span className="text-gray-500">Sharon Jerop Kebenei Image</span>
-              </div> */}
-            </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute z-0 w-24 h-24 border-4 rounded-full -bottom-2 -left-4 border-blue-400/30 animate-pulse"></div>
-            <div className="absolute z-0 w-16 h-16 border-2 rounded-full -top-4 -right-2 border-blue-600/20 animate-pulse"></div>
-            
-            {/* Futuristic data elements */}
-            <div className="absolute px-4 py-2 rounded-lg shadow-lg -bottom-6 -right-6 bg-white/90 backdrop-blur-sm">
-              <p className="text-sm font-bold text-blue-600">Personal Best</p>
-              <p className="text-xs text-gray-700">2:32:05</p>
-            </div>
-            
-            <div className="absolute px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full shadow-lg -top-6 -left-6">
-              World Championships
-            </div>
-          </div>
-        </motion.div>
       </div>
       
       {/* Scroll indicator */}

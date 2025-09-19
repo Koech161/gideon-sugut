@@ -64,7 +64,7 @@ export default function RecordsTable() {
   return (
     <section className="py-20 bg-gradient-to-b from-white to-blue-50" id="records">
       <div className="container px-4 mx-auto">
-        <motion.div 
+        {/* <motion.div 
           className="mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function RecordsTable() {
             Race <span className="text-blue-600">Records</span>
           </h1>
           <div className="w-24 h-1 mx-auto bg-blue-600"></div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div 
           className="p-6 bg-white border border-blue-100 shadow-xl backdrop-blur-md rounded-2xl"

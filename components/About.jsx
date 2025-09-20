@@ -41,20 +41,21 @@ export default function About() {
                   My Running Journey
                 </h2>
               </div>
-              <p className="mb-6 text-lg leading-relaxed text-zinc-700">
-                Hailing from the legendary running grounds of Iten, Kenya, 
-                Kiptanui Hillary discovered his extraordinary talent for 
-                long-distance running at a young age. Inspired by Kenya's rich 
-                athletic heritage, he began his competitive career in local 
-                school championships before rapidly progressing to national 
-                and international competitions.
+             <p className="mb-6 text-lg leading-relaxed text-zinc-700">
+                Born and raised in the renowned running hub of Iten, Kenya, 
+                Kiptanui Hillary recognized his gift for long-distance running 
+                early in life. Inspired by the country’s proud athletic tradition, 
+                he began competing in school championships before quickly rising 
+                to national and international stages.
               </p>
               <p className="text-lg leading-relaxed text-zinc-700">
-                Specializing in marathon and half-marathon distances, Kiptanui combines 
-                natural endurance with scientific training methods to achieve exceptional 
-                results. His dedication extends beyond personal achievement as he actively 
-                mentors young athletes and promotes sports participation throughout Kenya.
+                Focused on marathon and half-marathon events, Kiptanui blends 
+                natural stamina with modern training techniques to deliver 
+                outstanding performances. Beyond his personal pursuits, he is 
+                committed to mentoring young athletes and encouraging wider 
+                participation in sports across Kenya.
               </p>
+
             </div>
             
             {/* Key Attributes */}
@@ -92,10 +93,11 @@ export default function About() {
         >
           <div className="inline-block px-8 py-6 border border-zinc-200 bg-zinc-100 rounded-2xl">
             <p className="text-xl italic font-medium text-zinc-800">
-              "The road to victory is paved with discipline, determination, and the courage to push beyond limits."
+              "Victory is built on discipline, fueled by determination, and achieved by the courage to go beyond limits."
             </p>
             <p className="mt-2 font-semibold text-zinc-600">- Kiptanui Hillary</p>
           </div>
+
         </motion.div>
       </div>
     </section>

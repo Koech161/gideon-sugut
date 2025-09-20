@@ -1,7 +1,7 @@
 [
-  { "id": 1, "event": "Marathon", "time": "2:32:05", "date": "2025-04-28", "venue": "Eldoret City Marathon" },
-  { "id": 2, "event": "Marathon", "time": "2:33:29", "date": "2024-11-24", "venue": "Iten Marathon" },
-  { "id": 3, "event": "Half Marathon", "time": "1:13:14 ", "date": "2024-07-21", "venue": "Betika Half Marathon" },
-  { "id": 4, "event": "Half Marathon", "time": "1:11:15", "date": "2024-02-25", "venue": "Kilimanjaro Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:13:27", "date": "2025-04-28", "venue": "Eldoret City Marathon" },
+  { "id": 2, "event": "Marathon", "time": "2:14:29", "date": "2024-11-24", "venue": "Iten Marathon" },
+  { "id": 3, "event": "Half Marathon", "time": "1:03:14 ", "date": "2024-07-21", "venue": "Betika Half Marathon" },
+  { "id": 4, "event": "Half Marathon", "time": "1:02:15", "date": "2024-02-25", "venue": "Kilimanjaro Half Marathon" }
 
 ]

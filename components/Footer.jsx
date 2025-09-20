@@ -11,7 +11,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://wa.me/+254728675034',
+    href: 'https://wa.me/+254700000000',
     label: 'WhatsApp',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -21,30 +21,30 @@ const socialLinks = [
     color: 'bg-green-500 hover:bg-green-600'
   },
   {
-    href: 'tel:+254728675034',
+    href: 'tel:+254700000000',
     label: 'Phone',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z" />
       </svg>
     ),
-    color: 'bg-blue-500 hover:bg-blue-600'
+    color: 'bg-zinc-600 hover:bg-zinc-700'
   },
   {
-    href: 'mailto:sharonkebenei97@gmail.com',
+    href: 'mailto:kiptanui@hillary.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
-    color: 'bg-purple-500 hover:bg-purple-600'
+    color: 'bg-zinc-500 hover:bg-zinc-600'
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="py-16 border-t bg-gradient-to-b from-blue-900 to-blue-950 border-blue-700/30" aria-label="Footer">
+    <footer className="py-16 border-t bg-gradient-to-b from-zinc-900 to-zinc-950 border-zinc-700/30" aria-label="Footer">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 gap-12 mb-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
@@ -55,9 +55,9 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <h3 className="mb-4 text-2xl font-bold text-white">
-              Sharon <span className="text-blue-400">Jerop Kebenei</span>
+              Kiptanui <span className="text-zinc-400">Hillary</span>
             </h3>
-            <p className="mb-6 leading-relaxed text-blue-200">
+            <p className="mb-6 leading-relaxed text-zinc-400">
               Elite Kenyan marathon runner dedicated to excellence, endurance, 
               and inspiring the next generation of athletes through record-breaking performances.
             </p>
@@ -86,16 +86,16 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider text-blue-300 uppercase">Navigation</h4>
+            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-zinc-300">Navigation</h4>
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center text-blue-100 transition-colors duration-300 hover:text-white group"
+                    className="flex items-center transition-colors duration-300 text-zinc-400 hover:text-white group"
                     aria-label={`Go to ${link.label} page`}
                   >
-                    <span className="w-2 h-2 mr-3 transition-opacity bg-blue-400 rounded-full opacity-0 group-hover:opacity-100"></span>
+                    <span className="w-2 h-2 mr-3 transition-opacity rounded-full opacity-0 bg-zinc-500 group-hover:opacity-100"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -109,49 +109,75 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider text-blue-300 uppercase">Contact Info</h4>
-            <div className="space-y-4 text-blue-100">
+            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-zinc-300">Contact Info</h4>
+            <div className="space-y-4 text-zinc-400">
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                 </svg>
-                sharonkebenei97@gmail.com
+                kiptanui@hillary.com
               </p>
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
                 </svg>
-                +254 728 675 034
+                +254 700 000 000
               </p>
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Eldoret, Kenya
+                Iten, Kenya
               </p>
             </div>
           </motion.div>
 
-          
-          
+          {/* Training Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-zinc-300">Training Base</h4>
+            <div className="space-y-4 text-zinc-400">
+              <p className="flex items-start">
+                <svg className="w-4 h-4 mt-1 mr-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                High Altitude Training Center, Iten
+              </p>
+              <p className="flex items-start">
+                <svg className="w-4 h-4 mt-1 mr-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                120-140km weekly mileage
+              </p>
+              <p className="flex items-start">
+                <svg className="w-4 h-4 mt-1 mr-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                Sponsored by Nike Kenya
+              </p>
+            </div>
+          </motion.div>
         </div>
 
         {/* Bottom Bar */}
         <motion.div
-          className="flex flex-col items-center justify-between pt-8 border-t border-blue-700/30 md:flex-row"
+          className="flex flex-col items-center justify-between pt-8 border-t border-zinc-700/30 md:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <p className="mb-4 text-sm text-blue-300 md:mb-0">
-            &copy; {new Date().getFullYear()} Sharon Jerop Kebenei. All rights reserved.
+          <p className="mb-4 text-sm text-zinc-500 md:mb-0">
+            &copy; {new Date().getFullYear()} Kiptanui Hillary. All rights reserved.
           </p>
-          <div className="text-sm text-blue-300">
+          <div className="text-sm text-zinc-500">
             Developed by{' '}
             <a
               href="https://abelk-k.vercel.app"
-              className="font-medium text-blue-400 transition-colors duration-300 hover:text-white"
+              className="font-medium transition-colors duration-300 text-zinc-400 hover:text-white"
               aria-label="Visit developer's website"
             >
               Kikoa Softwares
@@ -161,7 +187,7 @@ export default function Footer() {
 
         {/* Decorative elements */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
-          <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-blue-950 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-zinc-950 to-transparent"></div>
         </div>
       </div>
     </footer>

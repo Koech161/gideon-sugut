@@ -30,7 +30,7 @@ export default function Header() {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-200' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-zinc-200' 
           : 'bg-transparent'
       }`}
     >
@@ -43,10 +43,10 @@ export default function Header() {
         >
           <Link 
             href="/" 
-            className="flex items-center text-xl font-bold text-blue-900 transition-colors md:text-2xl hover:text-blue-700"
+            className="flex items-center text-xl font-bold transition-colors text-zinc-900 md:text-2xl hover:text-zinc-700"
           >
-            <span className="text-blue-600">Sharon</span>
-            <span className="hidden ml-1 text-blue-800 sm:inline">Jerop Kebenei</span>
+            <span className="text-zinc-600">Kiptanui</span>
+            <span className="hidden ml-1 text-zinc-800 sm:inline">Hillary</span>
           </Link>
         </motion.div>
 
@@ -63,15 +63,15 @@ export default function Header() {
                 href={link.href}
                 className={`relative text-sm font-medium uppercase tracking-wider transition-colors px-3 py-2 ${
                   pathname === link.href
-                    ? 'text-blue-600'
-                    : 'text-blue-800 hover:text-blue-600'
+                    ? 'text-zinc-600'
+                    : 'text-zinc-800 hover:text-zinc-600'
                 }`}
                 aria-current={pathname === link.href ? 'page' : undefined}
               >
                 {link.label}
                 {pathname === link.href && (
                   <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-zinc-600"
                     layoutId="navbar-indicator"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -88,7 +88,7 @@ export default function Header() {
           >
             <Link
               href="#contact"
-              className="px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+              className="px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 rounded-lg shadow-md bg-zinc-800 hover:bg-zinc-900"
             >
               Get In Touch
             </Link>
@@ -97,7 +97,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="p-2 text-blue-900 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="p-2 rounded-lg text-zinc-900 lg:hidden focus:outline-none focus:ring-2 focus:ring-zinc-500"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMenuOpen}
@@ -136,7 +136,7 @@ export default function Header() {
             
             {/* Menu Panel */}
             <motion.div
-              className="fixed top-0 right-0 z-50 h-full max-w-full border-l border-blue-200 shadow-2xl w-80 bg-white/98 backdrop-blur-md lg:hidden"
+              className="fixed top-0 right-0 z-50 h-full max-w-full border-l shadow-2xl border-zinc-200 w-80 bg-white/98 backdrop-blur-md lg:hidden"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -144,11 +144,11 @@ export default function Header() {
             >
               <div className="flex flex-col h-full">
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-blue-200">
-                  <span className="text-lg font-bold text-blue-900">Menu</span>
+                <div className="flex items-center justify-between p-6 border-b border-zinc-200">
+                  <span className="text-lg font-bold text-zinc-900">Menu</span>
                   <button
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-blue-600 transition-colors hover:text-blue-800"
+                    className="transition-colors text-zinc-600 hover:text-zinc-800"
                     aria-label="Close menu"
                   >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,8 +165,8 @@ export default function Header() {
                       href={link.href}
                       className={`block text-lg font-medium transition-colors py-3 px-4 rounded-lg ${
                         pathname === link.href
-                          ? 'bg-blue-100 text-blue-700'
-                          : 'text-blue-900 hover:bg-blue-50 hover:text-blue-700'
+                          ? 'bg-zinc-100 text-zinc-700'
+                          : 'text-zinc-900 hover:bg-zinc-50 hover:text-zinc-700'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                       aria-current={pathname === link.href ? 'page' : undefined}
@@ -177,13 +177,13 @@ export default function Header() {
                 </nav>
 
                 {/* Footer */}
-                <div className="p-6 border-t border-blue-200">
+                <div className="p-6 border-t border-zinc-200">
                   <Link
                     href="#contact"
-                    className="block w-full px-4 py-3 font-semibold text-center text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+                    className="block w-full px-4 py-3 font-semibold text-center text-white transition-colors duration-300 rounded-lg shadow-md bg-zinc-800 hover:bg-zinc-900"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Contact Sharon
+                    Contact Kiptanui
                   </Link>
                 </div>
               </div>

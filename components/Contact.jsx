@@ -6,7 +6,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('kiptanui@hillary.com');
+    navigator.clipboard.writeText('hillarykiptanui5@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -58,7 +58,7 @@ export default function Contact() {
               </h3>
               
               <div className="space-y-4">
-                <motion.a
+                {/* <motion.a
                   href="https://wa.me/+254700000000"
                   className="flex items-center p-4 transition-all border border-zinc-200 bg-zinc-50 rounded-xl hover:bg-zinc-100 group"
                   whileHover={{ x: 5 }}
@@ -73,9 +73,9 @@ export default function Contact() {
                     <p className="text-zinc-700">+254 700 000 000</p>
                     <p className="text-sm text-zinc-600">Quick responses</p>
                   </div>
-                </motion.a>
+                </motion.a> */}
 
-                <motion.a
+                {/* <motion.a
                   href="tel:+254700000000"
                   className="flex items-center p-4 transition-all border border-zinc-200 bg-zinc-50 rounded-xl hover:bg-zinc-100 group"
                   whileHover={{ x: 5 }}
@@ -90,7 +90,7 @@ export default function Contact() {
                     <p className="text-zinc-700">+254 700 000 000</p>
                     <p className="text-sm text-zinc-600">Available 9AM-6PM EAT</p>
                   </div>
-                </motion.a>
+                </motion.a> */}
 
                 <motion.div 
                   className="flex items-center p-4 transition-all border border-zinc-200 bg-zinc-50 rounded-xl hover:bg-zinc-100 group"
@@ -103,7 +103,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-zinc-900">Email</h4>
-                    <p className="text-zinc-700">kiptanui@hillary.com</p>
+                    <p className="text-zinc-700">hillarykiptanui5@gmail.com</p>
                     <button 
                       onClick={copyEmail}
                       className="flex items-center mt-1 text-sm transition-colors text-zinc-600 hover:text-zinc-800"

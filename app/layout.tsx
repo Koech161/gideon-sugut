@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://sharonjeropkebenei.com'), // Replace with actual domain
+  metadataBase: new URL('https://www.hillarykiptanui.com/'), // Replace with actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Kiptanui Hillary - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner specializing in long-distance races.",
-    url: 'https://sharonjeropkebenei.com', // Replace with actual domain
+    url: 'https://www.hillarykiptanui.com/', // Replace with actual domain
     siteName: "Kiptanui Hillary",
     images: [
       {

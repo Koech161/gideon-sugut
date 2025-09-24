@@ -14,12 +14,12 @@ const jost = Jost({
 
 
 export const metadata: Metadata = {
-  title: "Selly Jepng'etich Rono - Elite Kenyan Marathon Runner",
-  description: "Official website of Selly Jepng'etich Rono, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
-  keywords: "Selly Jepng'etich Rono, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
-  authors: [{ name: "Selly Jepng'etich Rono" }],
-  creator: "Selly Jepng'etich Rono",
-  publisher: "Selly Jepng'etich Rono",
+  title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
+  description: "Official website of Hilda Cheptoo Biwott, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
+  keywords: "Hilda Cheptoo Biwott, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
+  authors: [{ name: "Hilda Cheptoo Biwott" }],
+  creator: "Hilda Cheptoo Biwott",
+  publisher: "Hilda Cheptoo Biwott",
   formatDetection: {
     email: false,
     address: false,
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Selly Jepng'etich Rono - Elite Kenyan Marathon Runner",
+    title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner specializing in long-distance races.",
     url: 'https://www.hillarykiptanui.com/', // Replace with actual domain
-    siteName: "Selly Jepng'etich Rono",
+    siteName: "Hilda Cheptoo Biwott",
     images: [
       {
         url: '/og-image.jpg', // Replace with actual OG image path
         width: 1200,
         height: 630,
-        alt: "Selly Jepng'etich Rono - Professional Marathon Runner",
+        alt: "Hilda Cheptoo Biwott - Professional Marathon Runner",
       },
     ],
     locale: 'en_US',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Selly Jepng'etich Rono - Elite Kenyan Marathon Runner",
+    title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner",
     images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
     creator: '@sharonjerop', // Replace with actual Twitter handle

@@ -176,7 +176,7 @@ export default function Hero() {
       </div>
       
       {/* Elegant scroll indicator */}
-      <div className="absolute transform -translate-x-1/2 bottom-8 left-1/2">
+      <div className="absolute hidden transform -translate-x-1/2 bottom-8 left-1/2 ">
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}

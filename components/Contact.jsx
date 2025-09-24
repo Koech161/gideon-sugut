@@ -58,7 +58,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:selly.rono@yahoo.com"
+                  href="mailto:ronohsally@yahoo.com"
                   className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -69,7 +69,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-700">selly.rono@yahoo.com</p>
+                    <p className="text-gray-700">ronohsally@yahoo.com</p>
                     <p className="text-sm text-lime-600">Preferred for formal inquiries</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254723456789"
+                  href="https://wa.me/+254701848586"
                   className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -89,7 +89,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-gray-700">+254 701 848 586</p>
                     <p className="text-sm text-lime-600">Quick responses • Business hours</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254723456789"
+                  href="tel:+254701848586"
                   className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -109,7 +109,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Phone Call</h4>
-                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-gray-700">+254 701 848 586</p>
                     {/* <p className="text-sm text-lime-600">Available 9AM-6PM EAT</p> */}
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">

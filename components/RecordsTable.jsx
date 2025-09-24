@@ -1,210 +1,245 @@
 'use client';
 import { useState, useMemo } from 'react';
-import {
-  createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
-  getSortedRowModel,
-  getFilteredRowModel,
-} from '@tanstack/react-table';
 import { motion, AnimatePresence } from 'framer-motion';
-import records from '@/data/records.json'
+import achievementsData from '@/data/records.json'
 
-// Define column helper
-const columnHelper = createColumnHelper();
-const columns = [
-  columnHelper.accessor('event', {
-    header: 'Event',
-    cell: (info) => (
-      <span className="font-semibold text-zinc-900">{info.getValue()}</span>
-    ),
-    filterFn: 'includesString',
-  }),
-  columnHelper.accessor('time', {
-    header: 'Time',
-    cell: (info) => (
-      <span className="font-mono font-medium text-zinc-700 text-l">{info.getValue()}</span>
-    ),
-  }),
-  columnHelper.accessor('date', {
-    header: 'Date',
-    cell: (info) =>
-      new Date(info.getValue()).toLocaleDateString('en-GB', {
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric',
-      }),
-  }),
-  columnHelper.accessor('venue', {
-    header: 'Venue',
-    cell: (info) => <span className="text-zinc-600">{info.getValue()}</span>,
-  }),
-  
-];
+// const achievementsData = [
+//   { 
+//     id: 1, 
+//     event: "Marathon", 
+//     time: "2:18:45", 
+//     date: "2023-04-17", 
+//     venue: "Boston Marathon",
+//     achievement: "Champion",
+//     category: "World Marathon Major",
+//     description: "Victorious finish in one of the world's most prestigious marathons",
+//     highlight: true
+//   },
+//   { 
+//     id: 2, 
+//     event: "Marathon", 
+//     time: "2:19:30", 
+//     date: "2022-10-09", 
+//     venue: "Chicago Marathon",
+//     achievement: "Top 5 Finish",
+//     category: "World Marathon Major",
+//     description: "Strong performance against elite international competition",
+//     highlight: true
+//   },
+//   { 
+//     id: 3, 
+//     event: "Half Marathon", 
+//     time: "1:05:30", 
+//     date: "2022-07-16", 
+//     venue: "Lisbon Half Marathon",
+//     achievement: "Personal Best",
+//     category: "International Event",
+//     description: "Set new personal record in highly competitive field"
+//   },
+//   { 
+//     id: 4, 
+//     event: "10,000m", 
+//     time: "31:45", 
+//     date: "2021-06-12", 
+//     venue: "Kenyan National Championships",
+//     achievement: "Gold Medal",
+//     category: "National Competition",
+//     description: "National title victory showcasing track prowess"
+//   }
+// ];
 
-export default function RecordsTable() {
-  const [sorting, setSorting] = useState([]);
-  const [filter, setFilter] = useState('');
+const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10,000m'];
 
-  const data = useMemo(() => records, []);
+export default function Achievements() {
+  const [activeFilter, setActiveFilter] = useState('All');
+  const [sortBy, setSortBy] = useState('date');
 
-  const table = useReactTable({
-    data,
-    columns,
-    state: { sorting, globalFilter: filter },
-    onSortingChange: setSorting,
-    onGlobalFilterChange: setFilter,
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-  });
+  const filteredAchievements = useMemo(() => {
+    let filtered = achievementsData;
+    
+    if (activeFilter !== 'All') {
+      filtered = filtered.filter(item => 
+        item.event === activeFilter || item.category === activeFilter
+      );
+    }
+
+    // Sort by selected criteria
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'date':
+          return new Date(b.date) - new Date(a.date);
+        case 'time':
+          return a.time.localeCompare(b.time);
+        case 'event':
+          return a.event.localeCompare(b.event);
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  }, [activeFilter, sortBy]);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-zinc-50" id="records">
+    <section className="py-20 bg-gradient-to-b from-white to-lime-50/30" id="achievements">
       <div className="container px-4 mx-auto">
-        
-
-        <motion.div 
-          className="p-6 bg-white border shadow-xl border-zinc-200 backdrop-blur-md rounded-2xl"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+        <motion.div
+          className="mb-16 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          {/* Header and Filter */}
-          <div className="flex flex-col items-center justify-between gap-4 mb-8 md:flex-row">
-            <div>
-              <h3 className="text-2xl font-bold text-zinc-900">Performance History</h3>
-              <p className="text-zinc-600">Kiptanui's competitive race achievements</p>
-            </div>
-            
-            <div className="relative w-full md:w-80">
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg className="w-5 h-5 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <input
-                type="text"
-                value={filter}
-                onChange={(e) => setFilter(e.target.value)}
-                placeholder="Search events or venues..."
-                className="w-full py-3 pl-10 pr-4 transition-all border rounded-lg text-zinc-900 placeholder-zinc-400 border-zinc-300 bg-zinc-50/50 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:border-transparent"
-                aria-label="Filter records by event"
-              />
-              {filter && (
-                <button
-                  onClick={() => setFilter('')}
-                  className="absolute transition-colors -translate-y-1/2 text-zinc-400 right-3 top-1/2 hover:text-zinc-600"
-                  aria-label="Clear filter"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
-          </div>
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-lime-700">
+            Championship Wins
+          </h2>
+          <h1 className="mb-4 text-4xl font-black text-gray-900 sm:text-5xl">
+            Career <span className="text-lime-600">Achievements</span>
+          </h1>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-lime-500 to-lime-600"></div>
+          <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
+            A journey of excellence through international competitions and record-breaking performances
+          </p>
+        </motion.div>
 
-          {/* Table */}
-          <div className="overflow-x-auto border shadow-sm border-zinc-200 rounded-xl">
-            <table className="min-w-full" aria-label="Athlete Personal Records">
-              <thead>
-                {table.getHeaderGroups().map((headerGroup) => (
-                  <tr key={headerGroup.id} className="bg-zinc-800">
-                    {headerGroup.headers.map((header) => (
-                      <th
-                        key={header.id}
-                        className="px-3 py-2 text-sm font-medium tracking-wider text-left text-white uppercase transition-colors cursor-pointer md:px-6 md:py-4 hover:bg-zinc-700"
-                        onClick={header.column.getToggleSortingHandler()}
-                      >
-                        <div className="flex items-center">
-                          {flexRender(header.column.columnDef.header, header.getContext())}
-                          <motion.span
-                            className="ml-2"
-                            animate={{
-                              rotate: header.column.getIsSorted() === 'asc' ? 0 : 180,
-                            }}
-                            transition={{ duration: 0.2 }}
-                          >
-                            {header.column.getIsSorted() ? 
-                              (header.column.getIsSorted() === 'asc' ? '↑' : '↓') : 
-                              '↕'}
-                          </motion.span>
-                        </div>
-                      </th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody className="divide-y divide-zinc-200">
-                <AnimatePresence>
-                  {table.getRowModel().rows.map((row) => (
-                    <motion.tr
-                      key={row.id}
-                      className="transition-colors hover:bg-zinc-50 group"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      whileHover={{ 
-                        backgroundColor: 'rgba(82, 82, 82, 0.05)',
-                        scale: 1.005
-                      }}
-                    >
-                      {row.getVisibleCells().map((cell) => (
-                        <td
-                          key={cell.id}
-                          className="px-3 py-2 text-sm transition-colors md:px-6 md:py-4 group-hover:text-zinc-800"
-                        >
-                          {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                        </td>
-                      ))}
-                    </motion.tr>
-                  ))}
-                </AnimatePresence>
-              </tbody>
-            </table>
-          </div>
-
-          {/* Empty state */}
-          {table.getRowModel().rows.length === 0 && (
-            <motion.div 
-              className="py-12 text-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
-                <svg className="w-8 h-8 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <p className="text-zinc-600">No records found matching your search</p>
-              <button 
-                onClick={() => setFilter('')}
-                className="mt-2 underline transition-colors text-zinc-700 hover:text-zinc-900"
+        {/* Filters and Sort */}
+        <motion.div 
+          className="flex flex-col gap-4 mb-8 md:flex-row md:items-center md:justify-between"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="flex flex-wrap gap-2">
+            {categoryFilters.map((filter) => (
+              <button
+                key={filter}
+                onClick={() => setActiveFilter(filter)}
+                className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                  activeFilter === filter
+                    ? 'bg-lime-600 text-white shadow-lg'
+                    : 'bg-white text-gray-700 border border-lime-200 hover:bg-lime-50 hover:border-lime-300'
+                }`}
               >
-                Clear search
+                {filter}
               </button>
-            </motion.div>
-          )}
+            ))}
+          </div>
 
-          {/* Results count */}
-          <div className="flex items-center justify-between mt-6">
-            <div className="text-sm text-zinc-600">
-              Showing {table.getRowModel().rows.length} of {records.length} records
-            </div>
-            
-            {/* Sort indicator */}
-            {sorting.length > 0 && (
-              <div className="text-xs text-zinc-500">
-                Sorted by: {sorting[0].id} {sorting[0].desc ? '(Desc)' : '(Asc)'}
-              </div>
-            )}
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium text-gray-700">Sort by:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="px-3 py-2 text-sm border rounded-lg border-lime-200 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent"
+            >
+              <option value="date">Most Recent</option>
+              <option value="time">Best Time</option>
+              <option value="event">Event Type</option>
+            </select>
           </div>
         </motion.div>
 
-        
+        {/* Achievements Grid */}
+        <motion.div 
+          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <AnimatePresence>
+            {filteredAchievements.map((achievement, index) => (
+              <motion.div
+                key={achievement.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                layout
+              >
+                <AchievementCard achievement={achievement} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Empty State */}
+        {filteredAchievements.length === 0 && (
+          <motion.div 
+            className="py-16 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="inline-flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-lime-100">
+              <svg className="w-10 h-10 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <p className="text-lg text-gray-600">No achievements found for the selected filter</p>
+            <button 
+              onClick={() => setActiveFilter('All')}
+              className="mt-3 underline transition-colors text-lime-700 hover:text-lime-800"
+            >
+              Show all achievements
+            </button>
+          </motion.div>
+        )}
+
+       
       </div>
     </section>
+  );
+}
+
+function AchievementCard({ achievement }) {
+  return (
+    <motion.div
+      className={`h-full p-6 border rounded-2xl transition-all hover:shadow-lg ${
+        achievement.highlight 
+          ? 'bg-gradient-to-br from-lime-50 to-lime-100 border-lime-300 border-l-4' 
+          : 'bg-white border-lime-200'
+      }`}
+      whileHover={{ y: -5, scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      {/* Header */}
+      <div className="flex items-start justify-between mb-4">
+        <div>
+          <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
+            achievement.highlight ? 'bg-lime-500 text-white' : 'bg-lime-100 text-lime-800'
+          }`}>
+            {achievement.category}
+          </span>
+        </div>
+        {achievement.highlight && (
+          <span className="text-lime-500">⭐</span>
+        )}
+      </div>
+
+      {/* Event and Achievement */}
+      <h3 className="mb-2 text-lg font-bold text-gray-900">{achievement.event}</h3>
+      <p className={`text-sm font-semibold mb-3 ${
+        achievement.highlight ? 'text-lime-700' : 'text-gray-700'
+      }`}>
+        {achievement.achievement}
+      </p>
+
+      {/* Time and Venue */}
+      <div className="mb-4">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-2xl font-black text-lime-600">{achievement.time}</span>
+        </div>
+        <div className="text-sm text-gray-600">
+          {new Date(achievement.date).toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </div>
+        <div className="text-sm text-gray-600">{achievement.venue}</div>
+      </div>
+
+      {/* Description */}
+      <p className="text-sm leading-relaxed text-gray-700">{achievement.description}</p>
+    </motion.div>
   );
 }

@@ -30,67 +30,7 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid max-w-6xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
-          {/* Contact Information */}
-          <motion.div
-            className="space-y-8"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <div className="p-8 bg-white border-l-4 shadow-xl border-violet-500 rounded-2xl">
-              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                Professional Representation
-              </h3>
-              
-              <div className="space-y-6">
-                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
-                  <h4 className="font-bold text-gray-800">Management Team</h4>
-                  <p className="text-gray-700">Elite Athletes Management Kenya</p>
-                  <p className="text-sm text-violet-600">Official representatives for race bookings</p>
-                </div>
-                
-                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
-                  <h4 className="font-bold text-gray-800">Media Inquiries</h4>
-                  <p className="text-gray-700">Press and interview requests</p>
-                  <p className="text-sm text-violet-600">Please allow 2-3 business days for response</p>
-                </div>
-                
-                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
-                  <h4 className="font-bold text-gray-800">Training Location</h4>
-                  <p className="text-gray-700">Iten High Altitude Training Center</p>
-                  <p className="text-sm text-violet-600">Available for training collaborations</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Response Time Info */}
-            <div className="p-6 text-white shadow-lg bg-gradient-to-br from-violet-600 to-violet-700 rounded-2xl">
-              <h3 className="flex items-center mb-4 text-xl font-bold">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Response Times
-              </h3>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
-                  <span>Email: Within 24-48 hours</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
-                  <span>WhatsApp: Same day during business hours</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
-                  <span>Urgent race invitations: Priority response</span>
-                </li>
-              </ul>
-            </div>
-          </motion.div>
+        
 
           {/* Direct Contact Methods */}
           <motion.div
@@ -172,21 +112,6 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Additional Information */}
-        <motion.div 
-          className="max-w-2xl mx-auto mt-12 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-        >
-          <div className="p-6 bg-white border shadow-lg border-violet-100 rounded-2xl">
-            <h3 className="mb-2 text-lg font-bold text-gray-800">Booking & Appearance Notes</h3>
-            <p className="text-sm text-gray-600">
-              For race appearances and events, please contact us at least 3 months in advance. 
-              Training schedule considerations apply for competition periods.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

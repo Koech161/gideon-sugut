@@ -74,7 +74,7 @@ export default function Hero() {
             </div>
             
             {/* Floating achievement badges */}
-            <motion.div 
+            {/* <motion.div 
               className="absolute z-20 px-5 py-3 bg-white border shadow-xl rounded-2xl -top-4 -left-4 border-violet-100"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -84,9 +84,9 @@ export default function Hero() {
                 <div className="w-3 h-3 rounded-full bg-violet-500"></div>
                 <span className="text-sm font-semibold text-violet-700">World Record</span>
               </div>
-            </motion.div>
+            </motion.div> */}
             
-            <motion.div 
+            {/* <motion.div 
               className="absolute z-20 px-5 py-3 bg-white border shadow-xl rounded-2xl -bottom-4 -right-4 border-violet-100"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ export default function Hero() {
                 <div className="w-3 h-3 rounded-full bg-violet-500"></div>
                 <span className="text-sm font-semibold text-violet-700">5x Champion</span>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
 

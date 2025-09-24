@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <section
-      className="py-20 bg-gradient-to-b from-white to-lime-50/30"
-      aria-label="Contact Selly Jepng'etich Rono"
+      className="py-20 bg-gradient-to-b from-white to-violet-50/20"
+      aria-label="Contact Hilda Cheptoo Biwott"
       id='contact'
     >
       <div className="container px-4 mx-auto">
@@ -15,17 +15,17 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-lime-700">
-            Let's Connect
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-violet-700">
+            Get In Touch
           </h2>
           <h1 className="mb-4 text-4xl font-black text-gray-900">
-            Contact <span className="text-lime-600">Selly</span>
+            Contact <span className="text-violet-600">Hilda</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-lime-500 to-lime-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-violet-500 to-violet-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
-            Interested in partnerships, race invitations, or media features? 
-            I'm available for sponsorship opportunities, speaking engagements, 
-            and collaborations that promote athletic excellence.
+            Interested in race partnerships, sponsorship opportunities, or media features? 
+            I'm available for brand collaborations, speaking engagements, and events 
+            that promote athletic excellence and sports development.
           </p>
         </motion.div>
 
@@ -37,8 +37,59 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            
+            <div className="p-8 bg-white border-l-4 shadow-xl border-violet-500 rounded-2xl">
+              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
+                <svg className="w-6 h-6 mr-3 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Professional Representation
+              </h3>
+              
+              <div className="space-y-6">
+                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
+                  <h4 className="font-bold text-gray-800">Management Team</h4>
+                  <p className="text-gray-700">Elite Athletes Management Kenya</p>
+                  <p className="text-sm text-violet-600">Official representatives for race bookings</p>
+                </div>
+                
+                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
+                  <h4 className="font-bold text-gray-800">Media Inquiries</h4>
+                  <p className="text-gray-700">Press and interview requests</p>
+                  <p className="text-sm text-violet-600">Please allow 2-3 business days for response</p>
+                </div>
+                
+                <div className="p-4 border border-violet-100 rounded-xl bg-violet-50">
+                  <h4 className="font-bold text-gray-800">Training Location</h4>
+                  <p className="text-gray-700">Iten High Altitude Training Center</p>
+                  <p className="text-sm text-violet-600">Available for training collaborations</p>
+                </div>
+              </div>
+            </div>
 
+            {/* Response Time Info */}
+            <div className="p-6 text-white shadow-lg bg-gradient-to-br from-violet-600 to-violet-700 rounded-2xl">
+              <h3 className="flex items-center mb-4 text-xl font-bold">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Response Times
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
+                  <span>Email: Within 24-48 hours</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
+                  <span>WhatsApp: Same day during business hours</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 mr-3 bg-white rounded-full"></div>
+                  <span>Urgent race invitations: Priority response</span>
+                </li>
+              </ul>
+            </div>
           </motion.div>
 
           {/* Direct Contact Methods */}
@@ -48,9 +99,9 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="p-8 bg-white border-l-4 shadow-xl border-lime-500 rounded-2xl">
+            <div className="p-8 bg-white border-l-4 shadow-xl border-violet-500 rounded-2xl">
               <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 mr-3 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 Direct Contact
@@ -58,28 +109,28 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:ronohsally@yahoo.com"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="mailto:hilda.cheptoo@example.com"
+                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-lime-500">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-violet-500">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-700">ronohsally@yahoo.com</p>
-                    <p className="text-sm text-lime-600">Preferred for formal inquiries</p>
+                    <p className="text-gray-700">hilda.cheptoo@example.com</p>
+                    <p className="text-sm text-violet-600">Preferred for formal inquiries</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254701848586"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="https://wa.me/+254723456789"
+                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-green-500 rounded-lg">
@@ -89,17 +140,17 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 701 848 586</p>
-                    <p className="text-sm text-lime-600">Quick responses • Business hours</p>
+                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-sm text-violet-600">Quick responses • Business hours</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254701848586"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="tel:+254723456789"
+                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
@@ -109,10 +160,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Phone Call</h4>
-                    <p className="text-gray-700">+254 701 848 586</p>
-                    {/* <p className="text-sm text-lime-600">Available 9AM-6PM EAT</p> */}
+                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-sm text-violet-600">Available 8AM-6PM EAT</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
@@ -121,7 +172,21 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        
+        {/* Additional Information */}
+        <motion.div 
+          className="max-w-2xl mx-auto mt-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
+          <div className="p-6 bg-white border shadow-lg border-violet-100 rounded-2xl">
+            <h3 className="mb-2 text-lg font-bold text-gray-800">Booking & Appearance Notes</h3>
+            <p className="text-sm text-gray-600">
+              For race appearances and events, please contact us at least 3 months in advance. 
+              Training schedule considerations apply for competition periods.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

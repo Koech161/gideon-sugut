@@ -25,18 +25,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.hillarykiptanui.com/'), // Replace with actual domain
+  metadataBase: new URL('https://www.hildahcheptoo.live/'), // Replace with actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner specializing in long-distance races.",
-    url: 'https://www.hillarykiptanui.com/', // Replace with actual domain
+    url: 'https://www.hildahcheptoo.live/', // Replace with actual domain
     siteName: "Hilda Cheptoo Biwott",
     images: [
       {
-        url: '/og-image.jpg', // Replace with actual OG image path
+        url: '/favicon.ico', // Replace with actual OG image path
         width: 1200,
         height: 630,
         alt: "Hilda Cheptoo Biwott - Professional Marathon Runner",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner",
     images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
-    creator: '@sharonjerop', // Replace with actual Twitter handle
+    creator: '@cheptoohildah', // Replace with actual Twitter handle
   },
   robots: {
     index: true,

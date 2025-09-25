@@ -31,7 +31,7 @@ const socialLinks = [
     color: 'bg-gray-700 hover:bg-gray-800'
   },
   {
-    href: 'mailto:hilda.cheptoo@example.com',
+    href: 'mailto:cheptoohildah53@gmail.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-3 text-violet-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                 </svg>
-                hilda.cheptoo@example.com
+                cheptoohildah53@gmail.com
               </p>
               <p className="flex items-center">
                 <svg className="w-4 h-4 mr-3 text-violet-400" fill="currentColor" viewBox="0 0 24 24">

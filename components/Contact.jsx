@@ -49,7 +49,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:hilda.cheptoo@example.com"
+                  href="mailto:cheptoohildah53@gmail.com"
                   className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -60,7 +60,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-700">hilda.cheptoo@example.com</p>
+                    <p className="text-gray-700">cheptoohildah53@gmail.com</p>
                     <p className="text-sm text-violet-600">Preferred for formal inquiries</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">

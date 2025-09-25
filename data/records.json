@@ -1,7 +1,7 @@
 [
-  { "id": 1, "event": "Marathon", "time": "2:33:27", "date": "2024-11-17", "venue": "Kilimanjaro Tanzania" },
-  { "id": 3, "event": "10 Kilometres Road", "time": "31:17 ", "date": "2025-05-25", "venue": "Wildlife Race Kenya" },
-  { "id": 2, "event": "Half Marathon", "time": "1:12:59", "date": "2022-09-10", "venue": "Chemusus Dam Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:33:42", "date": "2024-11-24", "venue": "Iten Marathon" },
+  { "id": 3, "event": "Half Marathon", "time": "1:12:17 ", "date": "2024-02-25", "venue": "Kilimanjaro Half Marathon" },
+  { "id": 2, "event": "Half Marathon", "time": "1:13:29", "date": "2024-07-21", "venue": "Betika Half Marathon" }
 
 
 ]

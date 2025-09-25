@@ -11,7 +11,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://wa.me/+254723456789',
+    href: 'https://wa.me/+254799741734',
     label: 'WhatsApp',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ const socialLinks = [
     color: 'bg-green-500 hover:bg-green-600'
   },
   {
-    href: 'tel:+254723456789',
+    href: 'tel:+254799741734',
     label: 'Phone',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-3 text-violet-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
                 </svg>
-                +254 723 456 789
+                +254 799 741 734
               </p>
              
             </div>

@@ -69,7 +69,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254723456789"
+                  href="https://wa.me/+254799741734"
                   className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -80,7 +80,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-gray-700">+254 799 741 734</p>
                     <p className="text-sm text-violet-600">Quick responses • Business hours</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254723456789"
+                  href="tel:+254799741734"
                   className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
@@ -100,7 +100,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Phone Call</h4>
-                    <p className="text-gray-700">+254 723 456 789</p>
+                    <p className="text-gray-700">+254 799 741 734</p>
                     <p className="text-sm text-violet-600">Available 8AM-6PM EAT</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,7 +1,7 @@
 [
   { "id": 1, "event": "Marathon", "time": "2:33:42", "date": "2024-11-24", "venue": "Iten Marathon" },
-  { "id": 3, "event": "Half Marathon", "time": "1:12:17 ", "date": "2024-02-25", "venue": "Kilimanjaro Half Marathon" },
-  { "id": 2, "event": "Half Marathon", "time": "1:13:29", "date": "2024-07-21", "venue": "Betika Half Marathon" }
+  { "id": 3, "event": "Half Marathon", "time": "1:12:17 ", "date": "2025-06-28", "venue": "Lewa Safari Marathon" },
+  { "id": 2, "event": "Half Marathon", "time": "1:13:29", "date": "2024-04-27", "venue": "Mutuini Half Marathon" }
 
 
 ]

@@ -150,7 +150,7 @@ export default function Header() {
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-violet-200 bg-violet-50/50">
                   <div>
-                    <span className="text-lg font-black text-gray-900">Selly Rono</span>
+                    <span className="text-lg font-black text-gray-900">Hilda Cheptoo</span>
                     <p className="text-sm text-violet-700">Marathon Champion</p>
                   </div>
                   <button
@@ -193,12 +193,12 @@ export default function Header() {
                     Start Partnership
                   </Link>
                   <div className="flex justify-center mt-4 space-x-4">
-                    <a href="mailto:selly.rono@yahoo.com" className="p-2 transition-colors text-violet-600 hover:text-violet-800">
+                    <a href="mailto:cheptoohildah53@gmail.com" className="p-2 transition-colors text-violet-600 hover:text-violet-800">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </a>
-                    <a href="https://wa.me/+254723456789" className="p-2 transition-colors text-violet-600 hover:text-violet-800">
+                    <a href="https://wa.me/+254799741734" className="p-2 transition-colors text-violet-600 hover:text-violet-800">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l4.93-1.36A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm3.92 13.8c-.25.74-.74 1.32-1.48 1.66-.94.43-2.16.36-3.3-.18-1.4-.67-2.57-1.76-3.42-3.08-.85-1.32-1.07-2.74-.62-4.1.2-.6.58-1.13 1.14-1.5.14-.1.3-.16.46-.16h.32c.2 0 .48.07.66.44.22.45.78 1.54.86 1.65.08.1.14.22.1.34-.12.36-.36.7-.74.94-.14.09-.28.19-.4.29-.12.1-.24.2-.22.35.04.28.24.62.52.94.64.74 1.4 1.3 2.3 1.56.14.04.28.02.38-.06.1-.08.24-.22.38-.36.22-.22.44-.3.62-.2.18.1 1.1.52 1.3.6.18.08.3.14.34.24.04.1.02.2-.04.34-.3.64-.9 1.3-1.6 1.5z" />
                       </svg>

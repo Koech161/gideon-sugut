@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <section
-      className="py-20 bg-gradient-to-b from-white to-violet-50/20"
-      aria-label="Contact Hilda Cheptoo Biwott"
+      className="py-20 bg-gradient-to-b from-white to-teal-50"
+      aria-label="Contact Ascah Jepkorir Lelei"
       id='contact'
     >
       <div className="container px-4 mx-auto">
@@ -15,22 +15,85 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-violet-700">
+          <h2 className="mb-3 text-sm font-semibold tracking-wider text-teal-700 uppercase">
             Get In Touch
           </h2>
           <h1 className="mb-4 text-4xl font-black text-gray-900">
-            Contact <span className="text-violet-600">Hilda</span>
+            Contact <span className="text-teal-600">Ascah</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-violet-500 to-violet-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-teal-500 to-teal-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
             Interested in race partnerships, sponsorship opportunities, or media features? 
             I'm available for brand collaborations, speaking engagements, and events 
-            that promote athletic excellence and sports development.
+            that promote athletic excellence and Kenyan running heritage.
           </p>
         </motion.div>
 
         <div className="grid max-w-6xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
-        
+          {/* Contact Information */}
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="p-8 bg-white border-l-4 border-teal-500 shadow-xl rounded-2xl">
+              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
+                <svg className="w-6 h-6 mr-3 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Professional Inquiries
+              </h3>
+              
+              <div className="space-y-6">
+                <motion.div 
+                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <h4 className="font-bold text-gray-800">Race Partnerships</h4>
+                  <p className="mt-2 text-gray-700">
+                    Marathon organizers and race directors interested in elite athlete participation
+                  </p>
+                </motion.div>
+
+                <motion.div 
+                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <h4 className="font-bold text-gray-800">Brand Collaborations</h4>
+                  <p className="mt-2 text-gray-700">
+                    Sports brands, apparel companies, and lifestyle partnerships
+                  </p>
+                </motion.div>
+
+                <motion.div 
+                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <h4 className="font-bold text-gray-800">Media & Speaking</h4>
+                  <p className="mt-2 text-gray-700">
+                    Interviews, features, and motivational speaking engagements
+                  </p>
+                </motion.div>
+              </div>
+
+              {/* Response Time Info */}
+              <motion.div 
+                className="p-4 mt-6 bg-white border border-teal-200 rounded-xl"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+              >
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>
+                  <p className="ml-3 text-sm font-medium text-teal-700">
+                    Response within 24-48 hours for professional inquiries
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
 
           {/* Direct Contact Methods */}
           <motion.div
@@ -39,9 +102,9 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="p-8 bg-white border-l-4 shadow-xl border-violet-500 rounded-2xl">
+            <div className="p-8 bg-white border-l-4 border-teal-500 shadow-xl rounded-2xl">
               <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 mr-3 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 Direct Contact
@@ -49,28 +112,28 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:cheptoohildah53@gmail.com"
-                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
+                  href="mailto:leleiascahjep@gmail.com"
+                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-violet-500">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-teal-500 rounded-lg">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-700">cheptoohildah53@gmail.com</p>
-                    <p className="text-sm text-violet-600">Preferred for formal inquiries</p>
+                    <p className="text-gray-700">leleiascahjep@gmail.com</p>
+                    <p className="text-sm text-teal-600">Preferred for formal inquiries</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254799741734"
-                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
+                  href="https://wa.me/+254725543745"
+                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-green-500 rounded-lg">
@@ -80,17 +143,17 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 799 741 734</p>
-                    <p className="text-sm text-violet-600">Quick responses • Business hours</p>
+                    <p className="text-gray-700">+254 725 543 745</p>
+                    <p className="text-sm text-teal-600">Quick responses • Business hours</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254799741734"
-                  className="flex items-center p-4 transition-all border border-violet-100 bg-violet-50 rounded-xl hover:bg-violet-100 group hover:shadow-lg"
+                  href="tel:+254725543745"
+                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
@@ -100,10 +163,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">Phone Call</h4>
-                    <p className="text-gray-700">+254 799 741 734</p>
-                    <p className="text-sm text-violet-600">Available 8AM-6PM EAT</p>
+                    <p className="text-gray-700">+254 725 543 745</p>
+                    <p className="text-sm text-teal-600">Available 8AM-6PM EAT</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-violet-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
@@ -111,6 +174,22 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
+
+        {/* Additional Info */}
+        <motion.div 
+          className="max-w-2xl mx-auto mt-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <div className="p-6 bg-white border border-teal-200 rounded-2xl">
+            <h3 className="mb-3 font-bold text-teal-800">Training Schedule Notice</h3>
+            <p className="text-gray-700">
+              Please note that response times may vary during intensive training periods and international competitions. 
+              Your understanding is appreciated as I maintain focus on peak athletic performance.
+            </p>
+          </div>
+        </motion.div>
 
       </div>
     </section>

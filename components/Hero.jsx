@@ -7,103 +7,107 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center justify-center min-h-screen py-12 overflow-hidden bg-white"
-      aria-label="Hilda Cheptoo Biwott Hero Section"
+      aria-label="Ascah Jepkorir Lelei Hero Section"
     >
-      {/* Elegant violet geometric background */}
+      {/* Dynamic teal geometric background */}
       <div className="absolute inset-0 z-0">
-        {/* Subtle diamond pattern */}
-        <div className="absolute inset-0 opacity-[0.02]" style={{
-          backgroundImage: `linear-gradient(45deg, #8b5cf6 25%, transparent 25%, transparent 75%, #8b5cf6 75%, #8b5cf6),
-                            linear-gradient(-45deg, #8b5cf6 25%, transparent 25%, transparent 75%, #8b5cf6 75%, #8b5cf6)`,
-          backgroundSize: '80px 80px',
-          backgroundPosition: '0 0, 40px 40px'
+        {/* Modern grid pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: `linear-gradient(0deg, transparent 24%, #0d9488 25%, #0d9488 26%, transparent 27%, transparent 74%, #0d9488 75%, #0d9488 76%, transparent 77%, transparent),
+                            linear-gradient(90deg, transparent 24%, #0d9488 25%, #0d9488 26%, transparent 27%, transparent 74%, #0d9488 75%, #0d9488 76%, transparent 77%, transparent)`,
+          backgroundSize: '60px 60px',
         }}></div>
         
-        {/* Animated violet gradient orbs */}
+        {/* Animated teal gradient orbs */}
         <motion.div 
-          className="absolute rounded-full top-1/4 -left-24 w-80 h-80 bg-violet-200/30 blur-3xl"
+          className="absolute rounded-full top-1/3 -left-32 w-96 h-96 bg-teal-200/40 blur-3xl"
           animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.2, 0.4, 0.2]
+            scale: [1, 1.4, 1],
+            opacity: [0.3, 0.5, 0.3]
+          }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div 
+          className="absolute rounded-full w-80 h-80 bottom-1/4 -right-24 bg-teal-300/30 blur-3xl"
+          animate={{
+            scale: [1.4, 1, 1.4],
+            opacity: [0.4, 0.2, 0.4]
           }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
-        <motion.div 
-          className="absolute rounded-full w-72 h-72 bottom-1/3 -right-20 bg-violet-300/20 blur-3xl"
-          animate={{
-            scale: [1.3, 1, 1.3],
-            opacity: [0.3, 0.1, 0.3]
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
         
-        {/* Sophisticated corner accents */}
-        <div className="absolute top-0 left-0 w-40 h-40 border-t-4 border-l-4 border-violet-400/10"></div>
-        <div className="absolute top-0 right-0 w-40 h-40 border-t-4 border-r-4 border-violet-400/10"></div>
-        <div className="absolute bottom-0 left-0 w-40 h-40 border-b-4 border-l-4 border-violet-400/10"></div>
-        <div className="absolute bottom-0 right-0 w-40 h-40 border-b-4 border-r-4 border-violet-400/10"></div>
+        {/* Modern corner accents */}
+        <div className="absolute top-0 left-0 w-48 h-48 border-t-4 border-l-4 border-teal-500/10"></div>
+        <div className="absolute top-0 right-0 w-48 h-48 border-t-4 border-r-4 border-teal-500/10"></div>
+        <div className="absolute bottom-0 left-0 w-48 h-48 border-b-4 border-l-4 border-teal-500/10"></div>
+        <div className="absolute bottom-0 right-0 w-48 h-48 border-b-4 border-r-4 border-teal-500/10"></div>
       </div>
       
-      <div className="container z-10 flex flex-col items-center gap-12 px-4 mx-auto lg:flex-row">
-        {/* Athlete Image Section - Elegant card design */}
+      <div className="container z-10 flex flex-col items-center gap-16 px-4 mx-auto lg:flex-row-reverse">
+        {/* Athlete Image Section - Modern medal-inspired design */}
         <motion.div 
           className="relative lg:w-2/5"
-          initial={{ opacity: 0, x: -80 }}
+          initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.9 }}
         >
           <div className="relative max-w-sm mx-auto">
-            {/* Main image container with violet accent frame */}
-            <div className="relative z-10 p-4 bg-white shadow-2xl rounded-3xl">
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-50 to-white aspect-[3/4]">
+            {/* Main image container with teal medal design */}
+            <div className="relative z-10 p-6 bg-white shadow-2xl rounded-3xl">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-50 to-white aspect-[3/4]">
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                  {/* Elegant monogram */}
-                  <div className="flex items-center justify-center mb-6 rounded-full w-36 h-36 bg-violet-100/60">
-                    <div className="flex items-center justify-center rounded-full w-28 h-28 bg-violet-200/50">
-                      <span className="text-4xl font-bold text-violet-700">HCB</span>
+                  {/* Champion medal design */}
+                  <div className="relative flex items-center justify-center mb-6">
+                    <div className="absolute w-32 h-32 rounded-full shadow-lg bg-gradient-to-br from-teal-400 to-teal-600 animate-pulse"></div>
+                    <div className="relative flex items-center justify-center rounded-full w-28 h-28 bg-teal-100/80 backdrop-blur-sm">
+                      <span className="text-2xl font-bold text-teal-800">AJL</span>
                     </div>
                   </div>
-                  <div className="w-24 h-1 mx-auto my-4 bg-gradient-to-r from-transparent via-violet-400 to-transparent"></div>
-                  <p className="text-sm font-medium text-violet-600">Professional Athlete</p>
+                  <div className="w-20 h-1 mx-auto my-4 bg-gradient-to-r from-transparent via-teal-500 to-transparent"></div>
+                  <p className="text-sm font-semibold text-teal-700">Marathon Champion</p>
                 </div>
                 
                 {/* Decorative elements */}
-                <div className="absolute w-8 h-8 border-2 rounded-full top-6 right-6 border-violet-400/20"></div>
-                <div className="absolute w-6 h-6 border-2 rounded-full bottom-6 left-6 border-violet-400/20"></div>
+                <div className="absolute w-10 h-10 border-2 rounded-full top-8 right-8 border-teal-400/30 animate-spin-slow"></div>
+                <div className="absolute w-8 h-8 border-2 rounded-full bottom-8 left-8 border-teal-400/30 animate-spin-slow" style={{animationDirection: 'reverse'}}></div>
               </div>
             </div>
             
-            {/* Floating achievement badges */}
-            {/* <motion.div 
-              className="absolute z-20 px-5 py-3 bg-white border shadow-xl rounded-2xl -top-4 -left-4 border-violet-100"
+            {/* Performance badges */}
+            <motion.div 
+              className="absolute z-20 px-6 py-4 bg-white border border-teal-100 shadow-xl rounded-2xl -top-6 -left-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
             >
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-violet-500"></div>
-                <span className="text-sm font-semibold text-violet-700">World Record</span>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6 h-6 bg-teal-500 rounded-full">
+                  <span className="text-xs font-bold text-white">★</span>
+                </div>
+                <span className="text-sm font-bold text-teal-800">Record Holder</span>
               </div>
-            </motion.div> */}
+            </motion.div>
             
-            {/* <motion.div 
-              className="absolute z-20 px-5 py-3 bg-white border shadow-xl rounded-2xl -bottom-4 -right-4 border-violet-100"
+            <motion.div 
+              className="absolute z-20 px-6 py-4 bg-white border border-teal-100 shadow-xl rounded-2xl -bottom-6 -right-6"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-violet-500"></div>
-                <span className="text-sm font-semibold text-violet-700">5x Champion</span>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6 h-6 bg-teal-500 rounded-full">
+                  <span className="text-xs font-bold text-white">🏆</span>
+                </div>
+                <span className="text-sm font-bold text-teal-800">Gold Medalist</span>
               </div>
-            </motion.div> */}
+            </motion.div>
           </div>
         </motion.div>
 
-        {/* Text Content - Centered modern layout */}
+        {/* Text Content - Bold and modern layout */}
         <motion.div
           className="space-y-8 text-center lg:w-3/5 lg:text-left"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
@@ -113,11 +117,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            <div className="w-2 h-2 rounded-full bg-violet-600 animate-pulse"></div>
-            <span className="px-5 py-2.5 text-sm font-semibold tracking-wider uppercase rounded-full text-violet-700 bg-violet-100/80">
-              Elite Long-Distance Runner
+            <div className="w-3 h-3 bg-teal-600 rounded-full animate-pulse"></div>
+            <span className="px-6 py-3 text-sm font-bold tracking-wider text-teal-800 uppercase rounded-full bg-teal-100/80">
+              Elite Marathon Runner
             </span>
-            <div className="w-2 h-2 rounded-full bg-violet-600 animate-pulse"></div>
+            <div className="w-3 h-3 bg-teal-600 rounded-full animate-pulse"></div>
           </motion.div>
           
           <motion.h1 
@@ -126,9 +130,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
           >
-            <span className="text-violet-600">Hilda</span> <br />
-            Cheptoo <br />
-            <span className="text-violet-800">Biwott</span>
+            <span className="text-teal-600">Ascah</span> <br />
+            <span className="text-teal-700">Jepkorir</span> <br />
+            <span className="text-teal-800">Lelei</span>
           </motion.h1>
           
           <motion.div 
@@ -137,11 +141,11 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            <div className="flex-1 h-0.5 bg-gradient-to-r from-violet-500/40 to-transparent lg:flex-none lg:w-20"></div>
+            <div className="flex-1 h-0.5 bg-gradient-to-r from-teal-500/50 to-transparent lg:flex-none lg:w-24"></div>
             <h2 className="text-xl font-semibold text-gray-700 sm:text-2xl">
               Kenyan Running Excellence
             </h2>
-            <div className="flex-1 h-0.5 bg-gradient-to-l from-violet-500/40 to-transparent lg:flex-none lg:w-20"></div>
+            <div className="flex-1 h-0.5 bg-gradient-to-l from-teal-500/50 to-transparent lg:flex-none lg:w-24"></div>
           </motion.div>
           
           <motion.p 
@@ -150,9 +154,10 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.7 }}
           >
-            Champion marathon runner representing Kenya with extraordinary endurance and determination. 
-            Celebrated for record-breaking performances in international competitions and inspiring 
-            future generations through dedication and sportsmanship.
+            Champion marathon runner representing Kenya's rich legacy of endurance athletes. 
+            Known for exceptional speed, mental toughness, and record-breaking performances 
+            in international competitions. Inspiring the next generation through dedication 
+            and unwavering commitment to excellence.
           </motion.p>
           
           <motion.div 
@@ -162,31 +167,52 @@ export default function Hero() {
             transition={{ delay: 0.9, duration: 0.5 }}
           >
             <Link href="#achievements">
-              <button className="px-12 py-4 font-bold text-white transition-all duration-300 transform shadow-lg bg-violet-600 rounded-xl hover:bg-violet-700 hover:-translate-y-1 hover:shadow-xl active:scale-95">
-                View Marathon Victories
+              <button className="px-12 py-4 font-bold text-white transition-all duration-300 transform bg-teal-600 shadow-lg rounded-xl hover:bg-teal-700 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+                View Championship Wins
               </button>
             </Link>
             <Link href="#story">
-              <button className="px-12 py-4 font-bold transition-all duration-300 transform border-2 shadow-lg text-violet-700 border-violet-600 rounded-xl hover:bg-violet-50 hover:-translate-y-1 active:scale-95">
-                My Running Journey
+              <button className="px-12 py-4 font-bold text-teal-700 transition-all duration-300 transform border-2 border-teal-600 shadow-lg rounded-xl hover:bg-teal-50 hover:-translate-y-1 active:scale-95">
+                My Athletic Journey
               </button>
             </Link>
+          </motion.div>
+
+          {/* Stats Preview */}
+          <motion.div 
+            className="grid grid-cols-3 gap-6 pt-8 mt-12 border-t border-teal-100"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.1, duration: 0.6 }}
+          >
+            <div className="text-center lg:text-left">
+              <div className="text-2xl font-bold text-teal-600">15+</div>
+              <div className="text-sm text-gray-600">Marathons</div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-2xl font-bold text-teal-600">8</div>
+              <div className="text-sm text-gray-600">Gold Medals</div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-2xl font-bold text-teal-600">2:24:15</div>
+              <div className="text-sm text-gray-600">Personal Best</div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
       
-      {/* Elegant scroll indicator */}
-      <div className="absolute hidden transform -translate-x-1/2 bottom-8 left-1/2 ">
+      {/* Modern scroll indicator */}
+      <div className="absolute hidden transform -translate-x-1/2 bottom-8 left-1/2 lg:block">
         <motion.div
-          animate={{ y: [0, 8, 0] }}
+          animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
           <div className="flex flex-col items-center">
-            <span className="text-xs font-medium tracking-wider uppercase text-violet-600">Discover</span>
-            <div className="flex justify-center w-5 h-8 mt-1 border rounded-full border-violet-300/50">
+            <span className="text-xs font-medium tracking-wider text-teal-600 uppercase">Explore Journey</span>
+            <div className="flex justify-center w-6 h-10 mt-1 border-2 rounded-full border-teal-300/50">
               <motion.div 
-                className="w-1 h-2 mt-2 rounded-full bg-violet-600"
-                animate={{ y: [0, 10, 0] }}
+                className="w-1 h-3 mt-2 bg-teal-600 rounded-full"
+                animate={{ y: [0, 12, 0] }}
                 transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
               />
             </div>
@@ -194,24 +220,24 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Subtle animated background elements */}
+      {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1.5 h-1.5 rounded-full bg-violet-300/30"
+            className="absolute w-2 h-2 rounded-full bg-teal-300/40"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              scale: [0.3, 1.2, 0.3],
-              opacity: [0.2, 0.5, 0.2],
+              scale: [0.4, 1.5, 0.4],
+              opacity: [0.3, 0.6, 0.3],
             }}
             transition={{
-              duration: Math.random() * 5 + 4,
+              duration: Math.random() * 6 + 4,
               repeat: Infinity,
-              delay: Math.random() * 3,
+              delay: Math.random() * 4,
             }}
           />
         ))}

@@ -11,7 +11,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://wa.me/+254799741734',
+    href: 'https://wa.me/+254725543745',
     label: 'WhatsApp',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ const socialLinks = [
     color: 'bg-green-500 hover:bg-green-600'
   },
   {
-    href: 'tel:+254799741734',
+    href: 'tel:+254725543745',
     label: 'Phone',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -31,20 +31,20 @@ const socialLinks = [
     color: 'bg-gray-700 hover:bg-gray-800'
   },
   {
-    href: 'mailto:cheptoohildah53@gmail.com',
+    href: 'mailto:leleiascahjep@gmail.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
-    color: 'bg-violet-600 hover:bg-violet-700'
+    color: 'bg-teal-600 hover:bg-teal-700'
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="py-16 border-t bg-gradient-to-b from-gray-900 to-gray-950 border-violet-900/30" aria-label="Footer">
+    <footer className="py-16 border-t bg-gradient-to-b from-gray-900 to-gray-950 border-teal-900/30" aria-label="Footer">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 gap-12 mb-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
@@ -55,12 +55,12 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <h3 className="mb-4 text-2xl font-black text-white">
-              Hilda <span className="text-violet-400">Biwott</span>
+              Ascah <span className="text-teal-400">Lelei</span>
             </h3>
             <p className="mb-6 leading-relaxed text-gray-400">
-              Elite Kenyan marathon runner dedicated to athletic excellence, 
+              Elite Kenyan marathon champion dedicated to athletic excellence, 
               inspiring future generations through record-breaking performances 
-              and community leadership in sports development.
+              and promoting Kenyan running heritage worldwide.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((link, index) => (
@@ -87,16 +87,16 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-violet-300">Quick Links</h4>
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-teal-300 uppercase">Quick Links</h4>
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-400 transition-colors duration-300 hover:text-violet-300 group"
+                    className="flex items-center text-gray-400 transition-colors duration-300 hover:text-teal-300 group"
                     aria-label={`Go to ${link.label} page`}
                   >
-                    <span className="w-2 h-2 mr-3 transition-all rounded-full opacity-0 bg-violet-500 group-hover:opacity-100 group-hover:scale-125"></span>
+                    <span className="w-2 h-2 mr-3 transition-all bg-teal-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-125"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -110,45 +110,63 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-violet-300">Get In Touch</h4>
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-teal-300 uppercase">Get In Touch</h4>
             <div className="space-y-4 text-gray-400">
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-violet-400" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-teal-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                 </svg>
-                cheptoohildah53@gmail.com
+                leleiascahjep@gmail.com
               </p>
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-violet-400" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-teal-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
                 </svg>
-                +254 799 741 734
+                +254 725 543 745
               </p>
-             
+              <p className="flex items-center">
+                <svg className="w-4 h-4 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Eldoret, Kenya
+              </p>
             </div>
           </motion.div>
 
-          
+          {/* Training Philosophy */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-teal-300 uppercase">Training Philosophy</h4>
+            <blockquote className="pl-4 italic text-gray-400 border-l-4 border-teal-500">
+              "Excellence is not a singular act, but a habit. The daily commitment to improvement, 
+              both on and off the track, defines true champions."
+            </blockquote>
+            <p className="mt-4 text-sm font-semibold text-teal-300">- Ascah Jepkorir Lelei</p>
+          </motion.div>
         </div>
 
         {/* Bottom Bar */}
         <motion.div
-          className="flex flex-col items-center justify-between pt-8 border-t border-violet-900/30 md:flex-row"
+          className="flex flex-col items-center justify-between pt-8 border-t border-teal-900/30 md:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="mb-4 text-sm text-gray-500 md:mb-0">
-            &copy; {new Date().getFullYear()} Hilda Cheptoo Biwott. All rights reserved.
+            &copy; {new Date().getFullYear()} Ascah Jepkorir Lelei. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6 text-sm text-gray-500">
+          <div className="flex flex-col items-center space-y-2 text-sm text-gray-500 md:flex-row md:space-y-0 md:space-x-6">
             <span>Proudly representing Kenya worldwide</span>
-            <span className="text-violet-400">•</span>
+            <span className="hidden text-teal-400 md:inline">•</span>
             <div className="text-sm text-gray-500">
               Developed by{' '}
               <a
                 href="https://abelk-k.vercel.app"
-                className="font-medium transition-colors duration-300 text-violet-400 hover:text-violet-300"
+                className="font-medium text-teal-400 transition-colors duration-300 hover:text-teal-300"
                 aria-label="Visit developer's website"
               >
                 Kikoa Softwares
@@ -160,7 +178,8 @@ export default function Footer() {
         {/* Decorative elements */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
           <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-gray-950 to-transparent"></div>
-          <div className="absolute w-20 h-20 rounded-full bottom-4 right-4 bg-violet-500/5 blur-xl"></div>
+          <div className="absolute w-20 h-20 rounded-full bottom-4 right-4 bg-teal-500/5 blur-xl"></div>
+          <div className="absolute w-16 h-16 rounded-full bottom-8 left-10 bg-teal-400/5 blur-xl"></div>
         </div>
       </div>
     </footer>

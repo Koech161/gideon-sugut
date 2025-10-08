@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import achievementsData from '@/data/records.json';
 
-const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10,000m', '5,000m'];
+const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10k'];
 
 export default function Achievements() {
   const [activeFilter, setActiveFilter] = useState('All');

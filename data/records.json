@@ -1,7 +1,7 @@
 [
-  { "id": 1, "event": "Marathon", "time": "2:32:07", "date": "2024-11-24", "venue": "Iten Marathon" },
-  { "id": 3, "event": "Marathon", "time": "1:12:34 ", "date": "2025-04-27", "venue": "Eldoret City Marathon" },
-  { "id": 2, "event": "Half Marathon", "time": "1:13:10", "date": "2024-11-24", "venue": "Lake OL'Bolossat Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:33:07", "date": "2024-11-24", "venue": "Iten Marathon" },
+  { "id": 3, "event": "Marathon", "time": "2:32:34 ", "date": "2025-04-27", "venue": "Eldoret City Marathon" },
+  { "id": 2, "event": "Half Marathon", "time": "1:13:10", "date": "2024-08-03", "venue": "Amazing Maasai Marathon" }
 
 
 ]

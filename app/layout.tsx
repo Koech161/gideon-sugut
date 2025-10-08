@@ -14,32 +14,32 @@ const jost = Jost({
 
 
 export const metadata: Metadata = {
-  title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
-  description: "Official website of Ascah Jepkorir Lelei, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
-  keywords: "Ascah Jepkorir Lelei, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
-  authors: [{ name: "Ascah Jepkorir Lelei" }],
-  creator: "Ascah Jepkorir Lelei",
-  publisher: "Ascah Jepkorir Lelei",
+  title: "Janex Jepkogei - Kenyan Distance Runner ",
+  description: "Official website of Janex Jepkogei, elite Kenyan distance runner specializing in 10,000m, half marathon, and marathon events. Explore championship achievements, personal bests, and partnership opportunities.",
+  keywords: "Janex Jepkogei, Kenyan runner, elite athlete, distance runner, women's running, Kenya athletics, 10,000m runner, half marathon, marathon, Nakuru runner, Rift Valley athlete",
+  authors: [{ name: "Janex Jepkogei" }],
+  creator: "Janex Jepkogei",
+  publisher: "Janex Jepkogei",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.hildahcheptoo.live/'), // Replace with actual domain
+  metadataBase: new URL('https://janexjepkogei.com/'), // Replace with actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
-    description: "Professional Kenyan marathon runner specializing in long-distance races.",
-    url: 'https://www.hildahcheptoo.live/', // Replace with actual domain
-    siteName: "Ascah Jepkorir Lelei",
+    title: "Janex Jepkogei - Elite Kenyan Distance Runner",
+    description: "Professional Kenyan distance runner known for explosive finishes and championship performances in international competitions.",
+    url: 'https://janexjepkogei.com/',
+    siteName: "Janex Jepkogei",
     images: [
       {
-        url: '/', // Replace with actual OG image path
+        url: '/og-image.jpg', // Replace with actual OG image path
         width: 1200,
         height: 630,
-        alt: "Ascah Jepkorir Lelei - Professional Marathon Runner",
+        alt: "Janex Jepkogei - Professional Distance Runner from Kenya",
       },
     ],
     locale: 'en_US',
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
-    description: "Professional Kenyan marathon runner",
+    title: "Janex Jepkogei - Elite Kenyan Distance Runner",
+    description: "Championship distance runner representing Kenya on the global stage",
     images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
-    creator: '@cheptoohildah', // Replace with actual Twitter handle
+    creator: '@janexjepkogei', // Replace with actual Twitter handle
   },
   robots: {
     index: true,
@@ -64,7 +64,10 @@ export const metadata: Metadata = {
     },
   },
   category: 'sports',
-  
+  other: {
+    'theme-color': '#10b981', // Emerald color for mobile browsers
+    'msapplication-TileColor': '#10b981',
+  }
 };
 
 export default function RootLayout({

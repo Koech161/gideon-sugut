@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <section
-      className="py-20 bg-gradient-to-b from-white to-teal-50"
-      aria-label="Contact Ascah Jepkorir Lelei"
+      className="py-20 bg-gradient-to-b from-white to-emerald-50"
+      aria-label="Contact Janex Jepkogei"
       id='contact'
     >
       <div className="container px-4 mx-auto">
@@ -15,13 +15,13 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider text-teal-700 uppercase">
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-emerald-700">
             Get In Touch
           </h2>
           <h1 className="mb-4 text-4xl font-black text-gray-900">
-            Contact <span className="text-teal-600">Ascah</span>
+            Contact <span className="text-emerald-600">Janex</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-teal-500 to-teal-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-emerald-500 to-emerald-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
             Interested in race partnerships, sponsorship opportunities, or media features? 
             I'm available for brand collaborations, speaking engagements, and events 
@@ -30,7 +30,7 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid max-w-6xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
-          {/* Contact Information */}
+         
           
 
           {/* Direct Contact Methods */}
@@ -40,38 +40,38 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="p-8 bg-white border-l-4 border-teal-500 shadow-xl rounded-2xl">
+            <div className="p-8 bg-white border-l-4 shadow-xl border-emerald-500 rounded-2xl">
               <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <svg className="w-6 h-6 mr-3 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Direct Contact
+                Quick Connect
               </h3>
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:leleiascahjep@gmail.com"
-                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
+                  href="mailto:janexrono20@gmail.com"
+                  className="flex items-center p-4 transition-all border border-emerald-100 bg-emerald-50 rounded-xl hover:bg-emerald-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-teal-500 rounded-lg">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-emerald-500">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-700">leleiascahjep@gmail.com</p>
-                    <p className="text-sm text-teal-600">Preferred for formal inquiries</p>
+                    <h4 className="font-bold text-gray-800">Send Email</h4>
+                    <p className="text-gray-700">janexrono20@gmail.com</p>
+                    <p className="text-sm text-emerald-600">Preferred for formal inquiries</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-emerald-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254725543745"
-                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
+                  href="https://wa.me/+254712134931"
+                  className="flex items-center p-4 transition-all border border-emerald-100 bg-emerald-50 rounded-xl hover:bg-emerald-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-green-500 rounded-lg">
@@ -81,40 +81,66 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 725 543 745</p>
-                    <p className="text-sm text-teal-600">Quick responses • Business hours</p>
+                    <p className="text-gray-700">+254 712 134 931</p>
+                    <p className="text-sm text-emerald-600">Quick responses • Business hours</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-emerald-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254725543745"
-                  className="flex items-center p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:bg-teal-100 group hover:shadow-lg"
+                  href="tel:+254712134931"
+                  className="flex items-center p-4 transition-all border border-emerald-100 bg-emerald-50 rounded-xl hover:bg-emerald-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-emerald-600">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Phone Call</h4>
-                    <p className="text-gray-700">+254 725 543 745</p>
-                    <p className="text-sm text-teal-600">Available 8AM-6PM EAT</p>
+                    <h4 className="font-bold text-gray-800">Direct Call</h4>
+                    <p className="text-gray-700">+254 712 134 931</p>
+                    <p className="text-sm text-emerald-600">Available 7AM-8PM EAT</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto text-teal-500 transition-opacity opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-emerald-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
+
+                 <motion.div 
+                  className="flex items-start p-4 transition-all border border-emerald-100 bg-emerald-50 rounded-xl hover:shadow-lg"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-800">Location</h4>
+                    <p className="text-gray-700">1352-20100 Nakuru</p>
+                    <p className="text-sm text-emerald-600">Kenya • Rift Valley</p>
+                  </div>
+                </motion.div>
               </div>
             </div>
+
+           
           </motion.div>
         </div>
 
-       
-
+        {/* Decorative Elements */}
+        <motion.div 
+          className="absolute right-0 mt-12 opacity-10 -z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.1 }}
+          transition={{ delay: 1 }}
+        >
+          <div className="w-64 h-64 rounded-full bg-emerald-300 blur-3xl"></div>
+        </motion.div>
       </div>
     </section>
   );

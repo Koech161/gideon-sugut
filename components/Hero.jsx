@@ -7,82 +7,80 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center justify-center min-h-screen py-12 overflow-hidden bg-white"
-      aria-label="Ascah Jepkorir Lelei Hero Section"
+      aria-label="Janex Jepkogei Hero Section"
     >
-      {/* Dynamic teal geometric background */}
+      {/* Modern geometric background with emerald theme */}
       <div className="absolute inset-0 z-0">
-        {/* Modern grid pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(0deg, transparent 24%, #0d9488 25%, #0d9488 26%, transparent 27%, transparent 74%, #0d9488 75%, #0d9488 76%, transparent 77%, transparent),
-                            linear-gradient(90deg, transparent 24%, #0d9488 25%, #0d9488 26%, transparent 27%, transparent 74%, #0d9488 75%, #0d9488 76%, transparent 77%, transparent)`,
-          backgroundSize: '60px 60px',
+        {/* Dynamic diagonal grid pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{
+          backgroundImage: `linear-gradient(45deg, #10b981 1px, transparent 1px),
+                            linear-gradient(-45deg, #10b981 1px, transparent 1px)`,
+          backgroundSize: '80px 80px',
         }}></div>
         
-        {/* Animated teal gradient orbs */}
+        {/* Emerald gradient orbs with refined animation */}
         <motion.div 
-          className="absolute rounded-full top-1/3 -left-32 w-96 h-96 bg-teal-200/40 blur-3xl"
+          className="absolute rounded-full top-1/4 -left-40 w-[500px] h-[500px] bg-emerald-200/20 blur-[100px]"
           animate={{
-            scale: [1, 1.4, 1],
-            opacity: [0.3, 0.5, 0.3]
+            scale: [1, 1.3, 1],
+            opacity: [0.2, 0.4, 0.2]
+          }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div 
+          className="absolute rounded-full w-[400px] h-[400px] bottom-1/3 -right-32 bg-emerald-300/15 blur-[90px]"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            opacity: [0.3, 0.15, 0.3]
           }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
-        <motion.div 
-          className="absolute rounded-full w-80 h-80 bottom-1/4 -right-24 bg-teal-300/30 blur-3xl"
-          animate={{
-            scale: [1.4, 1, 1.4],
-            opacity: [0.4, 0.2, 0.4]
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
         
-        {/* Modern corner accents */}
-        <div className="absolute top-0 left-0 w-48 h-48 border-t-4 border-l-4 border-teal-500/10"></div>
-        <div className="absolute top-0 right-0 w-48 h-48 border-t-4 border-r-4 border-teal-500/10"></div>
-        <div className="absolute bottom-0 left-0 w-48 h-48 border-b-4 border-l-4 border-teal-500/10"></div>
-        <div className="absolute bottom-0 right-0 w-48 h-48 border-b-4 border-r-4 border-teal-500/10"></div>
+        {/* Modern corner accents - refined design */}
+        <div className="absolute top-10 left-10 w-32 h-32 border-t-[3px] border-l-[3px] border-emerald-500/5 rounded-tl-2xl"></div>
+        <div className="absolute top-10 right-10 w-32 h-32 border-t-[3px] border-r-[3px] border-emerald-500/5 rounded-tr-2xl"></div>
+        <div className="absolute bottom-10 left-10 w-32 h-32 border-b-[3px] border-l-[3px] border-emerald-500/5 rounded-bl-2xl"></div>
+        <div className="absolute bottom-10 right-10 w-32 h-32 border-b-[3px] border-r-[3px] border-emerald-500/5 rounded-br-2xl"></div>
       </div>
       
-      <div className="container z-10 flex flex-col items-center gap-16 px-4 mx-auto lg:flex-row-reverse">
-        {/* Athlete Image Section - Modern medal-inspired design */}
+      <div className="container z-10 flex flex-col items-center gap-16 px-4 mx-auto lg:flex-row">
+        {/* Athlete Image Section - Modern running-inspired design */}
         <motion.div 
           className="relative lg:w-2/5"
-          initial={{ opacity: 0, x: 80 }}
+          initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.9 }}
         >
           <div className="relative max-w-sm mx-auto">
-            {/* Main image container with teal medal design */}
+            {/* Main image container with athletic design */}
             <div className="relative z-10 p-6 bg-white shadow-2xl rounded-3xl">
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-50 to-white aspect-[3/4]">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-50 to-white aspect-[3/4]">
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                  {/* Champion medal design */}
+                  {/* Champion runner design */}
                   <div className="relative flex items-center justify-center mb-6">
-                    <div className="absolute w-32 h-32 rounded-full shadow-lg bg-gradient-to-br from-teal-400 to-teal-600 animate-pulse"></div>
-                    <div className="relative flex items-center justify-center rounded-full w-28 h-28 bg-teal-100/80 backdrop-blur-sm">
-                      <span className="text-2xl font-bold text-teal-800">AJL</span>
+                    <div className="absolute w-32 h-32 rounded-full shadow-lg bg-gradient-to-br from-emerald-400 to-emerald-600 animate-pulse"></div>
+                    <div className="relative flex items-center justify-center rounded-full w-28 h-28 bg-emerald-100/80 backdrop-blur-sm">
+                      <span className="text-2xl font-bold text-emerald-800">JJ</span>
                     </div>
                   </div>
-                  <div className="w-20 h-1 mx-auto my-4 bg-gradient-to-r from-transparent via-teal-500 to-transparent"></div>
-                  <p className="text-sm font-semibold text-teal-700">Marathon Champion</p>
+                  <div className="w-20 h-1 mx-auto my-4 bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+                  <p className="text-sm font-semibold text-emerald-700">Elite Distance Runner</p>
                 </div>
                 
-                {/* Decorative elements */}
-                <div className="absolute w-10 h-10 border-2 rounded-full top-8 right-8 border-teal-400/30 animate-spin-slow"></div>
-                <div className="absolute w-8 h-8 border-2 rounded-full bottom-8 left-8 border-teal-400/30 animate-spin-slow" style={{animationDirection: 'reverse'}}></div>
+                {/* Athletic decorative elements */}
+                <div className="absolute w-10 h-10 border-2 rounded-full top-8 right-8 border-emerald-400/30 animate-spin-slow"></div>
+                <div className="absolute w-8 h-8 border-2 rounded-full bottom-8 left-8 border-emerald-400/30 animate-spin-slow" style={{animationDirection: 'reverse'}}></div>
               </div>
             </div>
             
            
-            
-            
           </div>
         </motion.div>
 
-        {/* Text Content - Bold and modern layout */}
+        {/* Text Content - Bold and energetic layout */}
         <motion.div
           className="space-y-8 text-center lg:w-3/5 lg:text-left"
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
@@ -92,11 +90,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            <div className="w-3 h-3 bg-teal-600 rounded-full animate-pulse"></div>
-            <span className="px-6 py-3 text-sm font-bold tracking-wider text-teal-800 uppercase rounded-full bg-teal-100/80">
-              Elite Marathon Runner
+            <div className="w-3 h-3 rounded-full bg-emerald-600 animate-pulse"></div>
+            <span className="px-6 py-3 text-sm font-bold tracking-wider uppercase rounded-full text-emerald-800 bg-emerald-100/80">
+              World-Class Athlete
             </span>
-            <div className="w-3 h-3 bg-teal-600 rounded-full animate-pulse"></div>
+            <div className="w-3 h-3 rounded-full bg-emerald-600 animate-pulse"></div>
           </motion.div>
           
           <motion.h1 
@@ -105,9 +103,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
           >
-            <span className="text-teal-600">Ascah</span> <br />
-            <span className="text-teal-700">Jepkorir</span> <br />
-            <span className="text-teal-800">Lelei</span>
+            <span className="text-emerald-600">JANEX</span> <br />
+            <span className="text-emerald-700">JEPKOGEI</span>
           </motion.h1>
           
           <motion.div 
@@ -116,11 +113,11 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            <div className="flex-1 h-0.5 bg-gradient-to-r from-teal-500/50 to-transparent lg:flex-none lg:w-24"></div>
+            <div className="flex-1 h-0.5 bg-gradient-to-r from-emerald-500/50 to-transparent lg:flex-none lg:w-24"></div>
             <h2 className="text-xl font-semibold text-gray-700 sm:text-2xl">
-              Kenyan Running Excellence
+              Kenyan Running Phenomenon
             </h2>
-            <div className="flex-1 h-0.5 bg-gradient-to-l from-teal-500/50 to-transparent lg:flex-none lg:w-24"></div>
+            <div className="flex-1 h-0.5 bg-gradient-to-l from-emerald-500/50 to-transparent lg:flex-none lg:w-24"></div>
           </motion.div>
           
           <motion.p 
@@ -129,10 +126,10 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.7 }}
           >
-            Champion marathon runner representing Kenya's rich legacy of endurance athletes. 
-            Known for exceptional speed, mental toughness, and record-breaking performances 
-            in international competitions. Inspiring the next generation through dedication 
-            and unwavering commitment to excellence.
+            Representing the pinnacle of Kenyan athletic excellence, Janex Jepkogei embodies 
+            the spirit, determination, and extraordinary talent that has made Kenya synonymous 
+            with world-class distance running. With groundbreaking performances and relentless 
+            pursuit of greatness, she continues to inspire millions worldwide.
           </motion.p>
           
           <motion.div 
@@ -142,42 +139,38 @@ export default function Hero() {
             transition={{ delay: 0.9, duration: 0.5 }}
           >
             <Link href="#achievements">
-              <button className="px-12 py-4 font-bold text-white transition-all duration-300 transform bg-teal-600 shadow-lg rounded-xl hover:bg-teal-700 hover:-translate-y-1 hover:shadow-xl active:scale-95">
-                View Championship Wins
+              <button className="px-12 py-4 font-bold text-white transition-all duration-300 transform shadow-lg bg-emerald-600 rounded-xl hover:bg-emerald-700 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+                Championship Legacy
               </button>
             </Link>
-            <Link href="#story">
-              <button className="px-12 py-4 font-bold text-teal-700 transition-all duration-300 transform border-2 border-teal-600 shadow-lg rounded-xl hover:bg-teal-50 hover:-translate-y-1 active:scale-95">
-                My Athletic Journey
+            <Link href="#about">
+              <button className="px-12 py-4 font-bold transition-all duration-300 transform border-2 shadow-lg text-emerald-700 border-emerald-600 rounded-xl hover:bg-emerald-50 hover:-translate-y-1 active:scale-95">
+                Journey to Greatness
               </button>
             </Link>
           </motion.div>
 
-          
         </motion.div>
       </div>
-      
-      {/* Modern scroll indicator */}
-      
 
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-teal-300/40"
+            className="absolute w-2 h-2 rounded-full bg-emerald-300/30"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              scale: [0.4, 1.5, 0.4],
-              opacity: [0.3, 0.6, 0.3],
+              scale: [0.4, 1.3, 0.4],
+              opacity: [0.2, 0.5, 0.2],
             }}
             transition={{
-              duration: Math.random() * 6 + 4,
+              duration: Math.random() * 5 + 3,
               repeat: Infinity,
-              delay: Math.random() * 4,
+              delay: Math.random() * 3,
             }}
           />
         ))}

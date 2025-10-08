@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section
-      className="min-h-screen py-20 bg-gradient-to-b from-white to-teal-50"
-      aria-label="About Ascah Jepkorir Lelei"
+      className="min-h-screen py-20 bg-gradient-to-b from-white to-emerald-50"
+      aria-label="About Janex Jepkogei"
       id='about'
     >
       <div className="container px-4 mx-auto">
@@ -15,13 +15,13 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider text-teal-700 uppercase">
-            Champion's Journey
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-emerald-700">
+            The Journey of Excellence
           </h2>
           <h1 className="mb-4 text-4xl font-black text-gray-900 sm:text-5xl">
-            About <span className="text-teal-600">Ascah</span>
+            About <span className="text-emerald-600">Janex</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-teal-500 to-teal-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-emerald-500 to-emerald-600"></div>
         </motion.div>
 
         <div className="flex flex-col gap-12 lg:flex-row">
@@ -32,28 +32,28 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="p-8 bg-white border-l-4 border-teal-500 shadow-xl rounded-2xl">
+            <div className="p-8 bg-white border-l-4 shadow-xl border-emerald-500 rounded-2xl">
               <div className="flex items-center mb-6">
-                <div className="flex items-center justify-center w-10 h-10 mr-4 bg-teal-100 rounded-full">
-                  <span className="text-lg font-bold text-teal-700">AJ</span>
+                <div className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-emerald-100">
+                  <span className="text-lg font-bold text-emerald-700">JJ</span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800">
-                  My Athletic Legacy
+                  The Rise of a Champion
                 </h2>
               </div>
              <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                Hailing from the legendary running region of Eldoret, Kenya, 
-                Ascah Jepkorir Lelei discovered her passion for distance running 
-                at an early age. Training on the iconic high-altitude trails of 
-                the Rift Valley, she developed the exceptional endurance and mental 
-                fortitude that would define her championship career.
+                Born and raised in the heart of Kenya's legendary running territory, 
+                Janex Jepkogei emerged as a natural talent with an insatiable drive 
+                for victory. From her early days training on the rugged trails of 
+                the Rift Valley, she demonstrated the raw power and graceful endurance 
+                that would become her signature style.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                Specializing in marathon distances, Ascah combines traditional 
-                Kenyan running wisdom with modern training techniques. Her journey 
-                from local competitions to international podiums represents the 
-                dedication and resilience that makes Kenyan athletes world-renowned 
-                in endurance sports.
+                Janex represents the new generation of Kenyan athletes—blending 
+                traditional running heritage with cutting-edge sports science. Her 
+                explosive speed in the final kilometers and strategic race intelligence 
+                have made her one of the most formidable competitors in international 
+                distance running.
               </p>
             </div>
             
@@ -61,29 +61,29 @@ export default function About() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
                 { 
-                  title: "Marathon Excellence", 
-                  desc: "World-class endurance built through rigorous high-altitude training",
-                  icon: "🏃‍♀️"
-                },
-                { 
-                  title: "Race Strategy", 
-                  desc: "Masterful pacing with explosive finishing kicks",
+                  title: "Explosive Finishes", 
+                  desc: "Renowned for devastating kicks in the final stages of races",
                   icon: "⚡"
                 },
                 { 
-                  title: "Mental Toughness", 
-                  desc: "Champion's mindset developed through elite competition",
-                  icon: "💪"
+                  title: "Strategic Brilliance", 
+                  desc: "Master tactician who reads races with exceptional intelligence",
+                  icon: "🎯"
                 },
                 { 
-                  title: "Community Leadership", 
-                  desc: "Inspiring and coaching future generations of Kenyan runners",
-                  icon: "🌟"
+                  title: "Mental Fortitude", 
+                  desc: "Unbreakable focus and resilience under pressure",
+                  icon: "💎"
+                },
+                { 
+                  title: "Global Ambassador", 
+                  desc: "Representing Kenyan excellence on the world stage",
+                  icon: "🌍"
                 }
               ].map((item, index) => (
                 <motion.div 
                   key={index}
-                  className="p-6 transition-all duration-300 bg-white border border-teal-100 shadow-lg rounded-xl hover:shadow-xl hover:border-teal-200"
+                  className="p-6 transition-all duration-300 bg-white border shadow-lg border-emerald-100 rounded-xl hover:shadow-xl hover:border-emerald-200"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + (index * 0.1) }}
@@ -98,7 +98,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Stats & Achievements Sidebar */}
           
         </div>
 
@@ -109,20 +108,21 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <div className="inline-block px-8 py-8 shadow-xl bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl">
+          <div className="inline-block px-8 py-8 shadow-xl bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl">
             <p className="text-xl italic font-medium text-white">
-              "Every finish line is just the beginning of the next challenge. True champions never stop pursuing greatness."
+              "The track doesn't care about your past victories. It demands your best today, 
+              and challenges you to be better tomorrow."
             </p>
-            <p className="mt-3 font-semibold text-teal-100">- Ascah Jepkorir Lelei</p>
+            <p className="mt-3 font-semibold text-emerald-100">- Janex Jepkogei</p>
           </div>
         </motion.div>
 
         {/* Decorative Elements */}
         <div className="absolute right-0 mt-12 -z-10 opacity-10">
-          <div className="w-64 h-64 bg-teal-300 rounded-full blur-3xl"></div>
+          <div className="w-64 h-64 rounded-full bg-emerald-300 blur-3xl"></div>
         </div>
         <div className="absolute bottom-0 left-0 -z-10 opacity-10">
-          <div className="w-48 h-48 bg-teal-200 rounded-full blur-3xl"></div>
+          <div className="w-48 h-48 rounded-full bg-emerald-200 blur-3xl"></div>
         </div>
       </div>
     </section>

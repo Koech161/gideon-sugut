@@ -99,62 +99,7 @@ export default function About() {
           </motion.div>
 
           {/* Stats & Achievements Sidebar */}
-          <motion.div
-            className="lg:w-2/5"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <div className="p-8 bg-white border border-teal-100 shadow-xl rounded-2xl">
-              <h3 className="mb-6 text-2xl font-bold text-center text-gray-800">
-                Career Highlights
-              </h3>
-              
-              <div className="space-y-6">
-                {[
-                  { stat: "2:24:15", label: "Personal Best Marathon", highlight: true },
-                  { stat: "15+", label: "International Marathons" },
-                  { stat: "8", label: "Gold Medal Finishes" },
-                  { stat: "3", label: "Continental Championships" },
-                  { stat: "2018", label: "Professional Debut Year" },
-                  { stat: "Top 5", label: "World Marathon Majors Ranking" }
-                ].map((item, index) => (
-                  <motion.div 
-                    key={index}
-                    className={`p-4 rounded-lg border ${
-                      item.highlight 
-                        ? 'bg-teal-50 border-teal-200 shadow-sm' 
-                        : 'bg-white border-teal-100'
-                    }`}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.6 + (index * 0.1) }}
-                  >
-                    <div className={`text-2xl font-bold ${
-                      item.highlight ? 'text-teal-700' : 'text-gray-800'
-                    }`}>
-                      {item.stat}
-                    </div>
-                    <div className="text-sm text-gray-600">{item.label}</div>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Training Philosophy */}
-              <motion.div 
-                className="p-6 mt-8 border border-teal-200 bg-teal-50 rounded-xl"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.0 }}
-              >
-                <h4 className="mb-3 font-bold text-teal-800">Training Philosophy</h4>
-                <p className="text-sm text-teal-700">
-                  "Consistency over intensity. Building endurance through gradual progression 
-                  while maintaining peak physical and mental health for optimal performance."
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
+          
         </div>
 
         {/* Inspirational Quote Section */}

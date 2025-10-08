@@ -14,12 +14,12 @@ const jost = Jost({
 
 
 export const metadata: Metadata = {
-  title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
-  description: "Official website of Hilda Cheptoo Biwott, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
-  keywords: "Hilda Cheptoo Biwott, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
-  authors: [{ name: "Hilda Cheptoo Biwott" }],
-  creator: "Hilda Cheptoo Biwott",
-  publisher: "Hilda Cheptoo Biwott",
+  title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
+  description: "Official website of Ascah Jepkorir Lelei, elite Kenyan marathon runner and record holder. Explore race achievements, personal bests, training insights, and contact for sponsorship opportunities.",
+  keywords: "Ascah Jepkorir Lelei, Kenyan marathon runner, elite athlete, long-distance runner, women's marathon, Kenya athletics, professional runner, marathon records, Iten Kenya runner",
+  authors: [{ name: "Ascah Jepkorir Lelei" }],
+  creator: "Ascah Jepkorir Lelei",
+  publisher: "Ascah Jepkorir Lelei",
   formatDetection: {
     email: false,
     address: false,
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
+    title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner specializing in long-distance races.",
     url: 'https://www.hildahcheptoo.live/', // Replace with actual domain
-    siteName: "Hilda Cheptoo Biwott",
+    siteName: "Ascah Jepkorir Lelei",
     images: [
       {
-        url: '/favicon.ico', // Replace with actual OG image path
+        url: '/', // Replace with actual OG image path
         width: 1200,
         height: 630,
-        alt: "Hilda Cheptoo Biwott - Professional Marathon Runner",
+        alt: "Ascah Jepkorir Lelei - Professional Marathon Runner",
       },
     ],
     locale: 'en_US',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Hilda Cheptoo Biwott - Elite Kenyan Marathon Runner",
+    title: "Ascah Jepkorir Lelei - Elite Kenyan Marathon Runner",
     description: "Professional Kenyan marathon runner",
     images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
     creator: '@cheptoohildah', // Replace with actual Twitter handle

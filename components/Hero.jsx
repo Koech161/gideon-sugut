@@ -73,34 +73,9 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Performance badges */}
-            <motion.div 
-              className="absolute z-20 px-6 py-4 bg-white border border-teal-100 shadow-xl rounded-2xl -top-6 -left-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-6 h-6 bg-teal-500 rounded-full">
-                  <span className="text-xs font-bold text-white">★</span>
-                </div>
-                <span className="text-sm font-bold text-teal-800">Record Holder</span>
-              </div>
-            </motion.div>
+           
             
-            <motion.div 
-              className="absolute z-20 px-6 py-4 bg-white border border-teal-100 shadow-xl rounded-2xl -bottom-6 -right-6"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.6 }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-6 h-6 bg-teal-500 rounded-full">
-                  <span className="text-xs font-bold text-white">🏆</span>
-                </div>
-                <span className="text-sm font-bold text-teal-800">Gold Medalist</span>
-              </div>
-            </motion.div>
+            
           </div>
         </motion.div>
 
@@ -178,47 +153,12 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          {/* Stats Preview */}
-          <motion.div 
-            className="grid grid-cols-3 gap-6 pt-8 mt-12 border-t border-teal-100"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-          >
-            <div className="text-center lg:text-left">
-              <div className="text-2xl font-bold text-teal-600">15+</div>
-              <div className="text-sm text-gray-600">Marathons</div>
-            </div>
-            <div className="text-center lg:text-left">
-              <div className="text-2xl font-bold text-teal-600">8</div>
-              <div className="text-sm text-gray-600">Gold Medals</div>
-            </div>
-            <div className="text-center lg:text-left">
-              <div className="text-2xl font-bold text-teal-600">2:24:15</div>
-              <div className="text-sm text-gray-600">Personal Best</div>
-            </div>
-          </motion.div>
+          
         </motion.div>
       </div>
       
       {/* Modern scroll indicator */}
-      <div className="absolute hidden transform -translate-x-1/2 bottom-8 left-1/2 lg:block">
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          <div className="flex flex-col items-center">
-            <span className="text-xs font-medium tracking-wider text-teal-600 uppercase">Explore Journey</span>
-            <div className="flex justify-center w-6 h-10 mt-1 border-2 rounded-full border-teal-300/50">
-              <motion.div 
-                className="w-1 h-3 mt-2 bg-teal-600 rounded-full"
-                animate={{ y: [0, 12, 0] }}
-                transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
-              />
-            </div>
-          </div>
-        </motion.div>
-      </div>
+      
 
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">

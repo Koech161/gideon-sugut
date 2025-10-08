@@ -31,69 +31,7 @@ export default function Contact() {
 
         <div className="grid max-w-6xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
           {/* Contact Information */}
-          <motion.div
-            className="space-y-8"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <div className="p-8 bg-white border-l-4 border-teal-500 shadow-xl rounded-2xl">
-              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                Professional Inquiries
-              </h3>
-              
-              <div className="space-y-6">
-                <motion.div 
-                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <h4 className="font-bold text-gray-800">Race Partnerships</h4>
-                  <p className="mt-2 text-gray-700">
-                    Marathon organizers and race directors interested in elite athlete participation
-                  </p>
-                </motion.div>
-
-                <motion.div 
-                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <h4 className="font-bold text-gray-800">Brand Collaborations</h4>
-                  <p className="mt-2 text-gray-700">
-                    Sports brands, apparel companies, and lifestyle partnerships
-                  </p>
-                </motion.div>
-
-                <motion.div 
-                  className="p-4 transition-all border border-teal-100 bg-teal-50 rounded-xl hover:shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <h4 className="font-bold text-gray-800">Media & Speaking</h4>
-                  <p className="mt-2 text-gray-700">
-                    Interviews, features, and motivational speaking engagements
-                  </p>
-                </motion.div>
-              </div>
-
-              {/* Response Time Info */}
-              <motion.div 
-                className="p-4 mt-6 bg-white border border-teal-200 rounded-xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-              >
-                <div className="flex items-center">
-                  <div className="flex-shrink-0 w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>
-                  <p className="ml-3 text-sm font-medium text-teal-700">
-                    Response within 24-48 hours for professional inquiries
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
+          
 
           {/* Direct Contact Methods */}
           <motion.div
@@ -175,21 +113,7 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Additional Info */}
-        <motion.div 
-          className="max-w-2xl mx-auto mt-12 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-        >
-          <div className="p-6 bg-white border border-teal-200 rounded-2xl">
-            <h3 className="mb-3 font-bold text-teal-800">Training Schedule Notice</h3>
-            <p className="text-gray-700">
-              Please note that response times may vary during intensive training periods and international competitions. 
-              Your understanding is appreciated as I maintain focus on peak athletic performance.
-            </p>
-          </div>
-        </motion.div>
+       
 
       </div>
     </section>

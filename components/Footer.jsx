@@ -148,16 +148,6 @@ export default function Footer() {
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-lime-300">- Robert Kiprop</p>
             
-            {/* Personal Bests Quick View */}
-            <div className="p-4 mt-6 rounded-lg bg-lime-900/20">
-              <h5 className="mb-2 text-sm font-semibold text-lime-300">Personal Bests</h5>
-              <div className="grid grid-cols-2 gap-2 text-xs">
-                <div className="text-gray-400">Marathon</div>
-                <div className="font-semibold text-lime-400">2:04:15</div>
-                <div className="text-gray-400">Half Marathon</div>
-                <div className="font-semibold text-lime-400">59:30</div>
-              </div>
-            </div>
           </motion.div>
         </div>
 

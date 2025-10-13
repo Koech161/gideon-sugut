@@ -97,69 +97,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Stats and Milestones Sidebar */}
-          <motion.div
-            className="lg:w-2/5"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <div className="p-8 bg-white shadow-xl rounded-2xl">
-              <h3 className="mb-6 text-2xl font-bold text-center text-gray-800">
-                Career Highlights
-              </h3>
-              
-              <div className="space-y-6">
-                {[
-                  { year: "2023", event: "Berlin Marathon Champion", time: "2:04:15" },
-                  { year: "2022", event: "World Marathon Major Winner", time: "2:04:38" },
-                  { year: "2021", event: "Olympic Gold Medalist", time: "2:05:12" },
-                  { year: "2020", event: "London Marathon Champion", time: "2:04:45" },
-                  { year: "2019", event: "World Championship Silver", time: "2:05:28" },
-                  { year: "2018", event: "Chicago Marathon Winner", time: "2:05:55" }
-                ].map((achievement, index) => (
-                  <motion.div 
-                    key={index}
-                    className="flex items-center justify-between p-4 transition-all duration-300 border rounded-lg border-lime-100 hover:bg-lime-50 hover:border-lime-200"
-                    initial={{ opacity: 0, x: 10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.6 + (index * 0.1) }}
-                  >
-                    <div>
-                      <div className="font-semibold text-lime-700">{achievement.year}</div>
-                      <div className="text-sm text-gray-600">{achievement.event}</div>
-                    </div>
-                    <div className="px-3 py-1 text-sm font-bold rounded-full bg-lime-100 text-lime-800">
-                      {achievement.time}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Personal Bests */}
-              <div className="p-6 mt-8 bg-gradient-to-r from-lime-50 to-lime-100 rounded-xl">
-                <h4 className="mb-4 font-bold text-center text-gray-800">Personal Bests</h4>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-lime-700">2:04:15</div>
-                    <div className="text-xs text-gray-600">Marathon</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-lime-700">59:30</div>
-                    <div className="text-xs text-gray-600">Half Marathon</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-lime-700">27:45</div>
-                    <div className="text-xs text-gray-600">10K</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-lime-700">13:10</div>
-                    <div className="text-xs text-gray-600">5K</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* Inspirational Quote Section */}
@@ -179,42 +116,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Training Philosophy */}
-        <motion.div
-          className="p-8 mt-16 bg-white shadow-xl rounded-2xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.6 }}
-        >
-          <h3 className="mb-6 text-2xl font-bold text-center text-gray-800">
-            Training Philosophy
-          </h3>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {[
-              {
-                title: "High-Altitude Training",
-                description: "Training at 2,500m+ elevation for natural endurance enhancement",
-                detail: "Based in Iten, Kenya"
-              },
-              {
-                title: "Consistency Over Intensity",
-                description: "Sustainable training approach focused on long-term development",
-                detail: "200KM+ weekly mileage"
-              },
-              {
-                title: "Holistic Development",
-                description: "Balancing physical training with mental preparation and recovery",
-                detail: "Yoga & meditation"
-              }
-            ].map((item, index) => (
-              <div key={index} className="p-6 text-center border border-lime-100 rounded-xl">
-                <h4 className="mb-3 font-bold text-lime-700">{item.title}</h4>
-                <p className="mb-3 text-sm text-gray-600">{item.description}</p>
-                <div className="text-xs font-semibold text-lime-600">{item.detail}</div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+       
 
         {/* Decorative Elements */}
         <div className="absolute right-0 mt-12 -z-10 opacity-10">

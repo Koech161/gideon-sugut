@@ -87,7 +87,7 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <Link
-              href="#sponsorship"
+              href="#contact"
               className="px-6 py-2.5 text-sm font-bold text-white transition-all duration-300 rounded-xl shadow-lg bg-lime-600 hover:bg-lime-700 hover:shadow-xl hover:-translate-y-0.5"
             >
               Sponsor Athlete
@@ -186,7 +186,7 @@ export default function Header() {
                 {/* Footer */}
                 <div className="p-6 border-t border-lime-200 bg-lime-50/30">
                   <Link
-                    href="#sponsorship"
+                    href="#contact"
                     className="block w-full px-4 py-3 font-bold text-center text-white transition-all duration-300 shadow-lg bg-lime-600 rounded-xl hover:bg-lime-700 hover:shadow-xl"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -207,16 +207,7 @@ export default function Header() {
                     </a>
                   </div>
                   
-                  {/* Personal Best Quick View */}
-                  <div className="p-3 mt-4 rounded-lg bg-lime-100/50">
-                    <p className="text-xs font-semibold text-center text-lime-700">Personal Best</p>
-                    <p className="text-sm font-bold text-center text-lime-800">2:04:15</p>
-                    <p className="text-xs text-center text-lime-600">Marathon</p>
-                  </div>
                   
-                  <div className="mt-3 text-center">
-                    <p className="text-xs text-lime-600">Professional inquiries only</p>
-                  </div>
                 </div>
               </div>
             </motion.div>

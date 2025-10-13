@@ -89,24 +89,7 @@ export default function Hero() {
                 />
               </div>
             </div>
-            
-            {/* Floating achievement badges */}
-            <motion.div
-              className="absolute px-4 py-2 text-xs font-bold text-white rounded-full shadow-lg -top-4 -left-4 bg-lime-600"
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.2 }}
-            >
-              World Record
-            </motion.div>
-            <motion.div
-              className="absolute px-4 py-2 text-xs font-bold rounded-full shadow-lg -bottom-4 -right-4 text-lime-800 bg-lime-200"
-              initial={{ y: -10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.4 }}
-            >
-              Gold Medalist
-            </motion.div>
+           
           </div>
         </motion.div>
 
@@ -176,33 +159,14 @@ export default function Hero() {
                 View Achievements
               </button>
             </Link>
-            <Link href="#racing">
+            <Link href="#about">
               <button className="px-10 py-4 font-bold transition-all duration-300 transform border-2 shadow-lg text-lime-700 border-lime-600 rounded-xl hover:bg-lime-50 hover:-translate-y-1 active:scale-95">
-                Race Schedule
+                My Journey
               </button>
             </Link>
           </motion.div>
 
-          {/* Quick stats */}
-          <motion.div 
-            className="grid max-w-md grid-cols-3 gap-6 pt-8 mx-auto lg:mx-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1 }}
-          >
-            <div className="text-center">
-              <div className="text-2xl font-bold text-lime-600">12</div>
-              <div className="text-xs text-gray-500">Major Wins</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-lime-600">2:04:15</div>
-              <div className="text-xs text-gray-500">Personal Best</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-lime-600">3</div>
-              <div className="text-xs text-gray-500">World Records</div>
-            </div>
-          </motion.div>
+        
         </motion.div>
       </div>
 

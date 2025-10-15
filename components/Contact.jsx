@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <section
-      className="py-20 bg-gradient-to-b from-white to-lime-50"
-      aria-label="Contact Robert Kiprop"
+      className="py-20 bg-gradient-to-b from-white to-stone-50"
+      aria-label="Contact Eric Kiprono Sang"
       id='contact'
     >
       <div className="container px-4 mx-auto">
@@ -15,13 +15,13 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-lime-700">
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-stone-600">
             Get In Touch
           </h2>
-          <h1 className="mb-4 text-4xl font-black text-gray-900">
-            Contact <span className="text-lime-600">RObert</span>
+          <h1 className="mb-4 text-4xl font-bold text-gray-900">
+            Contact <span className="text-stone-600">Eric Kiprono Sang</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-lime-500 to-lime-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-stone-500 to-stone-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
             Interested in race partnerships, sponsorship opportunities, or media features? 
             I'm available for brand collaborations, speaking engagements, and events 
@@ -29,49 +29,46 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid max-w-6xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
-         
-          
-
+        <div className="grid max-w-4xl grid-cols-1 gap-8 mx-auto">
           {/* Direct Contact Methods */}
           <motion.div
-            className="space-y-8"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            className="space-y-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="p-8 bg-white border-l-4 shadow-xl border-lime-500 rounded-2xl">
+            <div className="p-8 bg-white border-l-4 shadow-lg border-stone-500 rounded-2xl">
               <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 mr-3 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Quick Connect
+                Contact Methods
               </h3>
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:rkiprop266@gmail.com"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="mailto:ericsang8@gmail.com"
+                  className="flex items-center p-4 transition-all border border-stone-100 bg-stone-50 rounded-xl hover:bg-stone-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-lime-500">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-stone-500">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Send Email</h4>
-                    <p className="text-gray-700">rkiprop266@gmail.com</p>
-                    <p className="text-sm text-lime-600">Preferred for formal inquiries</p>
+                    <h4 className="font-bold text-gray-800">Email</h4>
+                    <p className="text-gray-700">ericsang8@gmail.com</p>
+                    <p className="text-sm text-stone-600">Preferred for formal inquiries</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-stone-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="https://wa.me/+254703206235"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="https://wa.me/+254723651447"
+                  className="flex items-center p-4 transition-all border border-stone-100 bg-stone-50 rounded-xl hover:bg-stone-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-green-500 rounded-lg">
@@ -81,36 +78,36 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800">WhatsApp</h4>
-                    <p className="text-gray-700">+254 703 206 235</p>
-                    <p className="text-sm text-lime-600">Quick responses • Business hours</p>
+                    <p className="text-gray-700">+254 723 651 447</p>
+                    <p className="text-sm text-stone-600">Quick responses • Business hours</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-stone-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
                 <motion.a
-                  href="tel:+254703206235"
-                  className="flex items-center p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:bg-lime-100 group hover:shadow-lg"
+                  href="tel:+254723651447"
+                  className="flex items-center p-4 transition-all border border-stone-100 bg-stone-50 rounded-xl hover:bg-stone-100 group hover:shadow-lg"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-lime-600">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 rounded-lg bg-stone-600">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Direct Call</h4>
-                    <p className="text-gray-700">+254 703 206 235</p>
-                    <p className="text-sm text-lime-600">Available 7AM-8PM EAT</p>
+                    <h4 className="font-bold text-gray-800">Phone</h4>
+                    <p className="text-gray-700">+254 723 651 447</p>
+                    <p className="text-sm text-stone-600">Available 7AM-8PM EAT</p>
                   </div>
-                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-lime-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-stone-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.a>
 
-                 <motion.div 
-                  className="flex items-start p-4 transition-all border border-lime-100 bg-lime-50 rounded-xl hover:shadow-lg"
+                <motion.div 
+                  className="flex items-start p-4 transition-all border border-stone-100 bg-stone-50 rounded-xl hover:shadow-lg"
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
@@ -120,17 +117,58 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Location</h4>
-                    <p className="text-gray-700">1352-20100 Nakuru</p>
-                    <p className="text-sm text-lime-600">Kenya • Rift Valley</p>
+                    <h4 className="font-bold text-gray-800">Training Base</h4>
+                    <p className="text-gray-700">Eldoret, Kenya</p>
+                    <p className="text-sm text-stone-600">Rift Valley • Altitude Training</p>
                   </div>
                 </motion.div>
               </div>
             </div>
 
-           
+            {/* Response Time Information */}
+            <motion.div 
+              className="p-6 bg-white border border-stone-200 rounded-2xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8 }}
+            >
+              <h4 className="flex items-center mb-3 font-semibold text-gray-800">
+                <svg className="w-5 h-5 mr-2 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Response Times
+              </h4>
+              <div className="grid grid-cols-1 gap-4 text-sm text-gray-600 sm:grid-cols-2">
+                <div>
+                  <span className="font-medium text-stone-700">Email:</span> Within 24-48 hours
+                </div>
+                <div>
+                  <span className="font-medium text-stone-700">WhatsApp:</span> Within 2-6 hours
+                </div>
+                <div>
+                  <span className="font-medium text-stone-700">Phone:</span> During business hours
+                </div>
+                <div>
+                  <span className="font-medium text-stone-700">Urgent:</span> Mark email as urgent
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
+
+        {/* Professional Inquiry Note */}
+        <motion.div 
+          className="max-w-2xl p-6 mx-auto mt-12 text-center bg-white border border-stone-200 rounded-2xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <h4 className="mb-2 font-semibold text-gray-800">For Professional Inquiries</h4>
+          <p className="text-sm text-gray-600">
+            Race directors, sponsors, and media professionals are encouraged to use email for detailed proposals. 
+            Please include relevant details about your event or opportunity for prompt consideration.
+          </p>
+        </motion.div>
 
         {/* Decorative Elements */}
         <motion.div 
@@ -139,7 +177,7 @@ export default function Contact() {
           animate={{ opacity: 0.1 }}
           transition={{ delay: 1 }}
         >
-          <div className="w-64 h-64 rounded-full bg-lime-300 blur-3xl"></div>
+          <div className="w-64 h-64 rounded-full bg-stone-300 blur-3xl"></div>
         </motion.div>
       </div>
     </section>

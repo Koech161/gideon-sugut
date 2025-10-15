@@ -30,7 +30,7 @@ export default function Header() {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-lime-200' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-stone-200' 
           : 'bg-transparent'
       }`}
     >
@@ -43,10 +43,10 @@ export default function Header() {
         >
           <Link 
             href="/" 
-            className="flex items-center text-xl font-black text-gray-900 transition-colors md:text-2xl hover:text-lime-700"
+            className="flex items-center text-xl font-bold text-gray-900 transition-colors md:text-2xl hover:text-stone-700"
           >
-            <span className="text-lime-600">Robert</span>
-            <span className="hidden ml-1 text-gray-800 sm:inline">Kiprop</span>
+            <span className="text-stone-600">Eric</span>
+            <span className="hidden ml-1 text-gray-800 sm:inline">Kiprono Sang</span>
           </Link>
         </motion.div>
 
@@ -63,15 +63,15 @@ export default function Header() {
                 href={link.href}
                 className={`relative text-sm font-semibold uppercase tracking-wider transition-colors px-3 py-2 ${
                   pathname === link.href
-                    ? 'text-lime-600'
-                    : 'text-gray-800 hover:text-lime-600'
+                    ? 'text-stone-600'
+                    : 'text-gray-800 hover:text-stone-600'
                 }`}
                 aria-current={pathname === link.href ? 'page' : undefined}
               >
                 {link.label}
                 {pathname === link.href && (
                   <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-lime-600"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-stone-600"
                     layoutId="navbar-indicator"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -88,16 +88,16 @@ export default function Header() {
           >
             <Link
               href="#contact"
-              className="px-6 py-2.5 text-sm font-bold text-white transition-all duration-300 rounded-xl shadow-lg bg-lime-600 hover:bg-lime-700 hover:shadow-xl hover:-translate-y-0.5"
+              className="px-6 py-2.5 text-sm font-bold text-white transition-all duration-300 rounded-lg shadow-md bg-stone-600 hover:bg-stone-700 hover:shadow-lg hover:-translate-y-0.5"
             >
-              Sponsor Athlete
+              Partner With Me
             </Link>
           </motion.div>
         </div>
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="p-2 text-gray-900 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-opacity-50"
+          className="p-2 text-gray-900 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-opacity-50"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMenuOpen}
@@ -140,7 +140,7 @@ export default function Header() {
             
             {/* Menu Panel */}
             <motion.div
-              className="fixed top-0 right-0 z-50 h-full max-w-full border-l shadow-2xl border-lime-200 w-80 bg-white/98 backdrop-blur-md lg:hidden"
+              className="fixed top-0 right-0 z-50 h-full max-w-full border-l shadow-2xl border-stone-200 w-80 bg-white/98 backdrop-blur-md lg:hidden"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -148,14 +148,14 @@ export default function Header() {
             >
               <div className="flex flex-col h-full">
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-lime-200 bg-lime-50/50">
+                <div className="flex items-center justify-between p-6 border-b border-stone-200 bg-stone-50/50">
                   <div>
-                    <span className="text-lg font-black text-gray-900">Robert Kiprop</span>
-                    <p className="text-sm text-lime-700">Marathon Champion</p>
+                    <span className="text-lg font-bold text-gray-900">Eric Kiprono Sang</span>
+                    <p className="text-sm text-stone-700">Distance Runner</p>
                   </div>
                   <button
                     onClick={() => setIsMenuOpen(false)}
-                    className="p-2 transition-colors rounded-lg text-lime-600 hover:text-lime-800 hover:bg-lime-100"
+                    className="p-2 transition-colors rounded-lg text-stone-600 hover:text-stone-800 hover:bg-stone-100"
                     aria-label="Close menu"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,8 +172,8 @@ export default function Header() {
                       href={link.href}
                       className={`block text-lg font-semibold transition-all py-4 px-4 rounded-xl ${
                         pathname === link.href
-                          ? 'bg-lime-100 text-lime-700 border-l-4 border-lime-600'
-                          : 'text-gray-900 hover:bg-lime-50 hover:text-lime-700 hover:border-l-4 hover:border-lime-400'
+                          ? 'bg-stone-100 text-stone-700 border-l-4 border-stone-600'
+                          : 'text-gray-900 hover:bg-stone-50 hover:text-stone-700 hover:border-l-4 hover:border-stone-400'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                       aria-current={pathname === link.href ? 'page' : undefined}
@@ -184,30 +184,38 @@ export default function Header() {
                 </nav>
 
                 {/* Footer */}
-                <div className="p-6 border-t border-lime-200 bg-lime-50/30">
+                <div className="p-6 border-t border-stone-200 bg-stone-50/30">
                   <Link
                     href="#contact"
-                    className="block w-full px-4 py-3 font-bold text-center text-white transition-all duration-300 shadow-lg bg-lime-600 rounded-xl hover:bg-lime-700 hover:shadow-xl"
+                    className="block w-full px-4 py-3 font-bold text-center text-white transition-all duration-300 rounded-lg shadow-md bg-stone-600 hover:bg-stone-700 hover:shadow-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Sponsor Athlete
+                    Partner With Me
                   </Link>
                   
                   {/* Quick Contact */}
                   <div className="flex justify-center mt-4 space-x-4">
-                    <a href="mailto:rkiprop266@email.com" className="p-2 transition-colors text-lime-600 hover:text-lime-800">
+                    <a href="mailto:ericsang8@gmail.com" className="p-2 transition-colors text-stone-600 hover:text-stone-800">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </a>
-                    <a href="https://wa.me/254703206235" className="p-2 transition-colors text-lime-600 hover:text-lime-800">
+                    <a href="https://wa.me/254723651447" className="p-2 transition-colors text-stone-600 hover:text-stone-800">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l4.93-1.36A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm3.92 13.8c-.25.74-.74 1.32-1.48 1.66-.94.43-2.16.36-3.3-.18-1.4-.67-2.57-1.76-3.42-3.08-.85-1.32-1.07-2.74-.62-4.1.2-.6.58-1.13 1.14-1.5.14-.1.3-.16.46-.16h.32c.2 0 .48.07.66.44.22.45.78 1.54.86 1.65.08.1.14.22.1.34-.12.36-.36.7-.74.94-.14.09-.28.19-.4.29-.12.1-.24.2-.22.35.04.28.24.62.52.94.64.74 1.4 1.3 2.3 1.56.14.04.28.02.38-.06.1-.08.24-.22.38-.36.22-.22.44-.3.62-.2.18.1 1.1.52 1.3.60.18.08.3.14.34.24.04.1.02.2-.04.34-.3.64-.9 1.3-1.6 1.5z" />
                       </svg>
                     </a>
                   </div>
                   
-                  
+                  {/* Contact Info */}
+                  <div className="mt-4 text-center">
+                    <p className="text-xs text-stone-600">
+                      Email: ericsang8@gmail.com
+                    </p>
+                    <p className="text-xs text-stone-600">
+                      Phone: +254 723 651 447
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>

@@ -12,7 +12,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://wa.me/+254712345678',
+    href: 'https://wa.me/+254703206235',
     label: 'WhatsApp',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -22,7 +22,7 @@ const socialLinks = [
     color: 'bg-green-500 hover:bg-green-600'
   },
   {
-    href: 'tel:+254712345678',
+    href: 'tel:+254703206235',
     label: 'Phone',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ const socialLinks = [
     color: 'bg-gray-700 hover:bg-gray-800'
   },
   {
-    href: 'mailto:robertkiprop@email.com',
+    href: 'mailto:rkiprop266@gmail.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,17 +113,17 @@ export default function Footer() {
           >
             <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-lime-300">Get In Touch</h4>
             <div className="space-y-4 text-gray-400">
-              <a href="mailto:robertkiprop@email.com" className="flex items-center transition-colors hover:text-lime-300">
+              <a href="mailto:rkiprop266@gmail.com" className="flex items-center transition-colors hover:text-lime-300">
                 <svg className="w-4 h-4 mr-3 text-lime-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                 </svg>
-                robertkiprop@email.com
+                rkiprop266@gmail.com
               </a>
-              <a href="tel:+254712345678" className="flex items-center transition-colors hover:text-lime-300">
+              <a href="tel:+254703206235" className="flex items-center transition-colors hover:text-lime-300">
                 <svg className="w-4 h-4 mr-3 text-lime-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
                 </svg>
-                +254 712 345 678
+                +254 703 206 235
               </a>
               <p className="flex items-center">
                 <svg className="w-4 h-4 mr-3 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

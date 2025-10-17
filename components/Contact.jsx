@@ -106,69 +106,13 @@ export default function Contact() {
                   </svg>
                 </motion.a>
 
-                <motion.div 
-                  className="flex items-start p-4 transition-all border border-stone-100 bg-stone-50 rounded-xl hover:shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mr-4 bg-gray-700 rounded-lg">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800">Training Base</h4>
-                    <p className="text-gray-700">Eldoret, Kenya</p>
-                    <p className="text-sm text-stone-600">Rift Valley • Altitude Training</p>
-                  </div>
-                </motion.div>
               </div>
             </div>
 
-            {/* Response Time Information */}
-            <motion.div 
-              className="p-6 bg-white border border-stone-200 rounded-2xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <h4 className="flex items-center mb-3 font-semibold text-gray-800">
-                <svg className="w-5 h-5 mr-2 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Response Times
-              </h4>
-              <div className="grid grid-cols-1 gap-4 text-sm text-gray-600 sm:grid-cols-2">
-                <div>
-                  <span className="font-medium text-stone-700">Email:</span> Within 24-48 hours
-                </div>
-                <div>
-                  <span className="font-medium text-stone-700">WhatsApp:</span> Within 2-6 hours
-                </div>
-                <div>
-                  <span className="font-medium text-stone-700">Phone:</span> During business hours
-                </div>
-                <div>
-                  <span className="font-medium text-stone-700">Urgent:</span> Mark email as urgent
-                </div>
-              </div>
-            </motion.div>
+            
           </motion.div>
         </div>
 
-        {/* Professional Inquiry Note */}
-        <motion.div 
-          className="max-w-2xl p-6 mx-auto mt-12 text-center bg-white border border-stone-200 rounded-2xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-        >
-          <h4 className="mb-2 font-semibold text-gray-800">For Professional Inquiries</h4>
-          <p className="text-sm text-gray-600">
-            Race directors, sponsors, and media professionals are encouraged to use email for detailed proposals. 
-            Please include relevant details about your event or opportunity for prompt consideration.
-          </p>
-        </motion.div>
 
         {/* Decorative Elements */}
         <motion.div 

@@ -148,17 +148,6 @@ export default function Footer() {
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-stone-300">- Eric Kiprono Sang</p>
             
-            {/* Training Specialties */}
-            <div className="mt-6">
-              <h5 className="mb-2 text-sm font-semibold text-stone-400">Specialties</h5>
-              <div className="flex flex-wrap gap-2">
-                {['Marathon', 'Half Marathon', '10K Road', 'Cross Country'].map((specialty) => (
-                  <span key={specialty} className="px-2 py-1 text-xs rounded bg-stone-800/50 text-stone-300">
-                    {specialty}
-                  </span>
-                ))}
-              </div>
-            </div>
           </motion.div>
         </div>
 

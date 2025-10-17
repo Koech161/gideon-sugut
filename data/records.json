@@ -1,7 +1,7 @@
 [
-  { "id": 1, "event": "Marathon", "time": "2:13:27", "date": "2025-07-06", "venue": "Nairobi City Marathon" },
-  { "id": 3, "event": "10k", "time": "28:31", "date": "2024-05-05", "venue": "Absa Dar City Marathon" },
-  { "id": 2, "event": "Half Marathon", "time": "1:03:21", "date": "2024-03-31", "venue": "Kapsabet Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:13:21", "date": "2025-04-27", "venue": "Eldoret City Marathon" },
+  { "id": 3, "event": "10k", "time": "28:34", "date": "2024-05-05", "venue": "Absa Dar City Marathon" },
+  { "id": 2, "event": "Half Marathon", "time": "1:03:19", "date": "2024-11-16", "venue": "Chemususu Dam Half Marathon" }
 
 
 ]

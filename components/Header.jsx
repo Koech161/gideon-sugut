@@ -184,7 +184,7 @@ export default function Header() {
                 </nav>
 
                 {/* Footer */}
-                <div className="p-6 border-t border-stone-200 bg-stone-50/30">
+                <div className="p-6 border-t border-stone-200 bg-stone-50">
                   <Link
                     href="#contact"
                     className="block w-full px-4 py-3 font-bold text-center text-white transition-all duration-300 rounded-lg shadow-md bg-stone-600 hover:bg-stone-700 hover:shadow-lg"

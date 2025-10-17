@@ -19,7 +19,7 @@ export default function About() {
             The Distance Runner
           </h2>
           <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-            About <span className="text-stone-600">Eric Kiprono Sang</span>
+            About <span className="text-stone-600">Eric Sang</span>
           </h1>
           <div className="w-20 h-1 mx-auto bg-gradient-to-r from-stone-500 to-stone-600"></div>
         </motion.div>
@@ -103,68 +103,7 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="p-8 bg-white shadow-lg rounded-2xl">
-              <h3 className="pb-3 mb-6 text-xl font-bold text-gray-800 border-b border-stone-200">
-                Career Highlights
-              </h3>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="mb-2 font-semibold text-stone-700">Personal Bests</h4>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex justify-between">
-                      <span>10,000m</span>
-                      <span className="font-medium">27:45</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Half Marathon</span>
-                      <span className="font-medium">1:01:30</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Marathon</span>
-                      <span className="font-medium">2:06:15</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="mb-2 font-semibold text-stone-700">Training Base</h4>
-                  <div className="text-sm text-gray-600">
-                    <p>Eldoret, Kenya</p>
-                    <p className="mt-1 text-xs text-stone-500">Altitude: 2,100m</p>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="mb-2 font-semibold text-stone-700">Specialties</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {['Marathon', 'Half Marathon', '10K Road', 'Cross Country'].map((specialty, idx) => (
-                      <span key={idx} className="px-3 py-1 text-xs rounded-full bg-stone-100 text-stone-700">
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="mb-2 font-semibold text-stone-700">Career Milestones</h4>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li className="flex items-start">
-                      <span className="mr-2 text-stone-500">•</span>
-                      <span>Multiple international marathon appearances</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-stone-500">•</span>
-                      <span>Consistent top-10 finishes in World Marathon Majors</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-stone-500">•</span>
-                      <span>Represented Kenya in international competitions</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <img src={'/er3.jpg'} alt='potrait' /> 
           </motion.div>
         </div>
 

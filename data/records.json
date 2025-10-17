@@ -1,6 +1,6 @@
 [
   { "id": 1, "event": "Marathon", "time": "2:13:21", "date": "2025-04-27", "venue": "Eldoret City Marathon" },
-  { "id": 3, "event": "10k", "time": "28:34", "date": "2024-05-05", "venue": "Absa Dar City Marathon" },
+  { "id": 3, "event": "10k", "time": "28:34", "date": "2024-07-13", "venue": "Kaptagat Marathon" },
   { "id": 2, "event": "Half Marathon", "time": "1:03:19", "date": "2024-11-16", "venue": "Chemususu Dam Half Marathon" }
 
 

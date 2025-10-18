@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://erickipronosang.com/'), // Replace with actual domain
+  metadataBase: new URL('https://www.ericsang.live/'), // Replace with actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Eric Kiprono Sang - Professional Kenyan Distance Runner",
     description: "Professional Kenyan distance runner known for strategic racing and consistent performances in international marathon and road race competitions.",
-    url: 'https://erickipronosang.com/',
+    url: 'https://www.ericsang.live/',
     siteName: "Eric Kiprono Sang",
     images: [
       {

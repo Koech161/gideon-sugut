@@ -139,7 +139,7 @@ export default function Footer() {
           <p className="text-sm text-gray-500">
             Developed by{' '}
             <a href="https://abelk-k.vercel.app" className="text-orange-400 hover:text-orange-300">
-              Kikoa Softwares
+              Kikoa Software
             </a>
           </p>
         </div>

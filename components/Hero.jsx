@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             {/* Badge */}
-            <motion.div className="inline-flex flex-col items-start mb-8">
+            <motion.div className="flex-col items-start hidden mb-8  sm:flex-row sm:items-center sm:space-x-4">
               <span className="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase rounded-full text-orange-800 bg-orange-100/80">
                 10K • Half Marathon • Marathon
               </span>
@@ -92,27 +92,10 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Stats */}
-            <div className="flex gap-8 mt-16">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">31:12</div>
-                <div className="text-sm text-gray-500">10K Personal Best</div>
-              </div>
-              <div className="h-12 w-0.5 bg-orange-200"></div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">1:08:45</div>
-                <div className="text-sm text-gray-500">Half Marathon PB</div>
-              </div>
-              <div className="h-12 w-0.5 bg-orange-200"></div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">2:26:30</div>
-                <div className="text-sm text-gray-500">Marathon PB</div>
-              </div>
-            </div>
           </motion.div>
 
           {/* Visual */}
-          <motion.div className="relative order-1 lg:order-2">
+          <motion.div className="relative order-1 hidden lg:order-2 sm:block">
             <div className="relative max-w-md mx-auto">
               <div className="relative z-10 p-1 shadow-xl bg-gradient-to-br from-orange-50 to-white rounded-2xl">
                 <div className="overflow-hidden rounded-xl aspect-[3/4] flex flex-col items-center justify-center">

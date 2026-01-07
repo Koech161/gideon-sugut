@@ -12,7 +12,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://wa.me/+254723651447',
+    href: 'https://wa.me/+254726747588',
     label: 'WhatsApp',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -22,7 +22,7 @@ const socialLinks = [
     color: 'bg-green-500 hover:bg-green-600'
   },
   {
-    href: 'tel:+254723651447',
+    href: 'tel:+254726747588',
     label: 'Phone',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -32,20 +32,20 @@ const socialLinks = [
     color: 'bg-gray-700 hover:bg-gray-800'
   },
   {
-    href: 'mailto:ericsang8@gmail.com',
+    href: 'mailto:faithjemutai01@gmail.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
-    color: 'bg-stone-600 hover:bg-stone-700'
+    color: 'bg-orange-600 hover:bg-orange-700'
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="py-16 border-t bg-gradient-to-b from-gray-900 to-gray-950 border-stone-900/30" aria-label="Footer">
+    <footer className="py-16 border-t bg-gradient-to-b from-gray-900 to-gray-950 border-orange-900/30" aria-label="Footer">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 gap-12 mb-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
@@ -55,13 +55,18 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="mb-4 text-2xl font-bold text-white">
-              Eric <span className="text-stone-400">Kiprono Sang</span>
-            </h3>
+            <div className="flex items-center mb-4">
+              <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-lg bg-gradient-to-r from-orange-600 to-orange-500">
+                <span className="text-lg font-bold text-white">FJ</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white">
+                Faith <span className="text-orange-400">Jemutai</span>
+              </h3>
+            </div>
             <p className="mb-6 leading-relaxed text-gray-400">
-              Professional Kenyan distance runner specializing in marathon and half-marathon events. 
-              Known for strategic racing, consistent performances, and representing the excellence 
-              of Kenyan athletics on the global stage.
+              Elite Kenyan middle-distance runner specializing in 800m and 1500m events. 
+              Olympic medalist, African champion, and ambassador for women in athletics. 
+              Representing the speed and spirit of Kenyan track excellence globally.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((link, index) => (
@@ -88,16 +93,16 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-stone-300">Quick Links</h4>
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-orange-300 uppercase">Quick Links</h4>
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-400 transition-colors duration-300 hover:text-stone-300 group"
+                    className="flex items-center text-gray-400 transition-colors duration-300 hover:text-orange-300 group"
                     aria-label={`Go to ${link.label} page`}
                   >
-                    <span className="w-2 h-2 mr-3 transition-all rounded-full opacity-0 bg-stone-500 group-hover:opacity-100 group-hover:scale-125"></span>
+                    <span className="w-2 h-2 mr-3 transition-all bg-orange-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-125"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -111,26 +116,26 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-stone-300">Contact Info</h4>
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-orange-300 uppercase">Contact Info</h4>
             <div className="space-y-4 text-gray-400">
-              <a href="mailto:ericsang8@gmail.com" className="flex items-center transition-colors hover:text-stone-300">
-                <svg className="w-4 h-4 mr-3 text-stone-400" fill="currentColor" viewBox="0 0 24 24">
+              <a href="mailto:faithjemutai01@gmail.com" className="flex items-center transition-colors hover:text-orange-300">
+                <svg className="w-4 h-4 mr-3 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                 </svg>
-                ericsang8@gmail.com
+                faithjemutai01@gmail.com
               </a>
-              <a href="tel:+254723651447" className="flex items-center transition-colors hover:text-stone-300">
-                <svg className="w-4 h-4 mr-3 text-stone-400" fill="currentColor" viewBox="0 0 24 24">
+              <a href="tel:+254726747588" className="flex items-center transition-colors hover:text-orange-300">
+                <svg className="w-4 h-4 mr-3 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
                 </svg>
-                +254 723 651 447
+                +254 726 747 588
               </a>
               <p className="flex items-center">
-                <svg className="w-4 h-4 mr-3 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Eldoret, Kenya
+                Iten, Kenya
               </p>
             </div>
           </motion.div>
@@ -141,34 +146,43 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h4 className="mb-6 text-lg font-semibold tracking-wider uppercase text-stone-300">Running Philosophy</h4>
-            <blockquote className="pl-4 italic text-gray-400 border-l-4 border-stone-500">
-              "Success in distance running comes from consistency in training, patience in development, 
-              and the mental strength to push through challenges. Every step forward is progress."
+            <h4 className="mb-6 text-lg font-semibold tracking-wider text-orange-300 uppercase">Track Philosophy</h4>
+            <blockquote className="pl-4 italic text-gray-400 border-l-4 border-orange-500">
+              "Victory on the track is earned in the discipline of daily training. 
+              Speed is a gift, but consistency is a choice. True champions are made 
+              when no one is watching."
             </blockquote>
-            <p className="mt-4 text-sm font-semibold text-stone-300">- Eric Kiprono Sang</p>
+            <p className="mt-4 text-sm font-semibold text-orange-300">- Faith Jemutai Cherotich</p>
             
+            {/* Training Base Badge */}
+            <div className="inline-flex items-center px-4 py-2 mt-6 border rounded-lg bg-gradient-to-r from-orange-900/50 to-orange-800/30 border-orange-800/50">
+              <div className="w-2 h-2 mr-2 bg-orange-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-orange-300">Training Base: Iten High-Altitude Camp</span>
+            </div>
           </motion.div>
         </div>
 
         {/* Bottom Bar */}
         <motion.div
-          className="flex flex-col items-center justify-between pt-8 border-t border-stone-900/30 md:flex-row"
+          className="flex flex-col items-center justify-between pt-8 border-t border-orange-900/30 md:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="mb-4 text-sm text-gray-500 md:mb-0">
-            &copy; {new Date().getFullYear()} Eric Kiprono Sang. All rights reserved.
+            &copy; {new Date().getFullYear()} Faith Jemutai. All rights reserved.
           </p>
           <div className="flex flex-col items-center space-y-2 text-sm text-gray-500 md:flex-row md:space-y-0 md:space-x-6">
-            <span>Representing Kenyan athletics excellence</span>
-            <span className="hidden text-stone-400 md:inline">•</span>
+            <span className="flex items-center">
+              <div className="w-2 h-2 mr-2 bg-orange-500 rounded-full"></div>
+              Representing Kenya in global athletics
+            </span>
+            <span className="hidden text-orange-400 md:inline">•</span>
             <div className="text-sm text-gray-500">
               Developed by{' '}
               <a
                 href="https://abelk-k.vercel.app"
-                className="font-medium transition-colors duration-300 text-stone-400 hover:text-stone-300"
+                className="font-medium text-orange-400 transition-colors duration-300 hover:text-orange-300"
                 aria-label="Visit developer's website"
               >
                 Kikoa Softwares
@@ -177,11 +191,29 @@ export default function Footer() {
           </div>
         </motion.div>
 
+        {/* Partnership Badges */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mt-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+        >
+          <div className="px-4 py-2 text-sm font-medium text-orange-300 border rounded-full bg-gradient-to-r from-orange-900/20 to-orange-800/10 border-orange-800/30">
+            Athletics Kenya Member
+          </div>
+          <div className="px-4 py-2 text-sm font-medium text-orange-300 border rounded-full bg-gradient-to-r from-orange-900/20 to-orange-800/10 border-orange-800/30">
+            NOC-K Certified Athlete
+          </div>
+          <div className="px-4 py-2 text-sm font-medium text-orange-300 border rounded-full bg-gradient-to-r from-orange-900/20 to-orange-800/10 border-orange-800/30">
+            Women in Sports Ambassador
+          </div>
+        </motion.div>
+
         {/* Decorative elements */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
           <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-gray-950 to-transparent"></div>
-          <div className="absolute w-20 h-20 rounded-full bottom-4 right-4 bg-stone-500/5 blur-xl"></div>
-          <div className="absolute w-16 h-16 rounded-full bottom-8 left-10 bg-stone-400/5 blur-xl"></div>
+          <div className="absolute w-20 h-20 rounded-full bottom-4 right-4 bg-orange-500/5 blur-xl"></div>
+          <div className="absolute w-16 h-16 rounded-full bottom-8 left-10 bg-orange-400/5 blur-xl"></div>
         </div>
       </div>
     </footer>

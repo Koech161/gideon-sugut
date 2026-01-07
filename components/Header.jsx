@@ -159,7 +159,7 @@ export default function Header() {
                     </div>
                     <div>
                       <span className="text-lg font-bold text-gray-900">Faith Jemutai</span>
-                      <p className="text-sm text-orange-700">800m & 1500m Specialist</p>
+                      <p className="text-sm text-orange-700">10K • Half Marathon • Marathon</p>
                     </div>
                   </div>
                   <button

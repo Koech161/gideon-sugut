@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <section
-      className="py-20 bg-gradient-to-b from-white to-orange-50/30"
+      className="py-20 bg-gradient-to-b from-white to-orange-50"
       aria-label="Contact Faith Jemutai"
       id='contact'
     >

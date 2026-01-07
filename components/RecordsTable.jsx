@@ -36,7 +36,7 @@
 //   }, [activeFilter, sortBy]);
 
 //   return (
-//     <section className="py-20 bg-gradient-to-b from-white to-stone-50" id="achievements">
+//     <section className="py-20 bg-gradient-to-b from-white to-orange-50" id="achievements">
 //       <div className="container px-4 mx-auto">
 //         <motion.div
 //           className="mb-16 text-center"
@@ -44,13 +44,13 @@
 //           animate={{ opacity: 1, y: 0 }}
 //           transition={{ duration: 0.6 }}
 //         >
-//           <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-stone-700">
+//           <h2 className="mb-3 text-sm font-semibold tracking-wider text-orange-700 uppercase">
 //             Championship Legacy
 //           </h2>
 //           <h1 className="mb-4 text-4xl font-black text-gray-900 sm:text-5xl">
-//             Racing <span className="text-stone-600">Achievements</span>
+//             Racing <span className="text-orange-600">Achievements</span>
 //           </h1>
-//           <div className="w-20 h-1 mx-auto bg-gradient-to-r from-stone-500 to-stone-600"></div>
+//           <div className="w-20 h-1 mx-auto bg-gradient-to-r from-orange-500 to-orange-600"></div>
 //           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
 //             A remarkable career defined by explosive performances, strategic victories, 
 //             and record-breaking moments on the global stage
@@ -71,8 +71,8 @@
 //                 onClick={() => setActiveFilter(filter)}
 //                 className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
 //                   activeFilter === filter
-//                     ? 'bg-stone-600 text-white shadow-lg'
-//                     : 'bg-white text-gray-700 border border-stone-200 hover:bg-stone-50 hover:border-stone-300'
+//                     ? 'bg-orange-600 text-white shadow-lg'
+//                     : 'bg-white text-gray-700 border border-orange-200 hover:bg-orange-50 hover:border-orange-300'
 //                 }`}
 //               >
 //                 {filter}
@@ -85,7 +85,7 @@
 //             <select
 //               value={sortBy}
 //               onChange={(e) => setSortBy(e.target.value)}
-//               className="px-3 py-2 text-sm text-gray-800 border rounded-lg border-stone-200 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent"
+//               className="px-3 py-2 text-sm text-gray-800 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
 //             >
 //               <option value="date">Most Recent</option>
 //               <option value="time">Best Time</option>
@@ -125,15 +125,15 @@
 //             animate={{ opacity: 1 }}
 //             transition={{ duration: 0.5 }}
 //           >
-//             <div className="inline-flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-stone-100">
-//               <svg className="w-10 h-10 text-stone-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+//             <div className="inline-flex items-center justify-center w-20 h-20 mb-4 bg-orange-100 rounded-full">
+//               <svg className="w-10 h-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 //                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
 //               </svg>
 //             </div>
 //             <p className="text-lg text-gray-600">No achievements found for the selected filter</p>
 //             <button 
 //               onClick={() => setActiveFilter('All')}
-//               className="mt-3 underline transition-colors text-stone-700 hover:text-stone-800"
+//               className="mt-3 text-orange-700 underline transition-colors hover:text-orange-800"
 //             >
 //               Show all achievements
 //             </button>
@@ -152,8 +152,8 @@
 //     <motion.div
 //       className={`h-full p-6 border rounded-2xl transition-all hover:shadow-lg ${
 //         achievement.highlight 
-//           ? 'bg-gradient-to-br from-stone-50 to-stone-100 border-stone-300 border-l-4' 
-//           : 'bg-white border-stone-200'
+//           ? 'bg-gradient-to-br from-orange-50 to-orange-100 border-orange-300 border-l-4' 
+//           : 'bg-white border-orange-200'
 //       }`}
 //       whileHover={{ y: -5, scale: 1.02 }}
 //       transition={{ type: "spring", stiffness: 300 }}
@@ -162,7 +162,7 @@
 //       <div className="flex items-start justify-between mb-4">
 //         <div>
 //           <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
-//             achievement.highlight ? 'bg-stone-500 text-white' : 'bg-stone-100 text-stone-800'
+//             achievement.highlight ? 'bg-orange-500 text-white' : 'bg-orange-100 text-orange-800'
 //           }`}>
 //             {achievement.category}
 //           </span>
@@ -184,7 +184,7 @@
 //       {/* Event and Achievement */}
 //       <h3 className="mb-2 text-lg font-bold text-gray-900">{achievement.event}</h3>
 //       <p className={`text-sm font-semibold mb-3 ${
-//         achievement.highlight ? 'text-stone-700' : 'text-gray-700'
+//         achievement.highlight ? 'text-orange-700' : 'text-gray-700'
 //       }`}>
 //         {achievement.achievement}
 //       </p>
@@ -192,9 +192,9 @@
 //       {/* Time and Venue */}
 //       <div className="mb-4">
 //         <div className="flex items-center gap-2 mb-2">
-//           <span className="text-2xl font-black text-stone-600">{achievement.time}</span>
+//           <span className="text-2xl font-black text-orange-600">{achievement.time}</span>
 //           {achievement.highlight && (
-//             <span className="px-2 py-1 text-xs font-bold text-white rounded-full bg-stone-500">PB</span>
+//             <span className="px-2 py-1 text-xs font-bold text-white bg-orange-500 rounded-full">PB</span>
 //           )}
 //         </div>
 //         <div className="text-sm text-gray-600">
@@ -212,11 +212,11 @@
 
 //       {/* Achievement Badge */}
 //       {achievement.highlight && (
-//         <div className="flex items-center justify-between pt-4 mt-4 border-t border-stone-100">
-//           <span className="text-xs font-semibold uppercase text-stone-600">Record Performance</span>
+//         <div className="flex items-center justify-between pt-4 mt-4 border-t border-orange-100">
+//           <span className="text-xs font-semibold text-orange-600 uppercase">Record Performance</span>
 //           <div className="flex items-center">
-//             <div className="w-2 h-2 mr-1 rounded-full bg-stone-400 animate-pulse"></div>
-//             <span className="text-xs text-stone-600">Highlight</span>
+//             <div className="w-2 h-2 mr-1 bg-orange-400 rounded-full animate-pulse"></div>
+//             <span className="text-xs text-orange-600">Highlight</span>
 //           </div>
 //         </div>
 //       )}
@@ -266,7 +266,7 @@ export default function Achievements() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-stone-50" id="achievements">
+    <section className="py-20 bg-gradient-to-b from-white to-orange-50" id="achievements">
       <div className="container px-4 mx-auto">
         {/* Header */}
         <motion.div
@@ -275,13 +275,13 @@ export default function Achievements() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-stone-700">
+          <h2 className="mb-3 text-sm font-semibold tracking-wider text-orange-700 uppercase">
             Performance Timeline
           </h2>
           <h1 className="mb-4 text-4xl font-black text-gray-900 sm:text-5xl">
-            Race <span className="text-stone-600">Records</span>
+            Race <span className="text-orange-600">Records</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-stone-500 to-stone-600"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-orange-500 to-orange-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
             Track-by-track analysis of championship performances and personal bests
           </p>
@@ -302,8 +302,8 @@ export default function Achievements() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
                     activeFilter === filter
-                      ? 'bg-stone-600 text-white shadow-lg'
-                      : 'bg-white text-gray-700 border border-stone-200 hover:bg-stone-50 hover:border-stone-300'
+                      ? 'bg-orange-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 border border-orange-200 hover:bg-orange-50 hover:border-orange-300'
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -319,7 +319,7 @@ export default function Achievements() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-3 py-2 text-sm text-gray-800 border rounded-lg border-stone-200 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent"
+                  className="px-3 py-2 text-sm text-gray-800 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 >
                   <option value="date">Most Recent</option>
                   <option value="time">Fastest Time</option>
@@ -327,7 +327,7 @@ export default function Achievements() {
                 </select>
               </div>
               
-              <div className="px-4 py-2 text-sm text-gray-600 rounded-lg bg-stone-100">
+              <div className="px-4 py-2 text-sm text-gray-600 bg-orange-100 rounded-lg">
                 Showing {filteredAchievements.length} races
               </div>
             </div>
@@ -342,7 +342,7 @@ export default function Achievements() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           {/* Timeline Line */}
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-stone-300 via-stone-200 to-stone-300 md:left-1/2 md:-translate-x-1/2" />
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-300 via-orange-200 to-orange-300 md:left-1/2 md:-translate-x-1/2" />
           
           {/* Achievements List */}
           <div className="space-y-4">
@@ -368,15 +368,15 @@ export default function Achievements() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-stone-100">
-              <svg className="w-10 h-10 text-stone-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="inline-flex items-center justify-center w-20 h-20 mb-4 bg-orange-100 rounded-full">
+              <svg className="w-10 h-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
             <p className="text-lg text-gray-600">No races found for the selected filter</p>
             <button 
               onClick={() => setActiveFilter('All')}
-              className="mt-3 underline transition-colors text-stone-700 hover:text-stone-800"
+              className="mt-3 text-orange-700 underline transition-colors hover:text-orange-800"
             >
               Show all races
             </button>
@@ -405,10 +405,10 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
       <motion.div 
         className={`absolute left-3.5 w-4 h-4 rounded-full border-2 md:left-1/2 md:-translate-x-1/2 ${
           achievement.highlight 
-            ? 'bg-stone-600 border-stone-700' 
+            ? 'bg-orange-600 border-orange-700' 
             : achievement.medal === 'Gold'
             ? 'bg-yellow-100 border-yellow-400'
-            : 'bg-white border-stone-400'
+            : 'bg-white border-orange-400'
         }`}
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 2, repeat: Infinity, delay: index * 0.2 }}
@@ -425,8 +425,8 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
       <motion.div
         className={`p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer ${
           achievement.highlight 
-            ? 'border-l-4 border-stone-600' 
-            : 'border-stone-200'
+            ? 'border-l-4 border-orange-600' 
+            : 'border-orange-200'
         }`}
         whileHover={{ x: index % 2 === 0 ? 5 : -5 }}
         onClick={onToggle}
@@ -437,7 +437,7 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
             <div className="flex items-center gap-3 mb-2">
               <h3 className="text-lg font-bold text-gray-900">{achievement.event}</h3>
               {achievement.highlight && (
-                <span className="px-2 py-1 text-xs font-bold text-white rounded-full bg-stone-600">
+                <span className="px-2 py-1 text-xs font-bold text-white bg-orange-600 rounded-full">
                   PB
                 </span>
               )}
@@ -445,7 +445,7 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
             
             <div className="flex flex-wrap items-center gap-4 mb-3">
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <span className="text-sm text-gray-700">
@@ -454,7 +454,7 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
               </div>
               
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -466,7 +466,7 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
           {/* Right Column - Performance Stats */}
           <div className="flex items-center gap-6">
             <div className="text-right">
-              <div className="text-2xl font-black text-stone-800">{achievement.time}</div>
+              <div className="text-2xl font-black text-orange-800">{achievement.time}</div>
               <div className="text-xs font-medium text-gray-500 uppercase">Finish Time</div>
             </div>
             
@@ -477,11 +477,11 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
 
             {/* Expand/Collapse Button */}
             <motion.button
-              className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-stone-100"
+              className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-orange-100"
               animate={{ rotate: isExpanded ? 180 : 0 }}
               transition={{ duration: 0.3 }}
             >
-              <svg className="w-5 h-5 text-stone-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-5 h-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </motion.button>
@@ -498,7 +498,7 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
               transition={{ duration: 0.3 }}
               className="overflow-hidden"
             >
-              <div className="pt-6 mt-6 border-t border-stone-100">
+              <div className="pt-6 mt-6 border-t border-orange-100">
                 <div className="grid gap-6 md:grid-cols-3">
                   <div>
                     <h4 className="mb-2 text-sm font-semibold text-gray-900">Achievement</h4>
@@ -526,9 +526,9 @@ function TimelineItem({ achievement, index, isExpanded, onToggle }) {
                 </div>
                 
                 {achievement.highlight && (
-                  <div className="flex items-center gap-2 p-3 mt-4 rounded-lg bg-gradient-to-r from-stone-50 to-stone-100">
-                    <div className="w-2 h-2 rounded-full bg-stone-600 animate-pulse"></div>
-                    <span className="text-sm font-medium text-stone-800">Personal Best Record</span>
+                  <div className="flex items-center gap-2 p-3 mt-4 rounded-lg bg-gradient-to-r from-orange-50 to-orange-100">
+                    <div className="w-2 h-2 bg-orange-600 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-orange-800">Personal Best Record</span>
                   </div>
                 )}
               </div>

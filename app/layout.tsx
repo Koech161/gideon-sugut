@@ -13,33 +13,33 @@ const jost = Jost({
 
 
 
-export const metadata: Metadata = {
-  title: "Eric Kiprono Sang - Professional Kenyan Distance Runner",
-  description: "Official website of Eric Kiprono Sang, professional Kenyan distance runner specializing in marathon, half marathon, and 10K road events. Explore race results, personal bests, and partnership opportunities.",
-  keywords: "Eric Kiprono Sang, Kenyan runner, professional athlete, distance runner, marathon runner, half marathon, 10K road race, Kenya athletics, Eldoret runner, Rift Valley athlete, running sponsorship",
-  authors: [{ name: "Eric Kiprono Sang" }],
-  creator: "Eric Kiprono Sang",
-  publisher: "Eric Kiprono Sang",
+export const metadata = {
+  title: "Faith Jemutai - Elite Kenyan Runner",
+  description: "Official website of Faith Jemutai, elite Kenyan runner specializing in 800m and 1500m events. Olympic medalist, African champion, and women in sports ambassador. Explore race results, personal bests, and partnership opportunities.",
+  keywords: "Faith Jemutai, Kenyan runner, runner, 800m, 1500m, track athlete, Olympic medalist, African champion, Iten athlete, Kenyan track and field, women in athletics, running sponsorship",
+  authors: [{ name: "Faith Jemutai" }],
+  creator: "Faith Jemutai",
+  publisher: "Faith Jemutai",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.ericsang.live/'), // Replace with actual domain
+  metadataBase: new URL('https://www.faithjemutai.online/'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Eric Kiprono Sang - Professional Kenyan Distance Runner",
-    description: "Professional Kenyan distance runner known for strategic racing and consistent performances in international marathon and road race competitions.",
-    url: 'https://www.ericsang.live/',
-    siteName: "Eric Kiprono Sang",
+    title: "Faith Jemutai - Elite Kenyan Runner",
+    description: "Elite Kenyan runner, Olympic medalist, and 800m/1500m specialist. Representing Kenya's track excellence on the global stage.",
+    url: 'https://www.faithjemutai.online/',
+    siteName: "Faith Jemutai",
     images: [
       {
-        url: '/og-image.jpg', // Replace with actual OG image path
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "Eric Kiprono Sang - Professional Distance Runner from Kenya",
+        alt: "Faith Jemutai - Elite Runner from Kenya",
       },
     ],
     locale: 'en_US',
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Eric Kiprono Sang - Professional Kenyan Distance Runner",
-    description: "Strategic distance runner representing Kenya in international marathon competitions",
-    images: ['/twitter-image.jpg'], // Replace with actual Twitter image path
-    creator: '@erickipronosang', // Replace with actual Twitter handle if available
+    title: "Faith Jemutai - Elite Kenyan Runner",
+    description: "Olympic medalist and 800m/1500m specialist representing Kenya in international track competitions",
+    images: ['/twitter-image.jpg'],
+    creator: '@faithjemutai', // Replace with actual Twitter handle if available
   },
   robots: {
     index: true,
@@ -65,8 +65,9 @@ export const metadata: Metadata = {
   },
   category: 'sports',
   other: {
-    'theme-color': '#78716c', // Stone color for mobile browsers
-    'msapplication-TileColor': '#78716c',
+    'theme-color': '#f97316', // Orange-500 for mobile browsers
+    'msapplication-TileColor': '#f97316',
+    'og:color': '#f97316',
   }
 };
 

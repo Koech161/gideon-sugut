@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       className="min-h-screen py-20 bg-gradient-to-b from-white to-fuchsia-50"
-      aria-label="About Joylene Jepleting"
+      aria-label="About Joyline Jepleting"
       id="about"
     >
       <div className="container px-4 mx-auto">
@@ -19,7 +19,7 @@ export default function About() {
             The Kenyan Running Spirit
           </h2>
           <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-            About <span className="text-fuchsia-600">Joylene Jepleting</span>
+            About <span className="text-fuchsia-600">Joyline Jepleting</span>
           </h1>
           <div className="w-20 h-1 mx-auto bg-gradient-to-r from-fuchsia-500 to-fuchsia-600"></div>
         </motion.div>
@@ -42,7 +42,7 @@ export default function About() {
                 </h2>
               </div>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                Born and raised in Kenya's renowned Rift Valley region, Joylene Jepleting's 
+                Born and raised in Kenya's renowned Rift Valley region, Joyline Jepleting's 
                 running journey began on the red dirt roads of her homeland. Growing up in 
                 a community where running is a way of life, she developed the natural 
                 endurance and mental fortitude that defines Kenyan distance runners. Her 
@@ -51,7 +51,7 @@ export default function About() {
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
                 Specializing in the 10,000 meters and road races from half marathon to 
-                marathon distances, Joylene combines traditional Kenyan running wisdom 
+                marathon distances, Joyline combines traditional Kenyan running wisdom 
                 with modern sports science. Her approach emphasizes sustainable pacing, 
                 strategic racing intelligence, and the ability to perform consistently 
                 at the highest levels of international competition.
@@ -211,7 +211,7 @@ export default function About() {
               that heritage into results on the world stage.
             </p>
             <p className="mt-3 font-semibold text-fuchsia-100">
-              – Joylene Jepleting
+              – Joyline Jepleting
             </p>
             <div className="mt-4 text-4xl transform rotate-180">"</div>
           </div>

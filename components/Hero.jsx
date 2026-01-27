@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center justify-center min-h-screen overflow-hidden bg-white"
-      aria-label="Joylene Jepleting - Elite Kenyan Long-Distance Runner"
+      aria-label="Joyline Jepleting - Elite Kenyan Long-Distance Runner"
     >
       {/* Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -54,7 +54,7 @@ export default function Hero() {
             {/* Name */}
             <div className="mb-6">
               <h1 className="text-5xl font-bold leading-none text-gray-900 sm:text-6xl lg:text-7xl">
-                <span className="block font-light text-gray-600">JOYLENE</span>
+                <span className="block font-light text-gray-600">JOYLiNE</span>
                 <span className="block mt-1 text-fuchsia-600">JEPLETING</span>
               </h1>
 
@@ -70,7 +70,7 @@ export default function Hero() {
             <div className="relative pl-6 mt-8">
               <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-fuchsia-400 via-fuchsia-500 to-fuchsia-400"></div>
               <p className="max-w-2xl text-lg leading-relaxed text-gray-600">
-                Representing the heart of Kenya's world-renowned running legacy, Joylene 
+                Representing the heart of Kenya's world-renowned running legacy, Joyline 
                 Jepleting is a formidable force in long-distance racing. With a foundation 
                 built on Kalenjin endurance traditions, she excels in 10,000m track events 
                 and road races up to the marathon. Her running embodies the perfect blend 

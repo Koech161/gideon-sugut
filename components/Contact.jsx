@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section
       className="py-20 bg-gradient-to-b from-white to-fuchsia-50"
-      aria-label="Contact Joylene Jepleting"
+      aria-label="Contact Joyline Jepleting"
       id='contact'
     >
       <div className="container px-4 mx-auto">
@@ -19,7 +19,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <h1 className="mb-4 text-4xl font-bold text-gray-900">
-            Contact <span className="text-fuchsia-600">Joylene Jepleting</span>
+            Contact <span className="text-fuchsia-600">Joyline Jepleting</span>
           </h1>
           <div className="w-20 h-1 mx-auto bg-gradient-to-r from-fuchsia-500 to-fuchsia-600"></div>
           <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
@@ -46,7 +46,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:joylenemoiben@gmail.com"
+                  href="mailto:joylinemoiben@gmail.com"
                   className="flex items-center p-4 transition-all border border-fuchsia-100 bg-fuchsia-50 rounded-xl hover:bg-fuchsia-100 group hover:shadow-lg hover:translate-x-1"
                   whileHover={{ x: 5 }}
                 >
@@ -57,7 +57,7 @@ export default function Contact() {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-800">Email Address</h4>
-                    <p className="text-gray-700">joylenemoiben@gmail.com</p>
+                    <p className="text-gray-700">joylinemoiben@gmail.com</p>
                     <p className="text-sm text-fuchsia-600">Primary contact for all inquiries</p>
                   </div>
                   <svg className="w-5 h-5 ml-auto transition-opacity opacity-0 text-fuchsia-500 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -249,7 +249,7 @@ export default function Contact() {
             <p className="font-semibold text-gray-800">Please Note</p>
           </div>
           <p className="text-gray-700">
-            Joylene trains extensively and competes internationally. During major competitions 
+            Joyline trains extensively and competes internationally. During major competitions 
             and intensive training camps, email responses may take slightly longer. Your 
             patience and understanding are greatly appreciated.
           </p>

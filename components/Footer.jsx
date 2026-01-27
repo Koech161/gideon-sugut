@@ -13,7 +13,7 @@ const navLinks = [
 // Only email social link
 const socialLinks = [
   {
-    href: 'mailto:joylenemoiben@gmail.com',
+    href: 'mailto:joylinemoiben@gmail.com',
     label: 'Email',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,7 +41,7 @@ export default function Footer() {
                 <span className="text-lg font-bold text-white">JJ</span>
               </div>
               <h3 className="text-2xl font-bold text-white">
-                Joylene <span className="text-fuchsia-400">Jepleting</span>
+                Joyline <span className="text-fuchsia-400">Jepleting</span>
               </h3>
             </div>
             <p className="mb-6 leading-relaxed text-gray-400">
@@ -107,7 +107,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="font-medium text-gray-300">Email Address</p>
-                  <p className="mt-1">joylenemoiben@gmail.com</p>
+                  <p className="mt-1">joylinemoiben@gmail.com</p>
                   <p className="mt-1 text-sm text-fuchsia-400/80">Primary contact method</p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function Footer() {
               reminds us that true endurance comes from within."
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-fuchsia-300">
-              – Joylene Jepleting
+              – Joyline Jepleting
             </p>
 
             {/* <div className="inline-flex items-center px-4 py-2 mt-6 border rounded-lg border-fuchsia-800/50 bg-fuchsia-900/30">
@@ -162,7 +162,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Joylene Jepleting. All rights reserved.
+            © {new Date().getFullYear()} Joyline Jepleting. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
             {/* <p className="text-sm text-gray-500">

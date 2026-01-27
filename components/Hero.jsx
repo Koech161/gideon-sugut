@@ -96,10 +96,10 @@ export default function Hero() {
 
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-6 mt-10">
-              <div className="text-center">
+              {/* <div className="text-center">
                 <div className="text-3xl font-bold text-fuchsia-600">10K</div>
                 <div className="text-sm text-gray-500">Specialist Distance</div>
-              </div>
+              </div> */}
               <div className="text-center">
                 <div className="text-3xl font-bold text-fuchsia-600">Kenya</div>
                 <div className="text-sm text-gray-500">National Team</div>

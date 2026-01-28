@@ -112,27 +112,7 @@ export default function Header() {
           ))}
           
           {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4, type: "spring" }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link
-              href="#contact"
-              className="relative px-6 py-3 overflow-hidden text-sm font-bold text-white transition-all duration-300 shadow-lg group rounded-xl"
-            >
-              <div className="absolute inset-0 transition-all duration-500 bg-gradient-to-r from-fuchsia-600 via-fuchsia-500 to-fuchsia-600 group-hover:from-fuchsia-700 group-hover:via-fuchsia-600 group-hover:to-fuchsia-700" />
-              <div className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-fuchsia-500/20 to-transparent" />
-              <span className="relative flex items-center gap-2">
-                Contact Me
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </span>
-            </Link>
-          </motion.div>
+          
         </div>
 
         {/* Mobile Menu Button */}

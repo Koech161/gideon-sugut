@@ -158,14 +158,6 @@ export default function About() {
                     <span className="text-fuchsia-100">Training Base</span>
                     <span className="font-semibold text-white">Rift Valley, Kenya</span>
                   </div>
-                  <div className="flex justify-between pb-2 border-b border-fuchsia-400/30">
-                    <span className="text-fuchsia-100">Competition Level</span>
-                    <span className="font-semibold text-white">World Athletics</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-fuchsia-100">Years Elite</span>
-                    <span className="font-semibold text-white">6+ Years</span>
-                  </div>
                 </div>
               </div>
 

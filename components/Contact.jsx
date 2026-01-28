@@ -115,58 +115,9 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-fuchsia-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                For Media & Sponsorship
-              </h3>
               
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="p-4 border border-fuchsia-200 bg-gradient-to-br from-fuchsia-50 to-white rounded-xl">
-                  <h4 className="mb-2 font-bold text-gray-800">Media Requests</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Interviews & Features
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Press Conferences
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Documentary Projects
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Event Appearances
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="p-4 border border-fuchsia-200 bg-gradient-to-br from-fuchsia-50 to-white rounded-xl">
-                  <h4 className="mb-2 font-bold text-gray-800">Sponsorship Inquiries</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Brand Partnerships
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Athletic Endorsements
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Product Collaborations
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-fuchsia-500">•</span>
-                      Speaking Engagements
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              
+              
               
               <div className="p-4 mt-6 border border-fuchsia-200 bg-gradient-to-r from-fuchsia-100 to-fuchsia-50 rounded-xl">
                 <div className="flex items-start">
@@ -180,80 +131,11 @@ export default function Contact() {
               </div>
             </motion.div>
 
-            {/* How to Email */}
-            <motion.div
-              className="p-8 bg-white border shadow-lg border-fuchsia-100 rounded-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              <h3 className="flex items-center mb-6 text-2xl font-bold text-gray-800">
-                <svg className="w-6 h-6 mr-3 text-fuchsia-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                How to Email Effectively
-              </h3>
-              
-              <div className="grid gap-6 md:grid-cols-3">
-                <div className="p-4 text-center border border-fuchsia-200 bg-fuchsia-50 rounded-xl">
-                  <div className="inline-flex items-center justify-center w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-fuchsia-600">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.068-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                    </svg>
-                  </div>
-                  <h4 className="mb-2 font-bold text-gray-800">Clear Subject Line</h4>
-                  <p className="text-sm text-gray-600">
-                    Include purpose and your organization name for quick identification
-                  </p>
-                </div>
-                
-                <div className="p-4 text-center border border-fuchsia-200 bg-fuchsia-50 rounded-xl">
-                  <div className="inline-flex items-center justify-center w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-fuchsia-600">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                    </svg>
-                  </div>
-                  <h4 className="mb-2 font-bold text-gray-800">Concise Details</h4>
-                  <p className="text-sm text-gray-600">
-                    Briefly state your request, timeline, and what you're offering or proposing
-                  </p>
-                </div>
-                
-                <div className="p-4 text-center border border-fuchsia-200 bg-fuchsia-50 rounded-xl">
-                  <div className="inline-flex items-center justify-center w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-fuchsia-600">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
-                  </div>
-                  <h4 className="mb-2 font-bold text-gray-800">Attach Relevant Files</h4>
-                  <p className="text-sm text-gray-600">
-                    Include proposals, press kits, or background information as attachments
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+           
           </motion.div>
         </div>
 
-        {/* Response Notice */}
-        <motion.div
-          className="max-w-2xl p-6 mx-auto mt-12 text-center bg-white border shadow-sm border-fuchsia-200 rounded-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          <div className="flex items-center justify-center mb-2">
-            <svg className="w-5 h-5 mr-2 text-fuchsia-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="font-semibold text-gray-800">Please Note</p>
-          </div>
-          <p className="text-gray-700">
-            Joyline trains extensively and competes internationally. During major competitions 
-            and intensive training camps, email responses may take slightly longer. Your 
-            patience and understanding are greatly appreciated.
-          </p>
-        </motion.div>
+       
 
         {/* Decorative Elements */}
         <motion.div 

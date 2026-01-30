@@ -14,35 +14,35 @@ const jost = Jost({
 
 
 export const metadata = {
-  title: "Joyline Jepleting – Elite Kenyan Long-Distance Runner",
+  title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
   description:
-    "Official website of Joyline Jepleting, elite Kenyan long-distance runner specializing in 10,000m, Half Marathon, and Marathon events. Representing Kenya's world-renowned running heritage from the Rift Valley to global podiums.",
+    "Official website of Grace Njoki, elite Kenyan marathon and half-marathon runner training in the Rift Valley. Representing Kenya's world-renowned running heritage from the high-altitude trails to global marathon podiums.",
   keywords:
-    "Joyline Jepleting, Kenyan long distance runner, marathon runner Kenya, half marathon athlete, 10,000m runner, distance running Kenya, Rift Valley athlete, Kenyan endurance athlete, women's athletics Kenya, marathon elite, road running, track athlete",
-  authors: [{ name: "Joyline Jepleting" }],
-  creator: "Joyline Jepleting",
-  publisher: "Joyline Jepleting",
+    "Grace Njoki, Kenyan marathon runner, half marathon athlete Kenya, Rift Valley runner, distance running Kenya, marathon elite, Kenyan endurance athlete, women's athletics Kenya, altitude training, marathon specialist, road running, Kenyan athlete",
+  authors: [{ name: "Grace Njoki" }],
+  creator: "Grace Njoki",
+  publisher: "Grace Njoki",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://joylinejepleting.com"),
+  metadataBase: new URL("https://gracenjoki.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Joyline Jepleting – Elite Kenyan Long-Distance Runner",
+    title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
     description:
-      "Elite Kenyan endurance athlete specializing in 10,000m track, Half Marathon, and Marathon races. Training in Kenya's Rift Valley and competing internationally at the highest level.",
-    url: "https://joylinejepleting.com/",
-    siteName: "Joyline Jepleting",
+      "Elite Kenyan marathon and half-marathon specialist training in Kenya's Rift Valley. Competing internationally at the highest level with altitude-honed endurance and racing intelligence.",
+    url: "https://gracenjoki.com/",
+    siteName: "Grace Njoki",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Joyline Jepleting – Elite Kenyan Long-Distance Runner",
+        alt: "Grace Njoki – Elite Kenyan Long-Distance Runner",
       },
     ],
     locale: "en_US",
@@ -50,11 +50,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joyline Jepleting – Elite Kenyan Long-Distance Runner",
+    title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
     description:
-      "World Athletics registered Kenyan runner competing in 10,000m, Half Marathon & Marathon events. Built on Rift Valley endurance heritage and elite training discipline.",
+      "World Athletics registered Kenyan marathon and half-marathon runner. Built on Rift Valley endurance heritage, altitude training, and elite racing discipline.",
     images: ["/twitter-image.jpg"],
-    creator: "@joylinejepleting",
+    creator: "@gracenjoki",
   },
   robots: {
     index: true,
@@ -69,12 +69,12 @@ export const metadata = {
   },
   category: "sports",
   other: {
-    "theme-color": "#d946ef", // Fuchsia color
-    "msapplication-TileColor": "#d946ef",
-    "og:color": "#d946ef",
-    "og:site_name": "Joyline Jepleting",
-    "twitter:site": "@joylinejepleting",
-    "twitter:creator": "@joylinejepleting",
+    "theme-color": "#10b981", // Emerald color
+    "msapplication-TileColor": "#10b981",
+    "og:color": "#10b981",
+    "og:site_name": "Grace Njoki",
+    "twitter:site": "@gracenjoki",
+    "twitter:creator": "@gracenjoki",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
@@ -92,11 +92,11 @@ export const metadata = {
     },
     {
       name: "apple-mobile-web-app-title",
-      content: "Joyline Jepleting",
+      content: "Grace Njoki",
     },
     {
       name: "application-name",
-      content: "Joyline Jepleting",
+      content: "Grace Njoki",
     },
   ],
   // Additional link tags
@@ -117,7 +117,7 @@ export const metadata = {
     {
       rel: "mask-icon",
       href: "/safari-pinned-tab.svg",
-      color: "#d946ef",
+      color: "#10b981", // Emerald color
     },
   ],
 };

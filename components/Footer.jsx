@@ -101,16 +101,7 @@ export default function Footer() {
               Contact Information
             </h4>
             <div className="space-y-4 text-gray-400">
-              <div className="flex items-start">
-                <svg className="w-5 h-5 mr-3 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <div>
-                  <p className="font-medium text-gray-300">Email Address</p>
-                  <p className="mt-1">contact@gracenjoki.com</p>
-                  <p className="mt-1 text-sm text-emerald-400/80">For race inquiries & media</p>
-                </div>
-              </div>
+              
               <div className="flex items-start">
                 <svg className="w-5 h-5 mr-3 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -122,16 +113,7 @@ export default function Footer() {
                   <p className="mt-1 text-sm text-emerald-400/80">High-altitude training grounds</p>
                 </div>
               </div>
-              <div className="flex items-start">
-                <svg className="w-5 h-5 mr-3 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                <div>
-                  <p className="font-medium text-gray-300">Affiliations</p>
-                  <p className="mt-1">Kenya Athletics</p>
-                  <p className="mt-1 text-sm text-emerald-400/80">World Athletics registered</p>
-                </div>
-              </div>
+              
             </div>
           </motion.div>
 
@@ -153,14 +135,7 @@ export default function Footer() {
               – Grace Njoki
             </p>
 
-            <div className="inline-flex items-center px-4 py-2 mt-6 border rounded-lg border-emerald-800/50 bg-emerald-900/30">
-              <svg className="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              <span className="text-sm text-emerald-300">
-                World Athletics Registered Athlete
-              </span>
-            </div>
+            
           </motion.div>
         </div>
 

@@ -56,6 +56,7 @@ export default function Hero() {
               <h1 className="text-5xl font-bold leading-none text-gray-900 sm:text-6xl lg:text-7xl">
                 <span className="block font-light text-gray-600">GRACE</span>
                 <span className="block mt-1 text-emerald-600">NJOKI</span>
+                <span className="block mt-1 text-gray-400">NYAGA</span>
               </h1>
 
               <div className="flex items-center gap-3 mt-4">

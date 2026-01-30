@@ -1,23 +1,32 @@
 'use client';
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import achievementsData from '@/data/records.json';
 
-const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10K', 'Track'];
+const achievementsData = [
+  { "id": 1, "event": "Marathon", "time": "2:33:26", "date": "2025-03-30", "venue": "Lukenya University Marathon" },
+  { "id": 3, "event": "10k", "time": "31:17", "date": "2024-10-19", "venue": "AK Cross Country" },
+  { "id": 2, "event": "Half Marathon", "time": "1:12:14", "date": "2025-07-13", "venue": "Machakos County Half Marathon" }
+];
+
+const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10k', 'Track'];
+const distanceMap = {
+    Marathon: '42K',
+    'Half Marathon': '21K',
+    '10k': '10K',
+  };
 
 export default function Achievements() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [sortBy, setSortBy] = useState('date');
   const [expandedId, setExpandedId] = useState(null);
-  const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
+  const [viewMode, setViewMode] = useState('timeline'); // 'timeline', 'cards', 'stats'
 
   const filteredAchievements = useMemo(() => {
     let filtered = achievementsData;
     
     if (activeFilter !== 'All') {
       filtered = filtered.filter(item => 
-        item.event.toLowerCase().includes(activeFilter.toLowerCase()) || 
-        item.category === activeFilter
+        item.event.toLowerCase().includes(activeFilter.toLowerCase())
       );
     }
 
@@ -29,11 +38,6 @@ export default function Achievements() {
           return a.time.localeCompare(b.time);
         case 'event':
           return a.event.localeCompare(b.event);
-        case 'pace':
-          // Calculate pace for sorting (simplified)
-          const paceA = a.pace || '0:00';
-          const paceB = b.pace || '0:00';
-          return paceA.localeCompare(paceB);
         default:
           return 0;
       }
@@ -49,42 +53,41 @@ export default function Achievements() {
   // Calculate statistics
   const stats = useMemo(() => {
     const total = filteredAchievements.length;
-    const golds = filteredAchievements.filter(a => a.medal === 'Gold').length;
-    const silvers = filteredAchievements.filter(a => a.medal === 'Silver').length;
-    const bronzes = filteredAchievements.filter(a => a.medal === 'Bronze').length;
-    const pbs = filteredAchievements.filter(a => a.highlight).length;
+    const marathons = filteredAchievements.filter(a => a.event === 'Marathon').length;
+    const halfMarathons = filteredAchievements.filter(a => a.event === 'Half Marathon').length;
+    const tenK = filteredAchievements.filter(a => a.event.toLowerCase().includes('10k')).length;
     
-    return { total, golds, silvers, bronzes, pbs };
+    return { total, marathons, halfMarathons, tenK };
   }, [filteredAchievements]);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-green-50" id="achievements">
+    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-emerald-50" id="achievements">
       <div className="container px-4 mx-auto">
-        {/* Header with Gradient Background */}
+        {/* Header */}
         <motion.div
-          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-green-900 via-green-700 to-green-600 md:p-12"
+          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-emerald-900 via-emerald-700 to-emerald-600 md:p-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="relative z-10 text-center">
             <div className="inline-flex items-center px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-sm">
-              <span className="text-sm font-semibold tracking-wider text-green-100 uppercase">
-                Performance Analytics
+              <span className="text-sm font-semibold tracking-wider uppercase text-emerald-100">
+                Race Performances
               </span>
             </div>
             <h1 className="mb-4 text-4xl font-black text-white sm:text-5xl lg:text-6xl">
-              Race <span className="text-green-200">Achievements</span>
+              Race <span className="text-emerald-200">Records</span>
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-green-200"></div>
-            <p className="max-w-3xl mx-auto text-lg text-green-100/90">
-              Comprehensive timeline of competitive performances, personal bests, and championship results
+            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-emerald-200"></div>
+            <p className="max-w-3xl mx-auto text-lg text-emerald-100/90">
+              Personal bests and competitive achievements across all distances
             </p>
           </div>
           
           {/* Animated background elements */}
           <motion.div 
-            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-green-500/20 blur-3xl"
+            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-emerald-500/20 blur-3xl"
             animate={{ 
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.5, 0.3]
@@ -108,29 +111,7 @@ export default function Achievements() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {/* <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-5">
-            {[
-              { label: 'Total Races', value: stats.total, color: 'from-green-500 to-green-600' },
-              { label: 'Gold Medals', value: stats.golds, color: 'from-yellow-500 to-yellow-600' },
-              { label: 'Silver Medals', value: stats.silvers, color: 'from-gray-400 to-gray-500' },
-              { label: 'Bronze Medals', value: stats.bronzes, color: 'from-amber-700 to-amber-800' },
-              { label: 'Personal Bests', value: stats.pbs, color: 'from-green-700 to-green-800' },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                className="p-4 bg-white border border-gray-100 shadow-lg rounded-2xl"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3 + index * 0.1 }}
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              >
-                <div className={`w-12 h-12 mb-3 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center`}>
-                  <span className="text-xl font-bold text-white">{stat.value}</span>
-                </div>
-                <p className="text-sm font-medium text-gray-600">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div> */}
+          
 
           {/* Controls Section */}
           <div className="flex flex-col gap-6 p-6 mb-8 bg-white border border-gray-100 shadow-lg rounded-2xl md:flex-row md:items-center md:justify-between">
@@ -138,26 +119,19 @@ export default function Achievements() {
             <div className="flex items-center gap-4">
               <span className="text-sm font-medium text-gray-700">View:</span>
               <div className="flex p-1 bg-gray-100 rounded-lg">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                    viewMode === 'grid'
-                      ? 'bg-white text-green-700 shadow-sm'
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  Grid
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                    viewMode === 'list'
-                      ? 'bg-white text-green-700 shadow-sm'
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  List
-                </button>
+                {['timeline', 'cards', 'stats'].map((mode) => (
+                  <button
+                    key={mode}
+                    onClick={() => setViewMode(mode)}
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                      viewMode === mode
+                        ? 'bg-white text-emerald-700 shadow-sm'
+                        : 'text-gray-600 hover:text-gray-900'
+                    }`}
+                  >
+                    {mode.charAt(0).toUpperCase() + mode.slice(1)}
+                  </button>
+                ))}
               </div>
             </div>
 
@@ -169,7 +143,7 @@ export default function Achievements() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all ${
                     activeFilter === filter
-                      ? 'bg-gradient-to-r from-green-600 to-green-500 text-white shadow-lg shadow-green-200'
+                      ? 'bg-gradient-to-r from-emerald-600 to-emerald-500 text-white shadow-lg shadow-emerald-200'
                       : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300'
                   }`}
                   whileHover={{ scale: 1.05 }}
@@ -187,11 +161,10 @@ export default function Achievements() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
                 >
                   <option value="date">Most Recent</option>
                   <option value="time">Fastest Time</option>
-                  <option value="pace">Best Pace</option>
                   <option value="event">Event Type</option>
                 </select>
               </div>
@@ -199,36 +172,10 @@ export default function Achievements() {
           </div>
         </motion.div>
 
-        {/* Achievements Grid/List */}
-        {viewMode === 'grid' ? (
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <AnimatePresence>
-              {filteredAchievements.map((achievement, index) => (
-                <AchievementCard 
-                  key={achievement.id}
-                  achievement={achievement}
-                  index={index}
-                  isExpanded={expandedId === achievement.id}
-                  onToggle={() => toggleExpand(achievement.id)}
-                />
-              ))}
-            </AnimatePresence>
-          </div>
-        ) : (
-          <div className="space-y-4">
-            <AnimatePresence>
-              {filteredAchievements.map((achievement, index) => (
-                <AchievementListItem 
-                  key={achievement.id}
-                  achievement={achievement}
-                  index={index}
-                  isExpanded={expandedId === achievement.id}
-                  onToggle={() => toggleExpand(achievement.id)}
-                />
-              ))}
-            </AnimatePresence>
-          </div>
-        )}
+        {/* Achievements Display based on view mode */}
+        {viewMode === 'timeline' && <TimelineView achievements={filteredAchievements} />}
+        {viewMode === 'cards' && <CardsView achievements={filteredAchievements} />}
+        {viewMode === 'stats' && <StatsView achievements={filteredAchievements} />}
 
         {/* Empty State */}
         {filteredAchievements.length === 0 && (
@@ -238,8 +185,8 @@ export default function Achievements() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-green-100 to-green-50">
-              <svg className="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-50">
+              <svg className="w-12 h-12 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -247,284 +194,261 @@ export default function Achievements() {
             <p className="mb-4 text-gray-600">Try selecting a different filter or category</p>
             <button 
               onClick={() => setActiveFilter('All')}
-              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600"
+              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600"
             >
               Show all races
             </button>
           </motion.div>
         )}
-
-        {/* Legend */}
-        {/* <motion.div 
-          className="flex flex-wrap items-center justify-center gap-6 p-6 mt-16 bg-white border border-gray-100 shadow-sm rounded-2xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-600 to-green-500"></div>
-            <span className="text-sm text-gray-700">Personal Best</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400"></div>
-            <span className="text-sm text-gray-700">Gold Medal</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-gray-400 to-gray-300"></div>
-            <span className="text-sm text-gray-700">Silver Medal</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-amber-700 to-amber-600"></div>
-            <span className="text-sm text-gray-700">Bronze Medal</span>
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );
 }
 
-function AchievementCard({ achievement, index, isExpanded, onToggle }) {
+function TimelineView({ achievements }) {
+  return (
+    <div className="relative">
+      {/* Timeline line */}
+      <div className=" hidden sm:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 to-emerald-300 md:left-1/2 md:-translate-x-1/2"></div>
+      
+      <div className="space-y-12">
+        {achievements.map((achievement, index) => (
+          <TimelineItem key={achievement.id} achievement={achievement} index={index} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TimelineItem({ achievement, index }) {
   const date = new Date(achievement.date);
+  const isEven = index % 2 === 0;
   
-  const getMedalColor = (medal) => {
-    switch (medal) {
-      case 'Gold': return 'bg-gradient-to-br from-yellow-500 to-yellow-400';
-      case 'Silver': return 'bg-gradient-to-br from-gray-400 to-gray-300';
-      case 'Bronze': return 'bg-gradient-to-br from-amber-700 to-amber-600';
-      default: return 'bg-gradient-to-br from-gray-200 to-gray-100';
+  const getEventColor = (event) => {
+    switch (event) {
+      case 'Marathon': return 'bg-gradient-to-r from-red-500 to-red-600';
+      case 'Half Marathon': return 'bg-gradient-to-r from-purple-500 to-purple-600';
+      case '10k': return 'bg-gradient-to-r from-blue-500 to-blue-600';
+      default: return 'bg-gradient-to-r from-gray-500 to-gray-600';
     }
   };
 
   return (
     <motion.div
-      layout
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.3, delay: index * 0.05 }}
-      whileHover={{ y: -8, transition: { duration: 0.2 } }}
-      className="relative group"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className={`relative flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''} items-center`}
     >
-      {/* Medal Badge */}
-      {achievement.medal && (
-        <div className={`absolute -top-3 -right-3 w-16 h-16 rounded-full ${getMedalColor(achievement.medal)} flex items-center justify-center z-20 shadow-lg`}>
-          <span className="text-2xl">
-            {achievement.medal === 'Gold' ? '🥇' : 
-             achievement.medal === 'Silver' ? '🥈' : '🥉'}
-          </span>
+      {/* Timeline dot */}
+      <div className="absolute z-10 hidden w-6 h-6 bg-white border-4 rounded-full sm:block left-8 border-emerald-500 md:left-1/2 md:-translate-x-1/2"></div>
+      
+      {/* Date */}
+      <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12'} mb-4 md:mb-0`}>
+        <div className="text-sm font-semibold tracking-wide uppercase text-emerald-700">
+          {date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </div>
-      )}
-
-      {/* PB Badge */}
-      {achievement.highlight && (
-        <div className="absolute -top-3 -left-3 px-3 py-1.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-bold shadow-lg z-20">
-          PB
-        </div>
-      )}
-
-      {/* Card Content */}
-      <div 
-        className={`relative h-full p-6 bg-white rounded-2xl shadow-lg border border-gray-100 cursor-pointer overflow-hidden ${
-          achievement.highlight ? 'ring-2 ring-green-200 ring-offset-2' : ''
-        }`}
-        onClick={onToggle}
-      >
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-green-500 to-transparent"></div>
-        </div>
-
-        {/* Event Header */}
-        <div className="relative mb-4">
-          <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-green-700">
-            {achievement.event}
-          </h3>
-          <div className="flex items-center gap-2 mt-1">
-            <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            </svg>
-            <span className="text-sm text-gray-600">{achievement.venue}</span>
-          </div>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 gap-4 mb-6">
-          <div className="p-3 rounded-xl bg-gray-50">
-            <div className="mb-1 text-xs font-medium text-gray-500 uppercase">Date</div>
-            <div className="font-semibold text-gray-900">
-              {date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+      </div>
+      
+      {/* Content */}
+      <div className={`w-full md:w-1/2 ${isEven ? 'md:pl-12' : 'md:pr-12'}`}>
+        <motion.div 
+          className="p-6 transition-shadow bg-white border border-gray-100 shadow-lg rounded-2xl hover:shadow-xl"
+          whileHover={{ scale: 1.02 }}
+        >
+          <div className="flex items-start justify-between mb-4">
+            <div>
+              <span className={`inline-block px-4 py-1.5 rounded-full text-white text-sm font-bold ${getEventColor(achievement.event)}`}>
+                {achievement.event}
+              </span>
+              <h3 className="mt-2 text-xl font-bold text-gray-900">{achievement.venue}</h3>
+            </div>
+            <div className="text-right">
+              <div className="text-3xl font-black text-emerald-700">{achievement.time}</div>
+              <div className="text-sm text-gray-600">Finish Time</div>
             </div>
           </div>
-          <div className="p-3 rounded-xl bg-gray-50">
-            <div className="mb-1 text-xs font-medium text-gray-500 uppercase">Distance</div>
-            <div className="font-semibold text-gray-900">{achievement.category}</div>
-          </div>
-        </div>
-
-        {/* Performance Highlight */}
-        <div className="p-4 border border-green-100 rounded-xl bg-gradient-to-r from-green-50 to-green-100/50">
-          <div className="mb-1 text-xs font-medium text-green-700 uppercase">Finish Time</div>
-          <div className="text-2xl font-black text-green-800">{achievement.time}</div>
-          {achievement.pace && (
-            <div className="mt-1 text-sm text-green-600">Avg: {achievement.pace}/km</div>
-          )}
-        </div>
-
-        {/* Expandable Details */}
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="pt-6 mt-6 border-t border-gray-100"
-            >
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Position</span>
-                  <span className="font-semibold text-gray-900">{achievement.position || 'N/A'}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Conditions</span>
-                  <span className="font-semibold text-gray-900">{achievement.conditions || 'Standard'}</span>
-                </div>
-                {achievement.notes && (
-                  <div className="pt-2 text-sm italic text-gray-700">{achievement.notes}</div>
-                )}
+          
+          <div className="grid grid-cols-2 gap-4">
+            <div className="p-3 rounded-xl bg-gray-50">
+              <div className="mb-1 text-xs font-medium text-gray-500 uppercase">
+                Distance
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* Expand Indicator */}
-        <div className="flex justify-center mt-4">
-          <motion.div
-            className="flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full"
-            animate={{ rotate: isExpanded ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </motion.div>
-        </div>
+              <div className="font-semibold text-gray-900">
+                {distanceMap[achievement.event] || '21K'}
+              </div>
+            </div>
+            <div className="p-3 rounded-xl bg-gray-50">
+              <div className="text-xs font-medium text-gray-700 uppercase">Venue</div>
+              <div className="text-lg font-semibold text-gray-900">{achievement.venue}</div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </motion.div>
   );
 }
 
-function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
-  const date = new Date(achievement.date);
-  
+function CardsView({ achievements }) {
   return (
-    <motion.div
-      layout
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 20 }}
-      transition={{ duration: 0.3, delay: index * 0.05 }}
-      className="group"
-    >
-      <div 
-        className={`p-6 bg-white rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-all ${
-          achievement.highlight ? 'border-l-4 border-l-green-500' : ''
-        }`}
-        onClick={onToggle}
-      >
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          {/* Left Column */}
-          <div className="flex-1">
-            <div className="flex items-center gap-3 mb-3">
-              {achievement.medal && (
-                <span className="text-2xl">
-                  {achievement.medal === 'Gold' ? '🥇' : 
-                   achievement.medal === 'Silver' ? '🥈' : '🥉'}
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <AnimatePresence>
+        {achievements.map((achievement, index) => (
+          <motion.div
+            key={achievement.id}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+            whileHover={{ y: -8 }}
+            className="relative group"
+          >
+            <div className="relative h-full p-6 overflow-hidden bg-white border border-gray-100 shadow-lg rounded-2xl">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-emerald-500 to-transparent"></div>
+              </div>
+
+              {/* Event Badge */}
+              <div className="absolute top-4 right-4">
+                <span className={`inline-block px-3 py-1 rounded-full text-white text-xs font-bold ${
+                  achievement.event === 'Marathon' ? 'bg-gradient-to-r from-red-500 to-red-600' :
+                  achievement.event === 'Half Marathon' ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                  'bg-gradient-to-r from-blue-500 to-blue-600'
+                }`}>
+                  {achievement.event}
                 </span>
-              )}
-              <div>
-                <h3 className="text-lg font-bold text-gray-900">{achievement.event}</h3>
-                <div className="flex items-center gap-4 mt-2">
-                  <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-sm text-gray-700">
-                      {date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
-                    </span>
+              </div>
+
+              {/* Main Content */}
+              <div className="relative">
+                <h3 className="mb-2 text-xl font-bold text-gray-900">{achievement.venue}</h3>
+                <div className="flex items-center gap-2 mb-6 text-gray-600">
+                  <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span className="text-sm">
+                    {new Date(achievement.date).toLocaleDateString('en-GB', { 
+                      day: 'numeric', 
+                      month: 'short', 
+                      year: 'numeric' 
+                    })}
+                  </span>
+                </div>
+
+                {/* Performance Highlight */}
+                <div className="p-5 mb-4 border border-emerald-100 rounded-xl bg-gradient-to-r from-emerald-50 to-emerald-100/50">
+                  <div className="text-center">
+                    <div className="mb-1 text-xs font-medium uppercase text-emerald-700">Finish Time</div>
+                    <div className="text-4xl font-black text-emerald-800">{achievement.time}</div>
+                    <div className="mt-2 text-sm text-emerald-600">{achievement.event}</div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    </svg>
-                    <span className="text-sm text-gray-700">{achievement.venue}</span>
-                  </div>
+                </div>
+
+                {/* Venue Info */}
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
+                  <svg className="flex-shrink-0 w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  </svg>
+                  <span className="text-sm text-gray-700">{achievement.venue}</span>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
+}
 
-          {/* Right Column */}
-          <div className="flex items-center gap-8">
-            <div className="text-center">
-              <div className="text-2xl font-black text-green-800">{achievement.time}</div>
-              <div className="text-xs font-medium text-gray-500 uppercase">Finish Time</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-lg font-bold text-gray-900">{achievement.category}</div>
-              <div className="text-xs text-gray-500">Distance</div>
-            </div>
+function StatsView({ achievements }) {
+  const formatTime = (time) => {
+    const parts = time.split(':');
+    if (parts.length === 2) return `${parts[0]}m ${parts[1]}s`;
+    if (parts.length === 3) return `${parts[0]}h ${parts[1]}m ${parts[2]}s`;
+    return time;
+  };
 
-            <motion.button
-              className="flex items-center justify-center w-10 h-10 transition-colors bg-gray-100 rounded-full hover:bg-gray-200"
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </motion.button>
-          </div>
+  return (
+    <div className="space-y-8">
+      {/* Personal Bests Section */}
+      <div className="p-8 bg-white border border-gray-100 shadow-lg rounded-2xl">
+        <h3 className="mb-6 text-2xl font-bold text-gray-900">Personal Bests</h3>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {achievements.map((achievement) => (
+            <div key={achievement.id} className="p-6 border rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-emerald-100">
+              <div className="mb-2 text-sm font-medium uppercase text-emerald-700">{achievement.event}</div>
+              <div className="mb-2 text-3xl font-black text-emerald-900">{achievement.time}</div>
+              <div className="text-sm text-emerald-700">{achievement.venue}</div>
+              <div className="mt-2 text-xs text-emerald-600">
+                {new Date(achievement.date).toLocaleDateString('en-GB', { 
+                  day: 'numeric', 
+                  month: 'long', 
+                  year: 'numeric' 
+                })}
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* Expanded Details */}
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="pt-6 mt-6 border-t border-gray-200"
-            >
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                <div className="p-3 rounded-lg bg-gray-50">
-                  <div className="mb-1 text-xs text-gray-600">Position</div>
-                  <div className="font-semibold text-gray-900">{achievement.position || 'N/A'}</div>
+      {/* Performance Analysis */}
+      <div className="p-8 bg-white border border-gray-100 shadow-lg rounded-2xl">
+        <h3 className="mb-6 text-2xl font-bold text-gray-900">Performance Analysis</h3>
+        <div className="space-y-6">
+          {achievements.map((achievement) => {
+            const date = new Date(achievement.date);
+            const timeParts = achievement.time.split(':');
+            const totalSeconds = timeParts.length === 3 
+              ? parseInt(timeParts[0]) * 3600 + parseInt(timeParts[1]) * 60 + parseInt(timeParts[2])
+              : parseInt(timeParts[0]) * 60 + parseInt(timeParts[1]);
+            
+            const pacePerKm = achievement.event === 'Marathon' 
+              ? (totalSeconds / 42.195 / 60).toFixed(2)
+              : achievement.event === 'Half Marathon'
+              ? (totalSeconds / 21.0975 / 60).toFixed(2)
+              : (totalSeconds / 10 / 60).toFixed(2);
+
+            return (
+              <div key={achievement.id} className="flex flex-col gap-4 p-6 border border-gray-100 rounded-xl md:flex-row md:items-center md:justify-between">
+                <div className="flex-1">
+                  <div className="flex items-center gap-4 mb-2">
+                    <span className={`inline-block px-3 py-1 rounded-full text-white text-sm font-bold ${
+                      achievement.event === 'Marathon' ? 'bg-red-500' :
+                      achievement.event === 'Half Marathon' ? 'bg-purple-500' :
+                      'bg-blue-500'
+                    }`}>
+                      {achievement.event}
+                    </span>
+                    <div className="text-sm font-medium text-gray-600">
+                      {date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </div>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900">{achievement.venue}</h4>
                 </div>
-                <div className="p-3 rounded-lg bg-gray-50">
-                  <div className="mb-1 text-xs text-gray-600">Conditions</div>
-                  <div className="font-semibold text-gray-900">{achievement.conditions || 'Standard'}</div>
-                </div>
-                <div className="p-3 rounded-lg bg-gray-50">
-                  <div className="mb-1 text-xs text-gray-600">Avg Pace</div>
-                  <div className="font-semibold text-gray-900">{achievement.pace || 'N/A'}</div>
-                </div>
-                <div className="p-3 rounded-lg bg-gray-50">
-                  <div className="mb-1 text-xs text-gray-600">Elevation Gain</div>
-                  <div className="font-semibold text-gray-900">{achievement.elevation || 'N/A'}</div>
+                
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-black text-emerald-700">{achievement.time}</div>
+                    <div className="text-xs text-gray-600">Finish Time</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xl font-bold text-gray-900">{pacePerKm}/km</div>
+                    <div className="text-xs text-gray-600">Average Pace</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xl font-bold text-gray-900">
+                      {achievement.event === 'Marathon' ? '42.195km' :
+                       achievement.event === 'Half Marathon' ? '21.097km' : '10km'}
+                    </div>
+                    <div className="text-xs text-gray-600">Distance</div>
+                  </div>
                 </div>
               </div>
-              {achievement.notes && (
-                <div className="p-3 mt-4 rounded-lg bg-green-50">
-                  <div className="text-sm text-gray-700">{achievement.notes}</div>
-                </div>
-              )}
-            </motion.div>
-          )}
-        </AnimatePresence>
+            );
+          })}
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -58,33 +58,33 @@ export default function Achievements() {
   }, [filteredAchievements]);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-fuchsia-50" id="achievements">
+    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-green-50" id="achievements">
       <div className="container px-4 mx-auto">
         {/* Header with Gradient Background */}
         <motion.div
-          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-fuchsia-900 via-fuchsia-700 to-fuchsia-600 md:p-12"
+          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-green-900 via-green-700 to-green-600 md:p-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="relative z-10 text-center">
             <div className="inline-flex items-center px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-sm">
-              <span className="text-sm font-semibold tracking-wider uppercase text-fuchsia-100">
+              <span className="text-sm font-semibold tracking-wider text-green-100 uppercase">
                 Performance Analytics
               </span>
             </div>
             <h1 className="mb-4 text-4xl font-black text-white sm:text-5xl lg:text-6xl">
-              Race <span className="text-fuchsia-200">Achievements</span>
+              Race <span className="text-green-200">Achievements</span>
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-fuchsia-200"></div>
-            <p className="max-w-3xl mx-auto text-lg text-fuchsia-100/90">
+            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-green-200"></div>
+            <p className="max-w-3xl mx-auto text-lg text-green-100/90">
               Comprehensive timeline of competitive performances, personal bests, and championship results
             </p>
           </div>
           
           {/* Animated background elements */}
           <motion.div 
-            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-fuchsia-500/20 blur-3xl"
+            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-green-500/20 blur-3xl"
             animate={{ 
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.5, 0.3]
@@ -110,11 +110,11 @@ export default function Achievements() {
         >
           {/* <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-5">
             {[
-              { label: 'Total Races', value: stats.total, color: 'from-fuchsia-500 to-fuchsia-600' },
+              { label: 'Total Races', value: stats.total, color: 'from-green-500 to-green-600' },
               { label: 'Gold Medals', value: stats.golds, color: 'from-yellow-500 to-yellow-600' },
               { label: 'Silver Medals', value: stats.silvers, color: 'from-gray-400 to-gray-500' },
               { label: 'Bronze Medals', value: stats.bronzes, color: 'from-amber-700 to-amber-800' },
-              { label: 'Personal Bests', value: stats.pbs, color: 'from-fuchsia-700 to-fuchsia-800' },
+              { label: 'Personal Bests', value: stats.pbs, color: 'from-green-700 to-green-800' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -142,7 +142,7 @@ export default function Achievements() {
                   onClick={() => setViewMode('grid')}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                     viewMode === 'grid'
-                      ? 'bg-white text-fuchsia-700 shadow-sm'
+                      ? 'bg-white text-green-700 shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -152,7 +152,7 @@ export default function Achievements() {
                   onClick={() => setViewMode('list')}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                     viewMode === 'list'
-                      ? 'bg-white text-fuchsia-700 shadow-sm'
+                      ? 'bg-white text-green-700 shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -169,7 +169,7 @@ export default function Achievements() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all ${
                     activeFilter === filter
-                      ? 'bg-gradient-to-r from-fuchsia-600 to-fuchsia-500 text-white shadow-lg shadow-fuchsia-200'
+                      ? 'bg-gradient-to-r from-green-600 to-green-500 text-white shadow-lg shadow-green-200'
                       : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300'
                   }`}
                   whileHover={{ scale: 1.05 }}
@@ -187,7 +187,7 @@ export default function Achievements() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent bg-white"
+                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
                 >
                   <option value="date">Most Recent</option>
                   <option value="time">Fastest Time</option>
@@ -238,8 +238,8 @@ export default function Achievements() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-fuchsia-100 to-fuchsia-50">
-              <svg className="w-12 h-12 text-fuchsia-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-green-100 to-green-50">
+              <svg className="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -247,7 +247,7 @@ export default function Achievements() {
             <p className="mb-4 text-gray-600">Try selecting a different filter or category</p>
             <button 
               onClick={() => setActiveFilter('All')}
-              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-fuchsia-600 to-fuchsia-500 hover:from-fuchsia-700 hover:to-fuchsia-600"
+              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600"
             >
               Show all races
             </button>
@@ -262,7 +262,7 @@ export default function Achievements() {
           transition={{ delay: 0.5 }}
         >
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-fuchsia-600 to-fuchsia-500"></div>
+            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-600 to-green-500"></div>
             <span className="text-sm text-gray-700">Personal Best</span>
           </div>
           <div className="flex items-center gap-2">
@@ -317,7 +317,7 @@ function AchievementCard({ achievement, index, isExpanded, onToggle }) {
 
       {/* PB Badge */}
       {achievement.highlight && (
-        <div className="absolute -top-3 -left-3 px-3 py-1.5 rounded-full bg-gradient-to-r from-fuchsia-600 to-fuchsia-500 text-white text-xs font-bold shadow-lg z-20">
+        <div className="absolute -top-3 -left-3 px-3 py-1.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-bold shadow-lg z-20">
           PB
         </div>
       )}
@@ -325,22 +325,22 @@ function AchievementCard({ achievement, index, isExpanded, onToggle }) {
       {/* Card Content */}
       <div 
         className={`relative h-full p-6 bg-white rounded-2xl shadow-lg border border-gray-100 cursor-pointer overflow-hidden ${
-          achievement.highlight ? 'ring-2 ring-fuchsia-200 ring-offset-2' : ''
+          achievement.highlight ? 'ring-2 ring-green-200 ring-offset-2' : ''
         }`}
         onClick={onToggle}
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-fuchsia-500 to-transparent"></div>
+          <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-green-500 to-transparent"></div>
         </div>
 
         {/* Event Header */}
         <div className="relative mb-4">
-          <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-fuchsia-700">
+          <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-green-700">
             {achievement.event}
           </h3>
           <div className="flex items-center gap-2 mt-1">
-            <svg className="w-4 h-4 text-fuchsia-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             </svg>
             <span className="text-sm text-gray-600">{achievement.venue}</span>
@@ -362,11 +362,11 @@ function AchievementCard({ achievement, index, isExpanded, onToggle }) {
         </div>
 
         {/* Performance Highlight */}
-        <div className="p-4 border rounded-xl bg-gradient-to-r from-fuchsia-50 to-fuchsia-100/50 border-fuchsia-100">
-          <div className="mb-1 text-xs font-medium uppercase text-fuchsia-700">Finish Time</div>
-          <div className="text-2xl font-black text-fuchsia-800">{achievement.time}</div>
+        <div className="p-4 border border-green-100 rounded-xl bg-gradient-to-r from-green-50 to-green-100/50">
+          <div className="mb-1 text-xs font-medium text-green-700 uppercase">Finish Time</div>
+          <div className="text-2xl font-black text-green-800">{achievement.time}</div>
           {achievement.pace && (
-            <div className="mt-1 text-sm text-fuchsia-600">Avg: {achievement.pace}/km</div>
+            <div className="mt-1 text-sm text-green-600">Avg: {achievement.pace}/km</div>
           )}
         </div>
 
@@ -428,7 +428,7 @@ function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
     >
       <div 
         className={`p-6 bg-white rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-all ${
-          achievement.highlight ? 'border-l-4 border-l-fuchsia-500' : ''
+          achievement.highlight ? 'border-l-4 border-l-green-500' : ''
         }`}
         onClick={onToggle}
       >
@@ -446,7 +446,7 @@ function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
                 <h3 className="text-lg font-bold text-gray-900">{achievement.event}</h3>
                 <div className="flex items-center gap-4 mt-2">
                   <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-fuchsia-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     <span className="text-sm text-gray-700">
@@ -454,7 +454,7 @@ function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-fuchsia-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
                     <span className="text-sm text-gray-700">{achievement.venue}</span>
@@ -467,7 +467,7 @@ function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
           {/* Right Column */}
           <div className="flex items-center gap-8">
             <div className="text-center">
-              <div className="text-2xl font-black text-fuchsia-800">{achievement.time}</div>
+              <div className="text-2xl font-black text-green-800">{achievement.time}</div>
               <div className="text-xs font-medium text-gray-500 uppercase">Finish Time</div>
             </div>
             
@@ -517,7 +517,7 @@ function AchievementListItem({ achievement, index, isExpanded, onToggle }) {
                 </div>
               </div>
               {achievement.notes && (
-                <div className="p-3 mt-4 rounded-lg bg-fuchsia-50">
+                <div className="p-3 mt-4 rounded-lg bg-green-50">
                   <div className="text-sm text-gray-700">{achievement.notes}</div>
                 </div>
               )}

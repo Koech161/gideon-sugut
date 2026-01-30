@@ -1,6 +1,6 @@
 [
  
-  { "id": 1, "event": "Marathon", "time": "2:33:26", "date": "2025-10-25", "venue": "Standard Chartered Nairobi Marathon" },
-  { "id": 3, "event": "10k", "time": "31:24", "date": "2024-10-05", "venue": "Betika Cross Country, Kericho" },
-  { "id": 2, "event": "Half Marathon", "time": "1:12:10", "date": "2025-01-19", "venue": "Zayed Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:33:26", "date": "2025-03-30", "venue": "Lukenya University Marathon" },
+  { "id": 3, "event": "10k", "time": "31:17", "date": "2024-10-19", "venue": "AK Cross Country" },
+  { "id": 2, "event": "Half Marathon", "time": "1:12:14", "date": "2025-07-13", "venue": "Machakos County Half Marathon" }
 ]

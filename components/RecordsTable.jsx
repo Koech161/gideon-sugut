@@ -8,7 +8,7 @@ const achievementsData = [
   { "id": 2, "event": "Half Marathon", "time": "1:12:14", "date": "2025-07-13", "venue": "Machakos County Half Marathon" }
 ];
 
-const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10k', 'Track'];
+const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10k'];
 const distanceMap = {
     Marathon: '42K',
     'Half Marathon': '21K',

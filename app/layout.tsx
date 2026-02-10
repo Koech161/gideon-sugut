@@ -11,38 +11,36 @@ const jost = Jost({
   display: 'swap',
 });
 
-
-
 export const metadata = {
-  title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
+  title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
   description:
-    "Official website of Grace Njoki, elite Kenyan marathon and half-marathon runner training in the Rift Valley. Representing Kenya's world-renowned running heritage from the high-altitude trails to global marathon podiums.",
+    "Official website of Meshack Kipruto, elite Kenyan marathon and 10,000m runner training in the Rift Valley. Representing Kenya's world-renowned running heritage from the high-altitude trails to global marathon podiums.",
   keywords:
-    "Grace Njoki, Kenyan marathon runner, half marathon athlete Kenya, Rift Valley runner, distance running Kenya, marathon elite, Kenyan endurance athlete, women's athletics Kenya, altitude training, marathon specialist, road running, Kenyan athlete",
-  authors: [{ name: "Grace Njoki" }],
-  creator: "Grace Njoki",
-  publisher: "Grace Njoki",
+    "Meshack Kipruto, Kenyan marathon runner, 10,000m athlete Kenya, Rift Valley runner, distance running Kenya, marathon elite, Kenyan endurance athlete, athletics Kenya, altitude training, marathon specialist, road running, Kenyan athlete, long-distance running",
+  authors: [{ name: "Meshack Kipruto" }],
+  creator: "Meshack Kipruto",
+  publisher: "Meshack Kipruto",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://gracenjoki.com"),
+  metadataBase: new URL("https://meshackkipruto.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
+    title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
     description:
-      "Elite Kenyan marathon and half-marathon specialist training in Kenya's Rift Valley. Competing internationally at the highest level with altitude-honed endurance and racing intelligence.",
-    url: "https://gracenjoki.com/",
-    siteName: "Grace Njoki",
+      "Elite Kenyan marathon and 10,000m specialist training in Kenya's Rift Valley. Competing internationally at the highest level with altitude-honed endurance and racing intelligence.",
+    url: "https://meshackkipruto.com/",
+    siteName: "Meshack Kipruto",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Grace Njoki – Elite Kenyan Long-Distance Runner",
+        alt: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
       },
     ],
     locale: "en_US",
@@ -50,11 +48,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grace Njoki – Elite Kenyan Long-Distance Runner",
+    title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
     description:
-      "World Athletics registered Kenyan marathon and half-marathon runner. Built on Rift Valley endurance heritage, altitude training, and elite racing discipline.",
+      "World Athletics registered Kenyan marathon and 10,000m runner. Built on Rift Valley endurance heritage, altitude training, and elite racing discipline.",
     images: ["/twitter-image.jpg"],
-    creator: "@gracenjoki",
+    creator: "@meshackkipruto",
   },
   robots: {
     index: true,
@@ -69,46 +67,58 @@ export const metadata = {
   },
   category: "sports",
   other: {
-    "theme-color": "#10b981", // Emerald color
-    "msapplication-TileColor": "#10b981",
-    "og:color": "#10b981",
-    "og:site_name": "Grace Njoki",
-    "twitter:site": "@gracenjoki",
-    "twitter:creator": "@gracenjoki",
+    "theme-color": "#ea580c", // Orange-600 color
+    "msapplication-TileColor": "#dc2626", // Red-600 color
+    "og:color": "#ea580c",
+    "og:site_name": "Meshack Kipruto",
+    "twitter:site": "@meshackkipruto",
+    "twitter:creator": "@meshackkipruto",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
-  // Additional structured data for better SEO
-  
-  // Additional meta tags for social media and SEO
   additionalMetaTags: [
-    {
-      property: "fb:app_id",
-      content: "YOUR_FACEBOOK_APP_ID", // Add if you have one
-    },
     {
       name: "viewport",
       content: "width=device-width, initial-scale=1, maximum-scale=5",
     },
     {
       name: "apple-mobile-web-app-title",
-      content: "Grace Njoki",
+      content: "Meshack Kipruto",
     },
     {
       name: "application-name",
-      content: "Grace Njoki",
+      content: "Meshack Kipruto",
     },
+    {
+      name: "msapplication-config",
+      content: "/browserconfig.xml",
+    },
+    {
+      name: "keywords",
+      content: "Meshack Kipruto, Kenyan runner, marathon athlete, Rift Valley training, 10,000m specialist, Kenya athletics"
+    }
   ],
-  // Additional link tags
   additionalLinkTags: [
     {
       rel: "icon",
       href: "/favicon.ico",
     },
     {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/favicon-16x16.png",
+    },
+    {
       rel: "apple-touch-icon",
-      href: "/apple-touch-icon.png",
       sizes: "180x180",
+      href: "/apple-touch-icon.png",
     },
     {
       rel: "manifest",
@@ -117,11 +127,97 @@ export const metadata = {
     {
       rel: "mask-icon",
       href: "/safari-pinned-tab.svg",
-      color: "#10b981", // Emerald color
+      color: "#ea580c", // Orange-600 color
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous",
     },
   ],
 };
 
+// Structured data for better SEO
+export const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Meshack Kipruto",
+  "description": "Elite Kenyan long-distance runner specializing in marathon and 10,000m events.",
+  "url": "https://meshackkipruto.com",
+  "image": "https://meshackkipruto.com/profile-image.jpg",
+  "sameAs": [
+    "https://twitter.com/meshackkipruto",
+    "https://instagram.com/meshackkipruto",
+    "https://facebook.com/meshackkipruto"
+  ],
+  "jobTitle": "Professional Long-Distance Runner",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Kenya Athletics"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Rift Valley Athletics Training Camp"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Rift Valley, Kenya"
+  },
+  "knowsAbout": ["Marathon Running", "Long-Distance Running", "Altitude Training", "Athletics", "Endurance Sports"],
+  "nationality": {
+    "@type": "Country",
+    "name": "Kenya"
+  },
+  "gender": "Male",
+  "sport": ["Marathon", "10,000 meters", "Long-distance running"],
+  "award": [
+    "Multiple marathon podium finishes",
+    "National athletics champion",
+    "International marathon competitor"
+  ]
+};
+
+// Additional meta tags for performance
+export const performanceMeta = {
+  additionalMetaTags: [
+    {
+      name: "msapplication-TileImage",
+      content: "/mstile-144x144.png",
+    },
+    {
+      name: "theme-color",
+      content: "#ffffff",
+    },
+    {
+      name: "color-scheme",
+      content: "light dark",
+    },
+    {
+      name: "supported-color-schemes",
+      content: "light",
+    },
+  ],
+  additionalLinkTags: [
+    {
+      rel: "preload",
+      href: "/fonts/inter-var.woff2",
+      as: "font",
+      type: "font/woff2",
+      crossOrigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: "/hero-bg.jpg",
+      imagesrcset: "/hero-bg-400.jpg 400w, /hero-bg-800.jpg 800w, /hero-bg-1200.jpg 1200w",
+      imagesizes: "100vw",
+    },
+  ],
+};
 export default function RootLayout({
   children,
 }: Readonly<{

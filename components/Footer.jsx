@@ -172,7 +172,7 @@ export default function Footer() {
             <blockquote className="pl-4 italic text-gray-400 border-l-4 border-orange-500">
               "Running is our heritage, our art, our legacy. The Rift Valley's hills 
               teach us resilience, the altitude builds our strength, and every early 
-              morning run prepares us for the world stage. We don't just run—we carry 
+              morning run prepares us for the world stage. We don't just run we carry 
               Kenya's spirit with every stride."
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-orange-300">

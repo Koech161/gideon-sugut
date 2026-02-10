@@ -52,7 +52,7 @@ export default function About() {
               </div>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
                 Born and raised in the heart of Kenya's legendary Rift Valley, Meshack Kipruto's 
-                running journey began on the same high-altitude trails that have produced generations 
+                running journey began on the same high altitude trails that have produced generations 
                 of world champions. Growing up in this running cradle of the world, he developed the 
                 natural endurance, relentless determination, and mental fortitude that define elite 
                 Kenyan distance runners. His early morning runs through the challenging terrain of 
@@ -62,7 +62,7 @@ export default function About() {
               <p className="text-lg leading-relaxed text-gray-700">
                 Specializing in marathon and 10,000-meter events, Meshack combines traditional Kenyan 
                 running wisdom with modern sports science. Training in the Rift Valley's demanding 
-                conditions—high altitude, rugged trails, and extreme weather variations—has developed 
+                conditions high altitude, rugged trails, and extreme weather variations has developed 
                 exceptional cardiovascular capacity and the ability to maintain competitive pace 
                 across the world's toughest marathon courses.
               </p>
@@ -188,7 +188,7 @@ export default function About() {
                 </div>
                 <p className="text-sm italic text-gray-700">
                   "Running is in our soil, in our breath, in our spirit. The Rift Valley 
-                  doesn't just train runners—it forges warriors of endurance who carry 
+                  doesn't just train runners it forges warriors of endurance who carry 
                   our legacy with every stride around the world. We don't just run; we 
                   become the rhythm of the land itself."
                 </p>
@@ -219,9 +219,9 @@ export default function About() {
           <div className="inline-block px-8 py-8 shadow-lg bg-gradient-to-r from-orange-600 to-red-700 rounded-2xl">
             <div className="mb-4 text-4xl text-orange-200">"</div>
             <p className="text-xl italic font-medium text-white">
-              The Rift Valley is more than a training ground—it's our foundation, 
+              The Rift Valley is more than a training ground it's our foundation, 
               our teacher, our identity. Every hill we conquer, every trail we master, 
-              every dawn we greet with pounding footsteps—these are the moments that 
+              every dawn we greet with pounding footsteps these are the moments that 
               forge champions. We run with the strength of our land and the spirit 
               of our people, carrying Kenya's legacy to the world stage.
             </p>

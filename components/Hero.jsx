@@ -62,7 +62,7 @@ export default function Hero() {
 
             {/* Name */}
             <div className="mb-6">
-              <h1 className="text-5xl font-bold leading-none text-gray-900 sm:text-6xl lg:text-7xl">
+              <h1 className="mt-16 text-5xl font-bold leading-none text-gray-900 sm:text-6xl lg:text-7xl">
                 <span className="block font-light text-gray-600">MESHACK</span>
                 <span className="block mt-1 text-orange-600">KIPRUTO</span>
                 <span className="block mt-1 text-gray-400">RIFT VALLEY CHAMPION</span>

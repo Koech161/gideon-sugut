@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const achievementsData = [
   { "id": 1, "event": "Marathon", "time": "2:14:26", "date": "2025-06-06", "venue": "Nairobi City Marathon" },
   { "id": 3, "event": "10k", "time": "29:17", "date": "2024-10-13", "venue": "Otso Moiben Community 10km Road" },
-  { "id": 2, "event": "Half Marathon", "time": "1:03:34", "date": "2024-11-05", "venue": "Chemususu Half Marathon" },
+  { "id": 2, "event": "Half Marathon", "time": "1:05:57", "date": "2024-11-05", "venue": "Chemususu Half Marathon" },
   { "id": 4, "event": "Half Marathon", "time": "1:03:05", "date": "2025-09-27", "venue": "Kirinyaga Half Marathon" }
 ];
 

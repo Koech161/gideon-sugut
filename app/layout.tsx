@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner",
     description:
-      "Elite Kenyan road specialist dominating the 10k, Half-Marathon, and Marathon. Training at 2,400m in Iten, she boasts a 30:41 10k foundation and a 67-minute 21k, with a focus on conquering the World Marathon Majors and achieving Olympic marathon glory.",
+     "Rising Kenyan distance runner Caroline Jelimo, training in the high-altitude 'Home of Champions,' Iten. A specialist in the 10k and Half-Marathon, Jelimo is an emerging force in the Rift Valley circuit, focused on endurance, discipline, and the pursuit of road racing excellence.",
     url: "https://carolinejelimo.com/",
     siteName: "Caroline Jelimo",
     images: [

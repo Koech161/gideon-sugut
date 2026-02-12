@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner",
     description:
-      "Kenyan 10,000m and 5,000m specialist training at 2,400m in Iten, Kenya. Representing Kenya Prisons with a 30:41 PB and ambitions for World Championships and Olympic glory.",
+      "Elite Kenyan road specialist dominating the 10k, Half-Marathon, and Marathon. Training at 2,400m in Iten, she boasts a 30:41 10k foundation and a 67-minute 21k, with a focus on conquering the World Marathon Majors and achieving Olympic marathon glory.",
     url: "https://carolinejelimo.com/",
     siteName: "Caroline Jelimo",
     images: [

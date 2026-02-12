@@ -67,14 +67,14 @@ export default function Footer() {
               </h3>
             </div>
            <p className="mb-6 leading-relaxed text-gray-400">
-  A powerhouse of Kenyan road racing, Caroline Jelimo is a versatile long-distance 
-  specialist dominant across the 10k, Half-Marathon, and the Full Marathon. 
-  Forged on the grueling, high-altitude trails of Iten, she embodies the 
-  relentless endurance of the Rift Valley. By combining tactical 10k speed with 
-  unshakeable marathon resilience, she represents a new era of Kenyan 
-  excellence—delivering world-class performances on the global stage with 
-  precision, grit, and an iron will.
-</p>
+            A powerhouse of Kenyan road racing, Caroline Jelimo is a versatile long-distance 
+            specialist dominant across the 10k, Half-Marathon, and the Full Marathon. 
+            Forged on the grueling, high-altitude trails of Iten, she embodies the 
+            relentless endurance of the Rift Valley. By combining tactical 10k speed with 
+            unshakeable marathon resilience, she represents a new era of Kenyan 
+            excellence—delivering world-class performances on the global stage with 
+            precision, grit, and an iron will.
+          </p>
 
             <div className="flex space-x-3">
               {contactLinks.map((link) => (
@@ -184,20 +184,7 @@ export default function Footer() {
               – Caroline Jelimo
             </p>
 
-            {/* Girls Running Initiative */}
-            <div className="p-4 mt-6 border border-pink-800/30 bg-gradient-to-br from-pink-900/20 to-rose-900/20 rounded-xl">
-              <h4 className="flex items-center mb-2 text-sm font-semibold text-pink-300">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                Rift Valley Girls Running Project
-              </h4>
-              <p className="text-xs text-gray-400">
-                10% of sponsorship proceeds support young female athletes in Iten with 
-                shoes, education, and training access. Empowering the next generation 
-                of Kenyan women runners.
-              </p>
-            </div>
+            
           </motion.div>
         </div>
 

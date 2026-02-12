@@ -25,7 +25,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="mb-3 text-sm font-semibold tracking-wider text-pink-600 uppercase">
-            Mastering the Roads from 10k to the Marathon
+            A Rising Force in Kenyan Road Running
           </h2>
           <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
             About <span className="text-pink-600">Caroline Jelimo</span>
@@ -51,10 +51,10 @@ export default function About() {
                 </h2>
               </div>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                Hailing from the thin air of Riftw Valley, Kenya, Caroline Jelimo is a testament to the endurance of the Rift Valley. While many specialize early, Caroline’s journey has been one of gradual conquest. From dominating local 10k road races to her breakthrough 67-minute half marathon, she has transitioned into the 42.195km distance with the poise of a veteran. Her training is a relentless pursuit of the "Marathon State"—a balance of physical toughness and the mental silence required to conquer the final 10 kilometers of a world-major race.
+                Hailing from the high-altitude terrain of the Rift Valley, Kenya, Caroline Jelimo is a rising talent in the local athletics scene. Her journey is defined by a steady progression from school-level competition to dominating regional road races. Currently honing her craft in the "Home of Champions," she is transitioning into the marathon distance with a focus on endurance and tactical patience.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                With a marathon personal best of 2:21:42, Caroline is no longer just a "rising star"—she is a calculated force on the World Marathon Majors circuit. Whether it's the tactical maneuvering of a 10k or the grueling attrition of a 42k, her strategy remains the same: relentless rhythm and an unbreakable spirit.
+                Caroline is recognized among local coaches for her exceptional "Marathon Engine"—the ability to maintain a grueling pace while staying mentally composed. As a promising local athlete, she is currently focused on mastering the local circuit, using every race as a stepping stone toward her ultimate goal of representing the heritage of Kenyan long-distance running.
               </p>
             </div>
 
@@ -62,18 +62,18 @@ export default function About() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
                 {
-                  title: 'Marathon Engine',
-                  desc: 'A 2:21:42 personal best, showcasing elite aerobic capacity and fueling efficiency.',
+                  title: 'Endurance Base',
+                  desc: 'Exceptional aerobic capacity developed through consistent high-volume training blocks.',
                   icon: '🏁',
                 },
                 {
-                  title: 'Half-Marathon Speed',
-                  desc: 'Clocked a blistering 1:07:15, proving her ability to maintain high intensity over 21k.',
+                  title: 'Half-Marathon Focus',
+                  desc: 'A strong presence in regional 21k events, showcasing her ability to handle high intensity.',
                   icon: '🥈',
                 },
                 {
-                  title: '10k Foundation',
-                  desc: 'Utilizes 31-minute 10k speed to dominate tactical finishes in long-distance events.',
+                  title: '10k Speed',
+                  desc: 'Uses sharp 10k road speed to stay competitive during tactical regional finishes.',
                   icon: '⚡',
                 },
                 {
@@ -83,13 +83,13 @@ export default function About() {
                 },
                 {
                   title: 'Mechanical Efficiency',
-                  desc: 'Renowned for a "quiet" upper body and a mid-foot strike that minimizes impact over 42k.',
+                  desc: 'Noted for a fluid running economy and a mid-foot strike that maximizes energy return.',
                   icon: '⚙️',
                 },
                 {
-                  title: 'Global Competitor',
-                  desc: 'Top-tier finishes in London, Berlin, and Valencia road circuits.',
-                  icon: '🌍',
+                  title: 'Regional Talent',
+                  desc: 'Consistent top-five finishes across the competitive Rift Valley road race series.',
+                  icon: '🇰🇪',
                 },
               ].map((item, index) => (
                 <motion.div
@@ -120,17 +120,17 @@ export default function About() {
               {/* Training Philosophy */}
               <div className="p-6 bg-white border border-pink-100 shadow-lg rounded-2xl">
                 <h3 className="mb-4 text-xl font-bold text-gray-800">
-                  The Marathon Build
+                  The Training Build
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    '180-200km weekly volume in peak marathon prep',
-                    '35km "Monster" long runs on the Iten-Eldoret road',
-                    'Progressive tempo runs starting at 3:15/km pace',
-                    'High-protein recovery fueled by traditional Mursik',
-                    'Mental visualization for the "Wall" at 35km',
-                    'Bi-weekly physio and mobility for injury prevention',
-                    'Specific 10k speedwork to maintain leg turnover',
+                    'Consistent weekly volume in the hills of Iten',
+                    '30km+ long runs on the Iten-Eldoret road',
+                    'Tough fartlek sessions with local training groups',
+                    'Recovery fueled by traditional Kenyan staples',
+                    'Mental focus sessions for late-race endurance',
+                    'Strength and conditioning for injury resilience',
+                    'Regular hill work to build explosive power',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-700">
                       <div className="flex items-center justify-center w-5 h-5 mr-3 bg-pink-100 rounded-full">
@@ -144,36 +144,24 @@ export default function About() {
 
               {/* Quick Stats */}
               <div className="p-6 shadow-lg bg-gradient-to-br from-pink-600 to-pink-800 rounded-2xl">
-                <h3 className="mb-4 text-xl font-bold text-white">Career Personal Bests</h3>
+                <h3 className="mb-4 text-xl font-bold text-white">Athletic Profile</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Marathon (42.2k)</span>
-                    <span className="font-semibold text-white">2:21:42</span>
+                    <span className="text-pink-100">Primary Focus</span>
+                    <span className="font-semibold text-white">Marathon / 21k</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Half Marathon (21.1k)</span>
-                    <span className="font-semibold text-white">1:07:15</span>
-                  </div>
-                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">10,000m / 10k Road</span>
-                    <span className="font-semibold text-white">30:41 / 31:02</span>
+                    <span className="text-pink-100">Specialization</span>
+                    <span className="font-semibold text-white">Road Racing</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-pink-400/30">
                     <span className="text-pink-100">Training Base</span>
                     <span className="font-semibold text-white">Iten, Kenya</span>
                   </div>
-                </div>
-              </div>
-
-              {/* Running Style */}
-              <div className="p-5 border border-pink-100 bg-gradient-to-r from-pink-600/5 to-pink-500/5 rounded-xl">
-                <h4 className="mb-2 font-semibold text-gray-800">Race Strategy</h4>
-                <div className="flex flex-wrap gap-2">
-                  {['Negative Splits', 'Uphill Specialist', 'Metronomic Pacing', 'Calm Under Heat', 'Aggressive Surging'].map((style, i) => (
-                    <span key={i} className="px-3 py-1 text-xs font-medium text-pink-700 bg-pink-100 rounded-full">
-                      {style}
-                    </span>
-                  ))}
+                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
+                    <span className="text-pink-100">Status</span>
+                    <span className="font-semibold text-white">Promising Talent</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,9 +178,9 @@ export default function About() {
           <div className="inline-block px-8 py-8 shadow-lg bg-gradient-to-r from-pink-700 to-slate-900 rounded-2xl">
             <div className="mb-4 text-4xl text-pink-200">"</div>
             <p className="max-w-3xl text-xl italic font-medium text-white">
-              The 10k is a sprint, the half is a test, but the marathon is a conversation with your soul. 
-              In Iten, we don't run to escape our limits—we run to find where they begin. 
-              Every kilometer is a step closer to the legacy of those who came before me.
+              The road doesn't care about your past, only your persistence. 
+              In Iten, we run to find where our limits begin and our strength ends. 
+              Every kilometer is a step closer to the legacy I hope to build.
             </p>
             <p className="mt-3 font-semibold text-pink-100">
               – Caroline Jelimo

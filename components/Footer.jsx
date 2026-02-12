@@ -172,13 +172,13 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h4 className="mb-6 text-lg font-semibold tracking-wider text-pink-300 uppercase">
-              Running Philosophy
+             The Philosophy of Growth
             </h4>
             <blockquote className="pl-4 italic text-gray-400 border-l-4 border-pink-500">
-              "In Iten, the altitude strips away everything that isn't essential. 
-              What remains is purpose. I run for the girls who haven't yet found their 
-              stride, for the women who were told their place wasn't on the track. 
-              Every finish line I cross is a new starting line for someone else."
+            "Movement is the purest form of self-discovery. We don't run to escape 
+            life, but to ensure life doesn't escape us. In the silence of the 
+            long mile, you realize that your only true competitor is the person 
+            you were yesterday."
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-pink-300">
               – Caroline Jelimo

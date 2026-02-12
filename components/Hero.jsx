@@ -97,7 +97,8 @@ export default function Hero() {
 
               <Link href="#achievements">
                 <button className="px-8 py-3.5 font-semibold text-pink-700 rounded-lg border border-pink-300 hover:bg-pink-50 transition-all duration-300">
-                  Training Philosophy
+                  
+                View Achievements
                 </button>
               </Link>
             </div>

@@ -14,9 +14,9 @@ const jost = Jost({
 export const metadata = {
   title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner | Rift Valley",
   description:
-    "Official website of Caroline Jelimo, elite Kenyan 10,000m and 5,000m runner training in Iten, Kenya. Rising star of Kenyan women's distance running, representing Kenya Prisons and Athletics Kenya with grace, determination, and championship ambition.",
+    "Official website of Caroline Jelimo, elite Kenyan runner training in Iten, Kenya. Rising star of Kenyan women's distance running, representing Kenya Prisons and Athletics Kenya with grace, determination, and championship ambition.",
   keywords:
-    "Caroline Jelimo, Kenyan female runner, Iten Kenya runner, 10,000m specialist Kenya, 5,000m athlete, Kenyan women's distance running, Rift Valley runner, Kenya Prisons athletics, Kenyan track athlete, altitude training Iten, female marathon prospect, Athletics Kenya, long-distance running Kenya, East African runner",
+    "Caroline Jelimo, Kenyan female runner, Iten Kenya runner, Kenyan women's distance running, Rift Valley runner, Kenya Prisons athletics, Kenyan track athlete, altitude training Iten, female marathon prospect, Athletics Kenya, long-distance running Kenya, East African runner",
   authors: [{ name: "Caroline Jelimo" }],
   creator: "Caroline Jelimo",
   publisher: "Caroline Jelimo",

@@ -51,7 +51,7 @@ export default function About() {
                 </h2>
               </div>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                Hailing from the thin air of Iten, Kenya, Caroline Jelimo is a testament to the endurance of the Rift Valley. While many specialize early, Caroline’s journey has been one of gradual conquest. From dominating local 10k road races to her breakthrough 67-minute half marathon, she has transitioned into the 42.195km distance with the poise of a veteran. Her training is a relentless pursuit of the "Marathon State"—a balance of physical toughness and the mental silence required to conquer the final 10 kilometers of a world-major race.
+                Hailing from the thin air of Riftw Valley, Kenya, Caroline Jelimo is a testament to the endurance of the Rift Valley. While many specialize early, Caroline’s journey has been one of gradual conquest. From dominating local 10k road races to her breakthrough 67-minute half marathon, she has transitioned into the 42.195km distance with the poise of a veteran. Her training is a relentless pursuit of the "Marathon State"—a balance of physical toughness and the mental silence required to conquer the final 10 kilometers of a world-major race.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
                 With a marathon personal best of 2:21:42, Caroline is no longer just a "rising star"—she is a calculated force on the World Marathon Majors circuit. Whether it's the tactical maneuvering of a 10k or the grueling attrition of a 42k, her strategy remains the same: relentless rhythm and an unbreakable spirit.

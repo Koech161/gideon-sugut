@@ -3,10 +3,10 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const achievementsData = [
-  { "id": 1, "event": "Marathon", "time": "2:14:26", "date": "2025-06-06", "venue": "Nairobi City Marathon" },
-  { "id": 3, "event": "10k", "time": "29:17", "date": "2024-10-13", "venue": "Otso Moiben Community 10km Road" },
-  { "id": 2, "event": "Half Marathon", "time": "1:05:57", "date": "2024-11-05", "venue": "Chemususu Half Marathon" },
-  { "id": 4, "event": "Half Marathon", "time": "1:03:05", "date": "2025-09-27", "venue": "Kirinyaga Half Marathon" }
+  { "id": 1, "event": "Marathon", "time": "2:31:26", "date": "2025-04-27", "venue": "Eldoret City Marathon", "location": "Eldoret" },
+  { "id": 3, "event": "10k", "time": "31:17", "date": "2025-07-20", "venue": "Mozzart Bet Rediscover Nandi 10KM", "location": "Kapsabet" },
+  { "id": 2, "event": "Half Marathon", "time": "1:12:57", "date": "2024-11-08", "venue": "Tophill Hospital Half Marathon", "location": "Kericho" },
+
 ];
 
 const categoryFilters = ['All', 'Marathon', 'Half Marathon', '10k'];
@@ -281,7 +281,7 @@ function TimelineItem({ achievement, index }) {
             </div>
             <div className="p-3 rounded-xl bg-gray-50">
               <div className="text-xs font-medium text-gray-700 uppercase">Venue</div>
-              <div className="text-lg font-semibold text-gray-900">{achievement.venue}</div>
+              <div className="text-lg font-semibold text-gray-900">{achievement.location}</div>
             </div>
           </div>
         </motion.div>
@@ -351,7 +351,7 @@ function CardsView({ achievements }) {
                   <svg className="flex-shrink-0 w-5 h-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
-                  <span className="text-sm text-gray-700">{achievement.venue}</span>
+                  <span className="text-sm text-gray-700">{achievement.location}</span>
                 </div>
               </div>
             </div>

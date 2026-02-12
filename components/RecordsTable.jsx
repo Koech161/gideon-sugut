@@ -62,33 +62,33 @@ export default function Achievements() {
   }, [filteredAchievements]);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-orange-50" id="achievements">
+    <section className="py-24 bg-gradient-to-b from-gray-50 via-white to-pink-50" id="achievements">
       <div className="container px-4 mx-auto">
         {/* Header */}
         <motion.div
-          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-orange-900 via-orange-700 to-orange-600 md:p-12"
+          className="relative p-8 mb-20 overflow-hidden rounded-3xl bg-gradient-to-r from-pink-900 via-pink-700 to-pink-600 md:p-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="relative z-10 text-center">
             <div className="inline-flex items-center px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-sm">
-              <span className="text-sm font-semibold tracking-wider text-orange-100 uppercase">
+              <span className="text-sm font-semibold tracking-wider text-pink-100 uppercase">
                 Race Performances
               </span>
             </div>
             <h1 className="mb-4 text-4xl font-black text-white sm:text-5xl lg:text-6xl">
-              Race <span className="text-orange-200">Records</span>
+              Race <span className="text-pink-200">Records</span>
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-orange-200"></div>
-            <p className="max-w-3xl mx-auto text-lg text-orange-100/90">
+            <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-white to-pink-200"></div>
+            <p className="max-w-3xl mx-auto text-lg text-pink-100/90">
               Personal bests and competitive achievements across all distances
             </p>
           </div>
           
           {/* Animated background elements */}
           <motion.div 
-            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-orange-500/20 blur-3xl"
+            className="absolute top-0 right-0 w-64 h-64 rounded-full bg-pink-500/20 blur-3xl"
             animate={{ 
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.5, 0.3]
@@ -126,7 +126,7 @@ export default function Achievements() {
                     onClick={() => setViewMode(mode)}
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                       viewMode === mode
-                        ? 'bg-white text-orange-700 shadow-sm'
+                        ? 'bg-white text-pink-700 shadow-sm'
                         : 'text-gray-600 hover:text-gray-900'
                     }`}
                   >
@@ -144,7 +144,7 @@ export default function Achievements() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all ${
                     activeFilter === filter
-                      ? 'bg-gradient-to-r from-orange-600 to-orange-500 text-white shadow-lg shadow-orange-200'
+                      ? 'bg-gradient-to-r from-pink-600 to-pink-500 text-white shadow-lg shadow-pink-200'
                       : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300'
                   }`}
                   whileHover={{ scale: 1.05 }}
@@ -162,7 +162,7 @@ export default function Achievements() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
+                  className="px-4 py-2.5 text-sm text-gray-800 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent bg-white"
                 >
                   <option value="date">Most Recent</option>
                   <option value="time">Fastest Time</option>
@@ -186,8 +186,8 @@ export default function Achievements() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50">
-              <svg className="w-12 h-12 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50">
+              <svg className="w-12 h-12 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -195,7 +195,7 @@ export default function Achievements() {
             <p className="mb-4 text-gray-600">Try selecting a different filter or category</p>
             <button 
               onClick={() => setActiveFilter('All')}
-              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600"
+              className="px-6 py-3 font-medium text-white transition-all rounded-xl bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-700 hover:to-pink-600"
             >
               Show all races
             </button>
@@ -210,7 +210,7 @@ function TimelineView({ achievements }) {
   return (
     <div className="relative">
       {/* Timeline line */}
-      <div className=" hidden sm:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 to-orange-300 md:left-1/2 md:-translate-x-1/2"></div>
+      <div className=" hidden sm:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-500 to-pink-300 md:left-1/2 md:-translate-x-1/2"></div>
       
       <div className="space-y-12">
         {achievements.map((achievement, index) => (
@@ -242,11 +242,11 @@ function TimelineItem({ achievement, index }) {
       className={`relative flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''} items-center`}
     >
       {/* Timeline dot */}
-      <div className="absolute z-10 hidden w-6 h-6 bg-white border-4 border-orange-500 rounded-full sm:block left-8 md:left-1/2 md:-translate-x-1/2"></div>
+      <div className="absolute z-10 hidden w-6 h-6 bg-white border-4 border-pink-500 rounded-full sm:block left-8 md:left-1/2 md:-translate-x-1/2"></div>
       
       {/* Date */}
       <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12'} mb-4 md:mb-0`}>
-        <div className="text-sm font-semibold tracking-wide text-orange-700 uppercase">
+        <div className="text-sm font-semibold tracking-wide text-pink-700 uppercase">
           {date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </div>
       </div>
@@ -265,7 +265,7 @@ function TimelineItem({ achievement, index }) {
               <h3 className="mt-2 text-xl font-bold text-gray-900">{achievement.venue}</h3>
             </div>
             <div className="text-right">
-              <div className="text-3xl font-black text-orange-700">{achievement.time}</div>
+              <div className="text-3xl font-black text-pink-700">{achievement.time}</div>
               <div className="text-sm text-gray-600">Finish Time</div>
             </div>
           </div>
@@ -307,7 +307,7 @@ function CardsView({ achievements }) {
             <div className="relative h-full p-6 overflow-hidden bg-white border border-gray-100 shadow-lg rounded-2xl">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-orange-500 to-transparent"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-br from-pink-500 to-transparent"></div>
               </div>
 
               {/* Event Badge */}
@@ -325,7 +325,7 @@ function CardsView({ achievements }) {
               <div className="relative">
                 <h3 className="mb-2 text-xl font-bold text-gray-900">{achievement.venue}</h3>
                 <div className="flex items-center gap-2 mb-6 text-gray-600">
-                  <svg className="w-4 h-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   <span className="text-sm">
@@ -338,17 +338,17 @@ function CardsView({ achievements }) {
                 </div>
 
                 {/* Performance Highlight */}
-                <div className="p-5 mb-4 border border-orange-100 rounded-xl bg-gradient-to-r from-orange-50 to-orange-100/50">
+                <div className="p-5 mb-4 border border-pink-100 rounded-xl bg-gradient-to-r from-pink-50 to-pink-100/50">
                   <div className="text-center">
-                    <div className="mb-1 text-xs font-medium text-orange-700 uppercase">Finish Time</div>
-                    <div className="text-4xl font-black text-orange-800">{achievement.time}</div>
-                    <div className="mt-2 text-sm text-orange-600">{achievement.event}</div>
+                    <div className="mb-1 text-xs font-medium text-pink-700 uppercase">Finish Time</div>
+                    <div className="text-4xl font-black text-pink-800">{achievement.time}</div>
+                    <div className="mt-2 text-sm text-pink-600">{achievement.event}</div>
                   </div>
                 </div>
 
                 {/* Venue Info */}
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
-                  <svg className="flex-shrink-0 w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="flex-shrink-0 w-5 h-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
                   <span className="text-sm text-gray-700">{achievement.venue}</span>
@@ -377,11 +377,11 @@ function StatsView({ achievements }) {
         <h3 className="mb-6 text-2xl font-bold text-gray-900">Personal Bests</h3>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {achievements.map((achievement) => (
-            <div key={achievement.id} className="p-6 border border-orange-100 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100/50">
-              <div className="mb-2 text-sm font-medium text-orange-700 uppercase">{achievement.event}</div>
-              <div className="mb-2 text-3xl font-black text-orange-900">{achievement.time}</div>
-              <div className="text-sm text-orange-700">{achievement.venue}</div>
-              <div className="mt-2 text-xs text-orange-600">
+            <div key={achievement.id} className="p-6 border border-pink-100 rounded-xl bg-gradient-to-br from-pink-50 to-pink-100/50">
+              <div className="mb-2 text-sm font-medium text-pink-700 uppercase">{achievement.event}</div>
+              <div className="mb-2 text-3xl font-black text-pink-900">{achievement.time}</div>
+              <div className="text-sm text-pink-700">{achievement.venue}</div>
+              <div className="mt-2 text-xs text-pink-600">
                 {new Date(achievement.date).toLocaleDateString('en-GB', { 
                   day: 'numeric', 
                   month: 'long', 
@@ -430,7 +430,7 @@ function StatsView({ achievements }) {
                 
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-black text-orange-700">{achievement.time}</div>
+                    <div className="text-2xl font-black text-pink-700">{achievement.time}</div>
                     <div className="text-xs text-gray-600">Finish Time</div>
                   </div>
                   <div className="text-center">

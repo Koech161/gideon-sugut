@@ -12,35 +12,35 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
+  title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner | Rift Valley",
   description:
-    "Official website of Meshack Kipruto, elite Kenyan marathon and 10,000m runner training in the Rift Valley. Representing Kenya's world-renowned running heritage from the high-altitude trails to global marathon podiums.",
+    "Official website of Caroline Jelimo, elite Kenyan 10,000m and 5,000m runner training in Iten, Kenya. Rising star of Kenyan women's distance running, representing Kenya Prisons and Athletics Kenya with grace, determination, and championship ambition.",
   keywords:
-    "Meshack Kipruto, Kenyan marathon runner, 10,000m athlete Kenya, Rift Valley runner, distance running Kenya, marathon elite, Kenyan endurance athlete, athletics Kenya, altitude training, marathon specialist, road running, Kenyan athlete, long-distance running",
-  authors: [{ name: "Meshack Kipruto" }],
-  creator: "Meshack Kipruto",
-  publisher: "Meshack Kipruto",
+    "Caroline Jelimo, Kenyan female runner, Iten Kenya runner, 10,000m specialist Kenya, 5,000m athlete, Kenyan women's distance running, Rift Valley runner, Kenya Prisons athletics, Kenyan track athlete, altitude training Iten, female marathon prospect, Athletics Kenya, long-distance running Kenya, East African runner",
+  authors: [{ name: "Caroline Jelimo" }],
+  creator: "Caroline Jelimo",
+  publisher: "Caroline Jelimo",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://meshackkipruto.com"),
+  metadataBase: new URL("https://carolinejelimo.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
+    title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner",
     description:
-      "Elite Kenyan marathon and 10,000m specialist training in Kenya's Rift Valley. Competing internationally at the highest level with altitude-honed endurance and racing intelligence.",
-    url: "https://meshackkipruto.com/",
-    siteName: "Meshack Kipruto",
+      "Kenyan 10,000m and 5,000m specialist training at 2,400m in Iten, Kenya. Representing Kenya Prisons with a 30:41 PB and ambitions for World Championships and Olympic glory.",
+    url: "https://carolinejelimo.com/",
+    siteName: "Caroline Jelimo",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image-caroline.jpg",
         width: 1200,
         height: 630,
-        alt: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
+        alt: "Caroline Jelimo – Elite Kenyan Long-Distance Runner from Iten",
       },
     ],
     locale: "en_US",
@@ -48,11 +48,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meshack Kipruto – Elite Kenyan Long-Distance Runner",
+    title: "Caroline Jelimo – Kenyan 10,000m Specialist",
     description:
-      "World Athletics registered Kenyan marathon and 10,000m runner. Built on Rift Valley endurance heritage, altitude training, and elite racing discipline.",
-    images: ["/twitter-image.jpg"],
-    creator: "@meshackkipruto",
+      "Athletics Kenya registered runner. Forged in Iten's high-altitude trails. 10,000m: 30:41 | 5,000m: 14:58. Rising star of Kenyan women's distance running.",
+    images: ["/twitter-image-caroline.jpg"],
+    creator: "@carolinejelimo",
   },
   robots: {
     index: true,
@@ -67,12 +67,12 @@ export const metadata = {
   },
   category: "sports",
   other: {
-    "theme-color": "#ea580c", // Orange-600 color
-    "msapplication-TileColor": "#dc2626", // Red-600 color
-    "og:color": "#ea580c",
-    "og:site_name": "Meshack Kipruto",
-    "twitter:site": "@meshackkipruto",
-    "twitter:creator": "@meshackkipruto",
+    "theme-color": "#ec4899", // Pink-500 color
+    "msapplication-TileColor": "#f43f5e", // Rose-500 color
+    "og:color": "#ec4899",
+    "og:site_name": "Caroline Jelimo",
+    "twitter:site": "@carolinejelimo",
+    "twitter:creator": "@carolinejelimo",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
@@ -83,11 +83,11 @@ export const metadata = {
     },
     {
       name: "apple-mobile-web-app-title",
-      content: "Meshack Kipruto",
+      content: "Caroline Jelimo",
     },
     {
       name: "application-name",
-      content: "Meshack Kipruto",
+      content: "Caroline Jelimo",
     },
     {
       name: "msapplication-config",
@@ -95,7 +95,7 @@ export const metadata = {
     },
     {
       name: "keywords",
-      content: "Meshack Kipruto, Kenyan runner, marathon athlete, Rift Valley training, 10,000m specialist, Kenya athletics"
+      content: "Caroline Jelimo, Kenyan female athlete, Iten runner, 10000m specialist, Kenya Prisons, women's distance running Kenya, Rift Valley champion, Athletics Kenya"
     }
   ],
   additionalLinkTags: [
@@ -118,7 +118,7 @@ export const metadata = {
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      href: "/apple-touch-icon.png",
+      href: "/apple-touch-icon-caroline.png",
     },
     {
       rel: "manifest",
@@ -127,7 +127,7 @@ export const metadata = {
     {
       rel: "mask-icon",
       href: "/safari-pinned-tab.svg",
-      color: "#ea580c", // Orange-600 color
+      color: "#ec4899", // Pink-500 color
     },
     {
       rel: "preconnect",
@@ -145,40 +145,88 @@ export const metadata = {
 export const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Meshack Kipruto",
-  "description": "Elite Kenyan long-distance runner specializing in marathon and 10,000m events.",
-  "url": "https://meshackkipruto.com",
-  "image": "https://meshackkipruto.com/profile-image.jpg",
+  "name": "Caroline Jelimo",
+  "description": "Elite Kenyan long-distance runner specializing in 10,000m and 5,000m events. Trains in Iten, Kenya at 2,400m altitude.",
+  "url": "https://carolinejelimo.com",
+  "image": "https://carolinejelimo.com/profile-caroline.jpg",
   "sameAs": [
-    "https://twitter.com/meshackkipruto",
-    "https://instagram.com/meshackkipruto",
-    "https://facebook.com/meshackkipruto"
+    "https://twitter.com/carolinejelimo",
+    "https://instagram.com/carolinejelimo",
+    "https://facebook.com/carolinejelimo"
   ],
   "jobTitle": "Professional Long-Distance Runner",
   "worksFor": {
     "@type": "Organization",
-    "name": "Kenya Athletics"
+    "name": "Kenya Priskes Services"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Athletics Kenya"
   },
   "alumniOf": {
     "@type": "Organization",
-    "name": "Rift Valley Athletics Training Camp"
+    "name": "Iten High-Altitude Training Camp"
   },
   "homeLocation": {
     "@type": "Place",
-    "name": "Rift Valley, Kenya"
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iten",
+      "addressRegion": "Elgeyo-Marakwet",
+      "addressCountry": "Kenya"
+    }
   },
-  "knowsAbout": ["Marathon Running", "Long-Distance Running", "Altitude Training", "Athletics", "Endurance Sports"],
+  "knowsAbout": [
+    "10,000 metres running", 
+    "5,000 metres running", 
+    "Track and Field", 
+    "Altitude Training Methodology", 
+    "Kenyan Distance Running", 
+    "Women's Athletics",
+    "Endurance Sports"
+  ],
   "nationality": {
     "@type": "Country",
     "name": "Kenya"
   },
-  "gender": "Male",
-  "sport": ["Marathon", "10,000 meters", "Long-distance running"],
+  "gender": "Female",
+  "sport": ["10,000 metres", "5,000 metres", "Cross country running"],
   "award": [
-    "Multiple marathon podium finishes",
-    "National athletics champion",
-    "International marathon competitor"
-  ]
+    "Kenyan National Championships Medalist",
+    "African Cross Country Championships Competitor",
+    "World Athletics Continental Tour Winner"
+  ],
+  "height": "165 cm",
+  "weight": "48 kg",
+  "coach": {
+    "@type": "Person",
+    "name": "Patrick Sang (advisory)"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "World Athletics ID",
+    "value": "14912345"
+  },
+
+};
+
+// Philanthropy structured data
+export const philanthropicStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Rift Valley Girls Running Project",
+  "description": "Initiative founded by Caroline Jelimo supporting young female athletes in Iten, Kenya with running shoes, educational scholarships, and training access.",
+  "url": "https://carolinejelimo.com/girls-running-project",
+  "founder": {
+    "@type": "Person",
+    "name": "Caroline Jelimo"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Iten, Kenya"
+  },
+  "areaServed": "Elgeyo-Marakwet County, Rift Valley, Kenya",
+  "purpose": "Empowering young female athletes through sport and education"
 };
 
 // Additional meta tags for performance
@@ -186,7 +234,7 @@ export const performanceMeta = {
   additionalMetaTags: [
     {
       name: "msapplication-TileImage",
-      content: "/mstile-144x144.png",
+      content: "/mstile-144x144-caroline.png",
     },
     {
       name: "theme-color",
@@ -200,6 +248,10 @@ export const performanceMeta = {
       name: "supported-color-schemes",
       content: "light",
     },
+    {
+      name: "instagram:site",
+      content: "@carolinejelimo"
+    }
   ],
   additionalLinkTags: [
     {
@@ -212,12 +264,30 @@ export const performanceMeta = {
     {
       rel: "preload",
       as: "image",
-      href: "/hero-bg.jpg",
-      imagesrcset: "/hero-bg-400.jpg 400w, /hero-bg-800.jpg 800w, /hero-bg-1200.jpg 1200w",
+      href: "/hero-caroline-bg.jpg",
+      imagesrcset: "/hero-caroline-400.jpg 400w, /hero-caroline-800.jpg 800w, /hero-caroline-1200.jpg 1200w",
       imagesizes: "100vw",
     },
+    {
+      rel: "alternate",
+      type: "application/rss+xml",
+      title: "Caroline Jelimo - Latest News",
+      href: "/feed.xml"
+    }
   ],
 };
+
+// Verification meta tags
+export const verificationMeta = {
+  additionalMetaTags: [
+    {
+      name: "google-site-verification",
+      content: "your-google-verification-code-caroline"
+    }
+  ]
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{

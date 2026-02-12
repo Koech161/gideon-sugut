@@ -67,13 +67,10 @@ export default function Footer() {
               </h3>
             </div>
            <p className="mb-6 leading-relaxed text-gray-400">
-            A powerhouse of Kenyan road racing, Caroline Jelimo is a versatile long-distance 
-            specialist dominant across the 10k, Half-Marathon, and the Full Marathon. 
-            Forged on the grueling, high-altitude trails of Iten, she embodies the 
-            relentless endurance of the Rift Valley. By combining tactical 10k speed with 
-            unshakeable marathon resilience, she represents a new era of Kenyan 
-            excellence—delivering world-class performances on the global stage with 
-            precision, grit, and an iron will.
+           A rising talent from the high-altitude trails of Iten, Caroline Jelimo is 
+          an emerging specialist in road racing. Combining sharp tactical speed with 
+          growing marathon endurance, she is carving her path through the competitive 
+          Kenyan circuit with discipline, grit, and the relentless spirit of the Rift Valley.
           </p>
 
             <div className="flex space-x-3">

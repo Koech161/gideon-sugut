@@ -54,7 +54,7 @@ export default function About() {
                 Hailing from the high-altitude terrain of the Rift Valley, Kenya, Caroline Jelimo is a rising talent in the local athletics scene. Her journey is defined by a steady progression from school-level competition to dominating regional road races. Currently honing her craft in the "Home of Champions," she is transitioning into the marathon distance with a focus on endurance and tactical patience.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                Caroline is recognized among local coaches for her exceptional "Marathon Engine"—the ability to maintain a grueling pace while staying mentally composed. As a promising local athlete, she is currently focused on mastering the local circuit, using every race as a stepping stone toward her ultimate goal of representing the heritage of Kenyan long-distance running.
+                Caroline is recognized among local coaches for her exceptional "Marathon Engine" the ability to maintain a grueling pace while staying mentally composed. As a promising local athlete, she is currently focused on mastering the local circuit, using every race as a stepping stone toward her ultimate goal of representing the heritage of Kenyan long-distance running.
               </p>
             </div>
 

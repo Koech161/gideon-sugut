@@ -248,7 +248,7 @@ export const performanceMeta = {
   additionalMetaTags: [
     {
       name: "msapplication-TileImage",
-      content: "/mstile-144x144-caroline.png",
+      content: "/mstile-144x144-gideon.png",
     },
     {
       name: "theme-color",
@@ -264,7 +264,7 @@ export const performanceMeta = {
     },
     {
       name: "instagram:site",
-      content: "@carolinejelimo"
+      content: "@gideonjelimo"
     }
   ],
   additionalLinkTags: [
@@ -278,14 +278,14 @@ export const performanceMeta = {
     {
       rel: "preload",
       as: "image",
-      href: "/hero-caroline-bg.jpg",
-      imagesrcset: "/hero-caroline-400.jpg 400w, /hero-caroline-800.jpg 800w, /hero-caroline-1200.jpg 1200w",
+      href: "/hero-gideon-bg.jpg",
+      imagesrcset: "/hero-gideon-400.jpg 400w, /hero-gideon-800.jpg 800w, /hero-gideon-1200.jpg 1200w",
       imagesizes: "100vw",
     },
     {
       rel: "alternate",
       type: "application/rss+xml",
-      title: "Caroline Jelimo - Latest News",
+      title: "gideon Jelimo - Latest News",
       href: "/feed.xml"
     }
   ],
@@ -296,7 +296,7 @@ export const verificationMeta = {
   additionalMetaTags: [
     {
       name: "google-site-verification",
-      content: "your-google-verification-code-caroline"
+      content: "your-google-verification-code-gideon"
     }
   ]
 };

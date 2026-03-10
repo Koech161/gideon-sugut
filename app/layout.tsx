@@ -12,35 +12,35 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner | Rift Valley",
+  title: "Gideon Kiptoo Sugut – Kenyan Long-Distance Runner | Rift Valley",
   description:
-    "Official website of Caroline Jelimo, elite Kenyan runner training in Iten, Kenya. Rising star of Kenyan women's distance running, representing Kenya Prisons and Athletics Kenya with grace, determination, and championship ambition.",
+    "Official website of Gideon Kiptoo Sugut, Kenyan long-distance runner training in Iten, Kenya. Specializing in 10km, half marathon, and marathon distances on the local road racing circuit. Representing the authentic running tradition of the Rift Valley.",
   keywords:
-    "Caroline Jelimo, Kenyan female runner, Iten Kenya runner, Kenyan women's distance running, Rift Valley runner, Kenya Prisons athletics, Kenyan track athlete, altitude training Iten, female marathon prospect, Athletics Kenya, long-distance running Kenya, East African runner",
-  authors: [{ name: "Caroline Jelimo" }],
-  creator: "Caroline Jelimo",
-  publisher: "Caroline Jelimo",
+    "Gideon Kiptoo Sugut, Kenyan runner, Iten Kenya runner, Kenyan distance running, Rift Valley runner, marathon training Kenya, 10km road race, half marathon Kenya, altitude training Iten, long-distance running Kenya, East African runner, local circuit Kenya",
+  authors: [{ name: "Gideon Kiptoo Sugut" }],
+  creator: "Gideon Kiptoo Sugut",
+  publisher: "Gideon Kiptoo Sugut",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://carolinejelimo.com"),
+  metadataBase: new URL("https://gideonsugut.run"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Caroline Jelimo – Elite Kenyan Long-Distance Runner",
+    title: "Gideon Kiptoo Sugut – Kenyan Long-Distance Runner",
     description:
-     "Rising Kenyan distance runner Caroline Jelimo, training in the high-altitude 'Home of Champions,' Iten. A specialist in the 10k and Half-Marathon, Jelimo is an emerging force in the Rift Valley circuit, focused on endurance, discipline, and the pursuit of road racing excellence.",
-    url: "https://carolinejelimo.com/",
-    siteName: "Caroline Jelimo",
+     "Kenyan distance runner Gideon Kiptoo Sugut, training in the high-altitude 'Home of Champions,' Iten. A competitor in 10km, half marathon, and marathon distances on the local road circuit, focused on endurance, discipline, and the authentic tradition of Rift Valley running.",
+    url: "https://gideonsugut.run/",
+    siteName: "Gideon Kiptoo Sugut",
     images: [
       {
-        url: "/og-image-caroline.jpg",
+        url: "/og-image-gideon.jpg",
         width: 1200,
         height: 630,
-        alt: "Caroline Jelimo – Elite Kenyan Long-Distance Runner from Iten",
+        alt: "Gideon Kiptoo Sugut – Kenyan Long-Distance Runner from Iten",
       },
     ],
     locale: "en_US",
@@ -48,11 +48,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Caroline Jelimo – Kenyan 10,000m Specialist",
+    title: "Gideon Kiptoo Sugut – Kenyan Distance Runner",
     description:
-      "Athletics Kenya registered runner. Forged in Iten's high-altitude trails. 10,000m: 30:41 | 5,000m: 14:58. Rising star of Kenyan women's distance running.",
-    images: ["/twitter-image-caroline.jpg"],
-    creator: "@carolinejelimo",
+      "Long-distance runner based in Iten, Rift Valley. Specializing in 10km, half marathon, and marathon distances on the local Kenyan road circuit.",
+    images: ["/twitter-image-gideon.jpg"],
+    creator: "@gideonsugut",
   },
   robots: {
     index: true,
@@ -67,12 +67,12 @@ export const metadata = {
   },
   category: "sports",
   other: {
-    "theme-color": "#ec4899", // Pink-500 color
-    "msapplication-TileColor": "#f43f5e", // Rose-500 color
-    "og:color": "#ec4899",
-    "og:site_name": "Caroline Jelimo",
-    "twitter:site": "@carolinejelimo",
-    "twitter:creator": "@carolinejelimo",
+    "theme-color": "#10b981", // Emerald-500 color
+    "msapplication-TileColor": "#059669", // Emerald-600 color
+    "og:color": "#10b981",
+    "og:site_name": "Gideon Kiptoo Sugut",
+    "twitter:site": "@gideonsugut",
+    "twitter:creator": "@gideonsugut",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
@@ -83,11 +83,11 @@ export const metadata = {
     },
     {
       name: "apple-mobile-web-app-title",
-      content: "Caroline Jelimo",
+      content: "Gideon Sugut",
     },
     {
       name: "application-name",
-      content: "Caroline Jelimo",
+      content: "Gideon Kiptoo Sugut",
     },
     {
       name: "msapplication-config",
@@ -95,7 +95,7 @@ export const metadata = {
     },
     {
       name: "keywords",
-      content: "Caroline Jelimo, Kenyan female athlete, Iten runner, 10000m specialist, Kenya Prisons, women's distance running Kenya, Rift Valley champion, Athletics Kenya"
+      content: "Gideon Kiptoo Sugut, Kenyan athlete, Iten runner, marathon runner Kenya, half marathon Kenya, 10km road race, Rift Valley running, local circuit Kenya"
     }
   ],
   additionalLinkTags: [
@@ -118,7 +118,7 @@ export const metadata = {
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      href: "/apple-touch-icon-caroline.png",
+      href: "/apple-touch-icon-gideon.png",
     },
     {
       rel: "manifest",
@@ -127,7 +127,7 @@ export const metadata = {
     {
       rel: "mask-icon",
       href: "/safari-pinned-tab.svg",
-      color: "#ec4899", // Pink-500 color
+      color: "#10b981", // Emerald-500 color
     },
     {
       rel: "preconnect",
@@ -145,23 +145,19 @@ export const metadata = {
 export const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Caroline Jelimo",
-  "description": "Elite Kenyan long-distance runner specializing in 10,000m and 5,000m events. Trains in Iten, Kenya at 2,400m altitude.",
-  "url": "https://carolinejelimo.com",
-  "image": "https://carolinejelimo.com/profile-caroline.jpg",
+  "name": "Gideon Kiptoo Sugut",
+  "description": "Kenyan long-distance runner specializing in 10km, half marathon, and marathon distances. Trains in Iten, Kenya at 2,400m altitude.",
+  "url": "https://gideonsugut.run",
+  "image": "https://gideonsugut.run/profile-gideon.jpg",
   "sameAs": [
-    "https://twitter.com/carolinejelimo",
-    "https://instagram.com/carolinejelimo",
-    "https://facebook.com/carolinejelimo"
+    "https://twitter.com/gideonsugut",
+    "https://instagram.com/gideonsugut",
+    "https://facebook.com/gideonsugut"
   ],
-  "jobTitle": "Professional Long-Distance Runner",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Kenya Priskes Services"
-  },
+  "jobTitle": "Long-Distance Runner",
   "memberOf": {
     "@type": "Organization",
-    "name": "Athletics Kenya"
+    "name": "Local Athletics Circuit"
   },
   "alumniOf": {
     "@type": "Organization",
@@ -177,58 +173,76 @@ export const structuredData = {
     }
   },
   "knowsAbout": [
-    "10,000 metres running", 
-    "5,000 metres running", 
-    "Track and Field", 
+    "10km road running", 
+    "Half marathon", 
+    "Marathon", 
     "Altitude Training Methodology", 
-    "Kenyan Distance Running", 
-    "Women's Athletics",
-    "Endurance Sports"
+    "Kenyan Distance Running Tradition", 
+    "Endurance Sports",
+    "Road Racing Circuit"
   ],
   "nationality": {
     "@type": "Country",
     "name": "Kenya"
   },
-  "gender": "Female",
-  "sport": ["10,000 metres", "5,000 metres", "Cross country running"],
-  "award": [
-    "Kenyan National Championships Medalist",
-    "African Cross Country Championships Competitor",
-    "World Athletics Continental Tour Winner"
-  ],
-  "height": "165 cm",
-  "weight": "48 kg",
+  "gender": "Male",
+  "sport": ["10km road race", "Half marathon", "Marathon", "Cross country running"],
+  "height": "172 cm",
+  "weight": "56 kg",
   "coach": {
     "@type": "Person",
-    "name": "Patrick Sang (advisory)"
+    "name": "Local Training Partners"
   },
   "identifier": {
     "@type": "PropertyValue",
-    "propertyID": "World Athletics ID",
-    "value": "14912345"
+    "propertyID": "Local Athletics ID",
+    "value": "KE-2024-001"
   },
-
 };
 
-// Philanthropy structured data
-export const philanthropicStructuredData = {
+// Training approach structured data
+export const trainingStructuredData = {
   "@context": "https://schema.org",
-  "@type": "NGO",
-  "name": "Rift Valley Girls Running Project",
-  "description": "Initiative founded by Caroline Jelimo supporting young female athletes in Iten, Kenya with running shoes, educational scholarships, and training access.",
-  "url": "https://carolinejelimo.com/girls-running-project",
-  "founder": {
-    "@type": "Person",
-    "name": "Caroline Jelimo"
-  },
+  "@type": "SportsActivityLocation",
+  "name": "Iten High-Altitude Training Base",
+  "description": "Traditional Kenyan training grounds in the Rift Valley where Gideon Kiptoo Sugut prepares for 10km, half marathon, and marathon distances on the local circuit.",
+  "url": "https://gideonsugut.run/training",
+  "sport": ["Long-distance running", "Marathon training", "Half marathon", "10km road race"],
   "location": {
     "@type": "Place",
-    "name": "Iten, Kenya"
+    "name": "Iten, Kenya",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iten",
+      "addressRegion": "Elgeyo-Marakwet",
+      "addressCountry": "Kenya"
+    }
   },
-  "areaServed": "Elgeyo-Marakwet County, Rift Valley, Kenya",
-  "purpose": "Empowering young female athletes through sport and education"
+  "areaServed": "Rift Valley, Kenya",
+  "featureList": "High-altitude training at 2,400m, traditional Kenyan running methods, group training sessions"
 };
 
+// Local race circuit structured data
+export const localCircuitStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  "name": "Rift Valley Road Race Circuit",
+  "description": "Local road racing events in Kenya where Gideon Kiptoo Sugut competes across 10km, half marathon, and marathon distances.",
+  "location": {
+    "@type": "Place",
+    "name": "Rift Valley Region",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Rift Valley",
+      "addressCountry": "Kenya"
+    }
+  },
+  "sport": ["10km road race", "Half marathon", "Marathon"],
+  "competitor": {
+    "@type": "Person",
+    "name": "Gideon Kiptoo Sugut"
+  }
+};
 // Additional meta tags for performance
 export const performanceMeta = {
   additionalMetaTags: [

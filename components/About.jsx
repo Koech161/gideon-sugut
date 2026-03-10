@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   const brandColor = {
-    primary: 'pink-600',
+    primary: 'emerald-600',
     secondary: 'slate-900',
-    light: 'pink-50',
-    dark: 'pink-800',
-    gradientFrom: 'pink-500',
-    gradientTo: 'pink-700'
+    light: 'emerald-50',
+    dark: 'emerald-800',
+    gradientFrom: 'emerald-500',
+    gradientTo: 'emerald-700'
   };
 
   return (
     <section
-      className="min-h-screen py-20 bg-gradient-to-b from-white to-pink-50"
-      aria-label="About Caroline Jelimo"
+      className="min-h-screen py-20 bg-gradient-to-b from-white to-emerald-50"
+      aria-label="About Gideon Kiptoo Sugut"
       id="about"
     >
       <div className="container px-4 mx-auto">
@@ -24,13 +24,13 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 text-sm font-semibold tracking-wider text-pink-600 uppercase">
-            A Rising Force in Kenyan Road Running
+          <h2 className="mb-3 text-sm font-semibold tracking-wider uppercase text-emerald-600">
+            A Rising Name in Kenyan Distance Running
           </h2>
           <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-            About <span className="text-pink-600">Caroline Jelimo</span>
+            About <span className="text-emerald-600">Gideon Kiptoo Sugut</span>
           </h1>
-          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-pink-500 to-pink-700"></div>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-emerald-500 to-emerald-700"></div>
         </motion.div>
 
         <div className="flex flex-col gap-12 lg:flex-row">
@@ -41,20 +41,30 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="p-8 bg-white border-l-4 border-pink-500 shadow-lg rounded-2xl">
+            <div className="p-8 bg-white border-l-4 shadow-lg border-emerald-500 rounded-2xl">
               <div className="flex items-center mb-6">
-                <div className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-r from-pink-100 to-pink-50">
-                  <span className="text-lg font-bold text-pink-700">CJ</span>
+                <div className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-r from-emerald-100 to-emerald-50">
+                  <span className="text-lg font-bold text-emerald-700">GKS</span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800">
-                  Built for the Long Road
+                  Forged in the Rift Valley
                 </h2>
               </div>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                Hailing from the high-altitude terrain of the Rift Valley, Kenya, Caroline Jelimo is a rising talent in the local athletics scene. Her journey is defined by a steady progression from school-level competition to dominating regional road races. Currently honing her craft in the "Home of Champions," she is transitioning into the marathon distance with a focus on endurance and tactical patience.
+                Gideon Kiptoo Sugut represents the authentic spirit of Kenyan distance running. 
+                Born and raised in the high-altitude region of the Rift Valley, his journey began 
+                on the dusty roads leading to and from school, where he first discovered his natural 
+                endurance. Today, he trains among the competitive packs in Iten, the world-renowned 
+                "Home of Champions," focusing his efforts on mastering the 10km, half marathon, 
+                and marathon distances on the local road racing circuit.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                Caroline is recognized among local coaches for her exceptional "Marathon Engine" the ability to maintain a grueling pace while staying mentally composed. As a promising local athlete, she is currently focused on mastering the local circuit, using every race as a stepping stone toward her ultimate goal of representing the heritage of Kenyan long-distance running.
+                Known among his training partners for his disciplined approach and consistent 
+                improvement, Gideon approaches each race with patience and strategic intelligence. 
+                While his focus remains firmly on the local circuit, his dedication to the craft 
+                reflects the deep-running tradition of Kenyan athletics. His goal is to honor that 
+                heritage through hard work, humility, and steady progression across all three 
+                distances.
               </p>
             </div>
 
@@ -62,39 +72,39 @@ export default function About() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
                 {
-                  title: 'Endurance Base',
-                  desc: 'Exceptional aerobic capacity developed through consistent high-volume training blocks.',
-                  icon: '🏁',
+                  title: 'Marathon Endurance',
+                  desc: 'Built for the full 42km distance through consistent high-volume training in the Rift Valley hills.',
+                  icon: '🏃‍♂️',
                 },
                 {
-                  title: 'Half-Marathon Focus',
-                  desc: 'A strong presence in regional 21k events, showcasing her ability to handle high intensity.',
+                  title: 'Half-Marathon Strength',
+                  desc: 'Strong performances in local 21k events, demonstrating pace judgment and race tactics.',
                   icon: '🥈',
                 },
                 {
-                  title: '10k Speed',
-                  desc: 'Uses sharp 10k road speed to stay competitive during tactical regional finishes.',
+                  title: '10km Speed',
+                  desc: 'Retains leg speed for shorter road races, adding versatility to his racing calendar.',
                   icon: '⚡',
                 },
                 {
-                  title: 'Altitude Hardened',
-                  desc: 'Lifetime of training at 2,400m in Iten, yielding a natural biological advantage.',
+                  title: 'Altitude Advantage',
+                  desc: 'Lifetime of training at 2,400m above sea level in Iten, building exceptional aerobic capacity.',
                   icon: '🏔️',
                 },
                 {
-                  title: 'Mechanical Efficiency',
-                  desc: 'Noted for a fluid running economy and a mid-foot strike that maximizes energy return.',
+                  title: 'Efficient Form',
+                  desc: 'Clean running mechanics developed through years of running on varied terrain.',
                   icon: '⚙️',
                 },
                 {
-                  title: 'Regional Talent',
-                  desc: 'Consistent top-five finishes across the competitive Rift Valley road race series.',
+                  title: 'Local Competitor',
+                  desc: 'Active participant in the competitive Rift Valley road race circuit and local events.',
                   icon: '🇰🇪',
                 },
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  className="p-6 transition-all duration-300 bg-white border border-pink-100 shadow-md rounded-xl hover:shadow-lg hover:border-pink-200 hover:-translate-y-1"
+                  className="p-6 transition-all duration-300 bg-white border shadow-md border-emerald-100 rounded-xl hover:shadow-lg hover:border-emerald-200 hover:-translate-y-1"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + index * 0.1 }}
@@ -118,23 +128,23 @@ export default function About() {
           >
             <div className="sticky space-y-6 top-24">
               {/* Training Philosophy */}
-              <div className="p-6 bg-white border border-pink-100 shadow-lg rounded-2xl">
+              <div className="p-6 bg-white border shadow-lg border-emerald-100 rounded-2xl">
                 <h3 className="mb-4 text-xl font-bold text-gray-800">
-                  The Training Build
+                  The Training Approach
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    'Consistent weekly volume in the hills of Iten',
-                    '30km+ long runs on the Iten-Eldoret road',
-                    'Tough fartlek sessions with local training groups',
-                    'Recovery fueled by traditional Kenyan staples',
-                    'Mental focus sessions for late-race endurance',
-                    'Strength and conditioning for injury resilience',
-                    'Regular hill work to build explosive power',
+                    'Daily runs on the famous red-clay trails of Iten',
+                    'Long runs of 35km+ through the Rift Valley countryside',
+                    'Group training sessions with local running camps',
+                    'Fartlek and tempo work on undulating terrain',
+                    'Traditional Kenyan diet for natural recovery',
+                    'Strength work focused on injury prevention',
+                    'Mental preparation for race-day challenges',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-700">
-                      <div className="flex items-center justify-center w-5 h-5 mr-3 bg-pink-100 rounded-full">
-                        <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                      <div className="flex items-center justify-center w-5 h-5 mr-3 rounded-full bg-emerald-100">
+                        <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                       </div>
                       {item}
                     </li>
@@ -143,24 +153,28 @@ export default function About() {
               </div>
 
               {/* Quick Stats */}
-              <div className="p-6 shadow-lg bg-gradient-to-br from-pink-600 to-pink-800 rounded-2xl">
-                <h3 className="mb-4 text-xl font-bold text-white">Athletic Profile</h3>
+              <div className="p-6 shadow-lg bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-2xl">
+                <h3 className="mb-4 text-xl font-bold text-white">Athlete Profile</h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Primary Focus</span>
-                    <span className="font-semibold text-white">Marathon / 21k</span>
+                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
+                    <span className="text-emerald-100">Primary Focus</span>
+                    <span className="font-semibold text-white">42km / 21km</span>
                   </div>
-                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Specialization</span>
+                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
+                    <span className="text-emerald-100">Specialization</span>
                     <span className="font-semibold text-white">Road Racing</span>
                   </div>
-                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Training Base</span>
+                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
+                    <span className="text-emerald-100">Training Base</span>
                     <span className="font-semibold text-white">Iten, Kenya</span>
                   </div>
-                  <div className="flex justify-between pb-2 border-b border-pink-400/30">
-                    <span className="text-pink-100">Status</span>
-                    <span className="font-semibold text-white">Promising Talent</span>
+                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
+                    <span className="text-emerald-100">Status</span>
+                    <span className="font-semibold text-white">Local Competitor</span>
+                  </div>
+                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
+                    <span className="text-emerald-100">Race Distances</span>
+                    <span className="font-semibold text-white">10k • 21k • 42k</span>
                   </div>
                 </div>
               </div>
@@ -175,17 +189,17 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <div className="inline-block px-8 py-8 shadow-lg bg-gradient-to-r from-pink-700 to-slate-900 rounded-2xl">
-            <div className="mb-4 text-4xl text-pink-200">"</div>
+          <div className="inline-block px-8 py-8 shadow-lg bg-gradient-to-r from-emerald-700 to-slate-900 rounded-2xl">
+            <div className="mb-4 text-4xl text-emerald-200">"</div>
             <p className="max-w-3xl text-xl italic font-medium text-white">
-              The road doesn't care about your past, only your persistence. 
-              In Iten, we run to find where our limits begin and our strength ends. 
-              Every kilometer is a step closer to the legacy I hope to build.
+              The roads of the Rift Valley have taught me that running is not about how fast you start, 
+              but how well you finish. Every morning in Iten, we run not for glory, but for the discipline 
+              that comes with each step. The local races are my classroom, and I'm still learning.
             </p>
-            <p className="mt-3 font-semibold text-pink-100">
-              – Caroline Jelimo
+            <p className="mt-3 font-semibold text-emerald-100">
+              – Gideon Kiptoo Sugut
             </p>
-            <div className="mt-4 text-4xl text-pink-200 transform rotate-180">"</div>
+            <div className="mt-4 text-4xl transform rotate-180 text-emerald-200">"</div>
           </div>
         </motion.div>
       </div>

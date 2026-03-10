@@ -82,7 +82,7 @@ export default function Hero() {
                 Gideon Kiptoo Sugut represents the new generation of Kenyan distance running talent. 
                 Specializing in the 10k, half marathon, and full marathon distances, Gideon trains 
                 rigorously on the famous red-clay trails of Iten. His journey is rooted in the 
-                authentic tradition of Kenyan athletics—dedication, discipline, and the relentless 
+                authentic tradition of Kenyan athleticsdedication, discipline, and the relentless 
                 pursuit of personal excellence on the local road racing circuit.
               </p>
             </div>

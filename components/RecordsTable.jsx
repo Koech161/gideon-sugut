@@ -3,9 +3,9 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const achievementsData = [
-  { "id": 1, "event": "Marathon", "time": "2:31:26", "date": "2025-04-27", "venue": "Eldoret City Marathon", "location": "Eldoret" },
-  { "id": 3, "event": "10k", "time": "31:17", "date": "2025-07-20", "venue": "Mozzart Bet Rediscover Nandi 10KM", "location": "Kapsabet" },
-  { "id": 2, "event": "Half Marathon", "time": "1:12:57", "date": "2024-11-08", "venue": "Tophill Hospital Half Marathon", "location": "Kericho" },
+  { "id": 1, "event": "Marathon", "time": "2:14:26", "date": "2025-04-27", "venue": "Eldoret City Marathon", "location": "Eldoret" },
+  { "id": 3, "event": "10k", "time": "29:17", "date": "2025-11-30", "venue": "Second Edition Tech Run", "location": "Eldoret" },
+  { "id": 2, "event": "Half Marathon", "time": "1:03:57", "date": "2025-01-19", "venue": "Zayed Half Marathonn", "location": "Nairobi" },
 
 ];
 

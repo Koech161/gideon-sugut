@@ -168,10 +168,7 @@ export default function About() {
                     <span className="text-emerald-100">Training Base</span>
                     <span className="font-semibold text-white">Iten, Kenya</span>
                   </div>
-                  <div className="flex justify-between pb-2 border-b border-emerald-400/30">
-                    <span className="text-emerald-100">Status</span>
-                    <span className="font-semibold text-white">Local Competitor</span>
-                  </div>
+                  
                   <div className="flex justify-between pb-2 border-b border-emerald-400/30">
                     <span className="text-emerald-100">Race Distances</span>
                     <span className="font-semibold text-white">10k • 21k • 42k</span>
